@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1002"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugTherapyChecks>
+                <drugTherapyCheck>
+                    <id>107</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;Prospect" ien="93268" gcnSeqNo="24538"/>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="58432"/>
+                    </interactedDrugList>
+                    <classification>Calcium Channel Blockers</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of DILTIAZEM HCL ORAL CAPSULE,SUSTAINED ACTION 240 MG and AMLODIPINE BESYLATE/ATORVASTATIN CALCIUM ORAL TABLET 2.5 MG-10 MG may represent a duplication in therapy based on their association to the therapeutic drug class Calcium Channel Blockers.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>483</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;Prospect" ien="93267" gcnSeqNo="16579"/>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="58432"/>
+                    </interactedDrugList>
+                    <classification>HMGCo-A Reductase Inhibitors</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of SIMVASTATIN ORAL TABLET 40 MG and AMLODIPINE BESYLATE/ATORVASTATIN CALCIUM ORAL TABLET 2.5 MG-10 MG may represent a duplication in therapy based on their association to the therapeutic drug class HMGCo-A Reductase Inhibitors.</shortText>
+                </drugTherapyCheck>
+            </drugTherapyChecks>
+        </drugCheck>
+    </Body>

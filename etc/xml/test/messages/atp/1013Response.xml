@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1013"/>
+        <PEPSVersion customIssueDate="20100227" customBuildVersion="6"
+            customDbVersion="3.2" difIssueDate="20100219"
+            difBuildVersion="7" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDoseChecks>
+                <drugDoseCheck>
+                    <source>FDB</source>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="60301"/>
+                        <severity>Information</severity>
+                        <type>RenalImpairment</type>
+                        <drugName>HEPARIN SODIUM,PORCINE/DEXTROSE 5%-WATER INTRAVENOUS SOLUTION,INTRAVENOUS 25,000 UNIT/250 ML</drugName>
+                        <text>Renal function is important in this drug's elimination. Dosing adjustment should be considered in patients with significant renal impairment.</text>
+                    </message>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="60301"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>HEPARIN SODIUM,PORCINE/DEXTROSE 5%-WATER INTRAVENOUS SOLUTION,INTRAVENOUS 25,000 UNIT/250 ML</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="60301"/>
+                    <chemoInjectable>false</chemoInjectable>
+                    <singleDoseStatus>Passed</singleDoseStatus>
+                    <singleDoseStatusCode>1</singleDoseStatusCode>
+                    <singleDoseMessage></singleDoseMessage>
+                    <singleDoseMax>1667 UNIT/HOUR</singleDoseMax>
+                    <rangeDoseStatus>Passed</rangeDoseStatus>
+                    <rangeDoseStatusCode>1</rangeDoseStatusCode>
+                    <rangeDoseMessage></rangeDoseMessage>
+                    <rangeDoseLow>833 UNIT/HOUR</rangeDoseLow>
+                    <rangeDoseHigh>1667 UNIT/HOUR</rangeDoseHigh>
+                    <doseHigh>1667</doseHigh>
+                    <doseHighUnit>UNIT/HOUR</doseHighUnit>
+                    <doseLow>833</doseLow>
+                    <doseLowUnit>UNIT/HOUR</doseLowUnit>
+                    <doseFormHigh>16.67</doseFormHigh>
+                    <doseFormHighUnit>ML/HOUR</doseFormHighUnit>
+                    <doseFormLow>8.33</doseFormLow>
+                    <doseFormLowUnit>ML/HOUR</doseFormLowUnit>
+                    <doseRouteDescription>CONTINUOUS INFUSION</doseRouteDescription>
+                    <durationStatus>BelowRecommended</durationStatus>
+                    <durationStatusCode>4</durationStatusCode>
+                    <durationMessage>Duration of 1 hours is below the duration range of 24 hours to indefinitely.</durationMessage>
+                    <frequencyStatus>Passed</frequencyStatus>
+                    <frequencyStatusCode>1</frequencyStatusCode>
+                    <frequencyMessage></frequencyMessage>
+                    <dailyDoseStatus>Passed</dailyDoseStatus>
+                    <dailyDoseStatusCode>1</dailyDoseStatusCode>
+                    <dailyDoseMessage></dailyDoseMessage>
+                    <maxDailyDoseStatus>Passed</maxDailyDoseStatus>
+                    <maxDailyDoseStatusCode>1</maxDailyDoseStatusCode>
+                    <maxDailyDoseMessage></maxDailyDoseMessage>
+                    <maxLifetimeDose>0</maxLifetimeDose>
+                </drugDoseCheck>
+            </drugDoseChecks>
+        </drugCheck>
+    </Body>

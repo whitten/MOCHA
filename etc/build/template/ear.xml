@@ -1,0 +1,62 @@
+<project name="EarTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initEarTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="ear"
+                     classname="org.swri.ant.task.EarTask"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader"
+                     uri="http://www.swri.org" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageEar" uri="http://www.swri.org">
+        <attribute name="name" default="${ant.project.name}" />
+        <attribute name="destFile" default="${ant.project.name}.ear" />
+        <attribute name="baseDir" default="${build.archive.dir}" />
+        <element name="additionalejb" optional="true" />
+        <element name="additionalwar" optional="true" />
+        <element name="additionalrar" optional="true" />
+        <element name="additionalmodule" optional="true" />
+        <sequential>
+            <swri:ear destfile="${build.archive.dir}/@{destFile}"
+                      displayName="@{name}"
+                      description="@{name}"
+                      update="true">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <metainf dir="${etc.dir}/weblogic">
+                    <include name="weblogic-application.xml" />
+                </metainf>
+
+                <module type="ejb" dir="@{baseDir}">
+                    <include name="**/*.jar" />
+                    <additionalejb />
+                </module>
+
+                <module type="web" dir="@{baseDir}">
+                    <include name="**/*.war" />
+                    <additionalwar />
+                </module>
+
+                <module type="connector" dir="@{baseDir}">
+                    <include name="**/*.rar" />
+                    <additionalrar />
+                </module>
+
+                <fileset dir="${basedir}">
+                    <include name="${lib}/**/*.jar" />
+                    <exclude name="${lib}/${build}/**" />
+                    <exclude name="${lib}/**/profile/**" unless="include.profile" />
+                    <exclude name="${lib}/database/derbyclient*.jar" unless="deploy.derby" />
+                </fileset>
+
+                <additionalmodule />
+            </swri:ear>
+
+            <checksum file="${build.archive.dir}/@{destFile}" forceOverwrite="true" />
+        </sequential>
+    </macrodef>
+</project>

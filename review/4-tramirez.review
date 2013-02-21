@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="4">
+  <ReviewIssue id="FJKA1AHN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-06 :: 13:31:45:755 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:13:08:841 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/capability/impl/ProcessOrderChecksCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Return type is String</Summary>
+    <Description>Neither the type nor the property name is ICatalogResponse. Where does that name come from?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

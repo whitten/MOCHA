@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean
+        id="receiveFromLocalCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.messaging.impl.ReceiveFromLocalCapabilityImpl">
+        <property
+            name="siteUpdate"
+            ref="siteUpdate" />
+    </bean>
+    <bean
+        id="receiveFromLocalService"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.messaging.impl.ReceiveFromLocalServiceImpl">
+        <property
+            name="receiveFromLocalCapability"
+            ref="receiveFromLocalCapability" />
+    </bean>
+    <bean
+        id="difReportService"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.session.impl.DifReportServiceImpl">
+        <property
+            name="difReportCapability"
+            ref="difReportCapability" />
+    </bean>
+    <bean
+        id="difReportCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.capability.impl.NationalDifReportCapabilityImpl">
+        <property
+            name="siteUpdate"
+            ref="siteUpdate" />
+        <property
+            name="versionCapability"
+            ref="versionCapability" />
+    </bean>
+    <bean
+        id="siteUpdate"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.database.SiteUpdate">
+        <property
+            name="dataSource"
+            ref="datupDataSource" />
+    </bean>
+    <bean
+        id="difUpdateCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.capability.impl.NationalDifUpdateCapabilityImpl">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+        <property
+            name="ftpFactory"
+            ref="ftpFactory" />
+        <property
+            name="difUpdater"
+            ref="difUpdater" />
+        <property
+            name="verificationTester"
+            ref="verificationTester" />
+        <property
+            name="versionCapability"
+            ref="versionCapability" />
+        <property
+            name="siteUpdate"
+            ref="siteUpdate" />
+        <property
+            name="emailUtility"
+            ref="emailUtility" />
+            
+         <property
+            name="externalCapability"
+            ref="sendToExternalCapability" />
+    </bean>
+    <!-- FDB-DIF Update Scheduler -->
+    <bean
+        id="fdbSettings"
+        class="dbank.fdbdataupdater.SettingsData">
+        <property
+            name="dataSource"
+            ref="fdbDataSource" />
+    </bean>
+    <bean
+        id="difUpdater"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.DifUpdater">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+            
+        <property
+            name="jndiTemplate"
+            ref="jndiTemplate" />
+    </bean>
+    <bean
+        id="datupConfiguration"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.Configuration">
+        <property
+            name="filename"
+            value="fdb_datup_configuration.properties" />
+    </bean>
+    
+        <bean
+        id="verificationTester"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.VerificationTester">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+        <property
+            name="processOrderChecksCapability"
+            ref="processOrderChecksCapability" />
+        <property
+            name="randomOrderCheckCapability"
+            ref="randomOrderCheckCapability" />
+    </bean>
+    <bean
+        id="ftpFactory"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.FtpFactory">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+    </bean>
+    <bean
+        id="emailUtility"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.EmailUtility">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+    </bean>
+    <bean
+        id="difUpdateScheduler"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.DifUpdateScheduler"
+        init-method="start">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+        <property
+            name="difUpdateCapability"
+            ref="difUpdateCapability" />
+    </bean>
+    

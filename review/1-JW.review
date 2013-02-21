@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="1">
+  <ReviewIssue id="F38Z977L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:09:13:665 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:43:59:731 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="37">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/VersionCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add  less awkward constructor</Summary>
+    <Description>Add a constructor that does the 'new Object[]' stuff within the constructor itself...so, just a new 3-arg constructor.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38ZH7S1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:15:27:649 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:19:22:262 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="45">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/common/utility/XmlBeansUtility.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>If expensive, add 'if(LOG.isInfoEnabled())' block here</Summary>
+    <Description>Is this expensive to perform?: obj.schemaType().getFullJavaName()&#xD;
+&#xD;
+If not, ignor this issue.</Description>
+    <Annotation />
+    <Revision>class was removed</Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38ZRUKU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:23:43:758 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:10:50:691 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="43">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/common/utility/XmlValidator.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Replace with 'while(iter.hasNext())'</Summary>
+    <Description>for (int i = 0; i &lt; errors.size(); i++) {</Description>
+    <Annotation />
+    <Revision>class was removed</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38ZVME6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:26:39:774 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:19:07:919 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="45">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/common/utility/XmlValidator.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add more diag info here?</Summary>
+    <Description>Replace 'error.getMessage()' with just 'error' here, to get toString() that might be more descriptive to the person looking at the validation exception later?</Description>
+    <Annotation />
+    <Revision>class was removed</Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F390NYYO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:48:42:432 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:48:23:661 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="74">src/EXT/DOMAIN/pharmacy/peps/external/common/utility/profile/StopWatch.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Just curious: why is this needed?</Summary>
+    <Description>pauseRunningTask</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F390PYC4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:50:14:932 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:47:52:619 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="10">src/EXT/DOMAIN/pharmacy/peps/external/common/utility/profile/Profiler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Is aspectj a new tool?</Summary>
+    <Description>org.aspectj.lang.ProceedingJoinPoint...could be a tools issue.  In general, can the AOP-style profiling stuff be disabled/removed quickly if needed?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F390SPCD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:52:23:245 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:48:09:319 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="14">src/EXT/DOMAIN/pharmacy/peps/external/common/utility/profile/TaskInfo.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add more on how this differs from Spring's TaskInfo</Summary>
+    <Description>This TaskInfo class was inspired from the Spring StopWatch.TaskInfo class</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F3917D89">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:03:47:385 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:48:18:334 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="146">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Why using lookup method injection here?</Summary>
+    <Description>protected abstract ScreenDrugs newScreenDrugsInstance();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391APKB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:06:23:339 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:50:08:692 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="171">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Refactor: Move StringUtility to common project</Summary>
+    <Description>StringUtility.nullToEmptyString(value);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391FDJ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:10:01:026 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:14:28:829 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="59">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Cache ScreenDrug objects instead of creating from scratch?</Summary>
+    <Description>newScreenDrugsInstance()</Description>
+    <Annotation />
+    <Revision>Screen Drugs are now cached</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391HDH0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:11:34:260 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:39:43:269 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="105">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Alternatives to if blocks?</Summary>
+    <Description>If a new order check is added, this class needs to be modified...were alternatives explored such as configuring keys to order-check implementations in a prop file?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391LUDK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:15:02:792 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:52:04:816 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="90">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>General: Pre-load the properties file</Summary>
+    <Description>Do this step once (maybe in static initializer), the refer to after that: Properties properties = PropertyUtility.loadConfigurablePath(PerformDrugDrugCheckCapabilityImpl.class);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391R13C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:19:04:776 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:10:13:113 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="31">src/EXT/DOMAIN/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Consider adding Class to Properties caching map here.</Summary>
+    <Description>return load(locateConfigurablePath(className));</Description>
+    <Annotation />
+    <Revision>properties are now cached</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391XTST">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:24:21:917 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:09:32:145 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="72">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What is going on here?</Summary>
+    <Description>DoseCheckType.MAINTENANCE_DOSE...should be looked up from FDB rather than hard coded.</Description>
+    <Annotation />
+    <Revision>This value is now passed in from VistA</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F392JO79">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:41:21:093 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:08:53:036 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>JW</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="14">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/ResponseConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Are these apache XML classes really part of XML Beans? :)</Summary>
+    <Description>org.apache.xmlbeans.XmlCursor...if so, if we move to Castor or JAXB, will this be a big impact on the code base ?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

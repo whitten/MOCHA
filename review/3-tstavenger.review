@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="3">
+  <ReviewIssue id="F91B66VC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:18:53:256 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:17:30:760 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="36">src/EXT/DOMAIN/pharmacy/peps/common/exception/PharmacyException.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>PharmacyException logged twice</Summary>
+    <Description>If our code were to use this constructor, the PharmacyException class woudl call log() twice since it is called both by the constructor this method calls, this(MessageKey, Object...) and by this constructor. &#xD;
+&#xD;
+Consider using one central contructor all constructors call that logs or simply remove this constructor's call to log().</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91B90KR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:21:05:067 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:17:23:729 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="36">src/EXT/DOMAIN/pharmacy/peps/common/exception/PharmacyRuntimeException.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>PharmacyRuntimeException logged twice</Summary>
+    <Description>If our code were to use this constructor, the PharmacyException class woudl call log() twice since it is called both by the constructor this method calls, this(MessageKey, Object...) and by this constructor. &#xD;
+&#xD;
+Consider using one central contructor all constructors call that logs or simply remove this constructor's call to log().</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BA16G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:21:52:504 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:16:15:761 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Don't need cast to Properties</Summary>
+    <Description>Since the Map is typed, we don't need to cast to Properties.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BDGL4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:24:32:440 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:15:54:496 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="72">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugCheckVo.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct spelling</Summary>
+    <Description>propsective -&gt; prospective</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BEO2O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:25:28:800 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:16:00:496 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="218">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugCheckVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove @see from VOs</Summary>
+    <Description>Many of the @see javadoc tags don't really mean much or are inaccurate. It may be best to just remove all of them (at least the ones that are wrong).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BI7C8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:28:13:736 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:14:25:777 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="18">src/EXT/DOMAIN/pharmacy/peps/common/vo/ValueObject.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing javadoc</Summary>
+    <Description>May want to just quickly scan other classes as well to verify javadoc is present.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BM73J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:31:20:047 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:30:21:528 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="25">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/inbound/servlet/AbstractServlet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Consider typing this class to work similar to AbstractPepsService</Summary>
+    <Description>Using a generic type would allow AbstractServlet to type the getService() method without using a parameterized method, and without having to lookup the service in Spring for every call.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BTF14">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:36:56:920 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:13:57:559 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="33">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/DrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add to javadoc to explain abstract class</Summary>
+    <Description>You may want to add a similar javadoc comment as found in EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl.PerformDrugChecksCapabilityImpl to more explicitly explain the abstract class.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BVQ34">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:38:44:560 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:13:03:419 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="71">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Clean up comment</Summary>
+    <Description>It may be better just to simply say that we're using our own internal unique ID to map the results we get back from FDB to the DrugCheckVo instance. Be sure to note that we're using the ScreenDrug.customId attribute, which remains set when FDB returns results.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91BYYOK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:41:15:668 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:12:15:747 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="111">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDoseCheckCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Map is typed, don't need to cast</Summary>
+    <Description>Since the value of the Map is typed to DrugCheckVo, we don't need to cast the return of the get() method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91C0RBE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:42:39:434 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:11:56:106 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="126">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Map is typed, don't need to cast</Summary>
+    <Description>Since the value of the Map is typed to DrugCheckVo, we don't need to cast the return of the get() method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91C1TXK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:43:29:480 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:11:36:825 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="50">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add to javadoc to explain abstract class</Summary>
+    <Description>Add a similar comment as EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl.PerformDrugChecksCapabilityImpl to explicitly explain the reason for the abstract class.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91C3XPF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:45:07:683 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:11:23:778 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="118">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugTherapyCheckCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Map is typed, don't need to cast</Summary>
+    <Description>Since the value of the Map is typed to DrugCheckVo, we don't need to cast the return of the get() method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91C50ZW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:45:58:604 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:09:59:604 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="18">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/nddf/PerformDrugDoseCheckCapability.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Should we remove classes that tested NDDF?</Summary>
+    <Description>We have a number of classes left over from when we did performance tests comparing DIF to NDDF. Should we remove all of the NDDF classes since we're using DIF?&#xD;
+&#xD;
+Make a note that the class is for NDDF only, not for DIF.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91C8OWK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:48:49:556 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:30:16:482 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="37">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/session/bean/DrugInfoServiceBean.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Consider using a super interface that all services implement to handleRequest()</Summary>
+    <Description>If there was a common interface that had a handleRequest() method, we could place this method in the AbstractPepsService&lt;T&gt; class and not have to have implementations in each session bean.&#xD;
+&#xD;
+This also applies to the implementations of AbstractServlet.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CEUBV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:53:36:523 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:08:47:040 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="9">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Organize imports</Summary>
+    <Description>Run an Eclipse organize imports to remove unused imports (like IOException).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CGFAN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:54:50:351 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:08:37:117 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="24">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/XmlUtility.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused LOG attribute</Summary>
+    <Description>LOG is not used, we can remove it.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CHYOZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:56:02:147 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:08:22:742 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="15">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/druginfo/XmlUtility.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Organize imports</Summary>
+    <Description>Run an Eclipse organize imports to remove unuzed imports (like PEPSResponse).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CMLZ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 07:59:38:943 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:08:11:023 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="12">test/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/test/DrugInfoCapabilityTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Organize Imports</Summary>
+    <Description>Run an Eclipse organize imports to remove unused imports (like Map and DoseRouteVo).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CO3PJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 08:00:48:583 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:07:58:445 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="48">test/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/test/PerformDrugDoseCheckCapabilityTest.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type safety</Summary>
+    <Description>Type the Collection instance for type safety (and to remove compiler warnings...)&#xD;
+&#xD;
+Also applies to EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.test.PerformDrugDrugCheckCapabilityTest and EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.test.PerformDrugTherapyCheckCommandTest.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F91CPKH9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-15 :: 08:01:56:973 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:07:24:803 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="15">test/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/servlet/test/demo/DemoScenario1.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove Demo test cases?</Summary>
+    <Description>The DemoScenario test cases were used once when Lina wanted us to show some example results from various order checks. The classes aren't used for anything else -- should we just remove them altogether?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F936POBH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 14:49:36:605 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:06:30:568 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add comment to explain placing FDB classes in Spring configuration</Summary>
+    <Description>Explain that placing FDB classes in Spring configuration allows us to Profile the FDB methods if we wanted and it reduces the instantiation of classes (since Spring caches for us).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

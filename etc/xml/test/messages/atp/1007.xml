@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+    <Header>
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="127.0.0.1"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="1007"
+            duz="88660079"
+            userName="user" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks prospectiveOnly="false" useCustomTables="false">
+                <drugDrugCheck />
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    gcnSeqNo="25485"
+                    orderNumber="Z;1;Prospect" />
+                <drug
+                    gcnSeqNo="266"
+                    orderNumber="Z;2;Prospect" />
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    gcnSeqNo="8209"
+                    orderNumber="Z;1;Profile" />
+                <drug
+                    gcnSeqNo="2451"
+                    orderNumber="Z;2;Profile" />
+                <drug
+                    gcnSeqNo="6562"
+                    orderNumber="Z;3;Profile" />
+                <drug
+                    gcnSeqNo="11666"
+                    orderNumber="Z;4;Profile" />
+                <drug
+                    gcnSeqNo="222"
+                    orderNumber="Z;5;Profile" />
+                <drug
+                    gcnSeqNo="2366"
+                    orderNumber="Z;6;Profile" />
+                <drug
+                    gcnSeqNo="2482"
+                    orderNumber="Z;7;Profile" />
+                <drug
+                    gcnSeqNo="7544"
+                    orderNumber="Z;8;Profile" />
+                <drug
+                    gcnSeqNo="3009"
+                    orderNumber="Z;9;Profile" />
+                <drug
+                    gcnSeqNo="4489"
+                    orderNumber="Z;10;Profile" />
+                <drug
+                    gcnSeqNo="1723"
+                    orderNumber="Z;11;Profile" />
+                <drug
+                    gcnSeqNo="9065"
+                    orderNumber="Z;12;Profile" />
+                <drug
+                    gcnSeqNo="7855"
+                    orderNumber="Z;13;Profile" />
+            </medicationProfile>
+        </drugCheck>
+    </Body>

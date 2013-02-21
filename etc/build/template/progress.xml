@@ -1,0 +1,30 @@
+<project name="ProgressTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="audible" uri="http://www.swri.org">
+        <attribute name="success" />
+        <attribute name="failure" />
+
+        <sequential>
+            <if>
+                <not>
+                    <isset property="sound.ignore" />
+                </not>
+
+                <then>
+                    <sound>
+                        <success source="${etc.build.dir}/sound/@{success}" />
+                        <fail source="${etc.build.dir}/sound/@{failure}" />
+                    </sound>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+	
+    <macrodef name="progress" uri="http://www.swri.org">
+        <attribute name="msg" />
+        <attribute name="level" default="info" />
+
+        <sequential>
+            <echo level="@{level}" message="--------------------------- @{msg} ----------------------------" />
+        </sequential>
+    </macrodef>
+</project>

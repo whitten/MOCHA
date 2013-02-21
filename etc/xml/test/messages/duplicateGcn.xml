@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <Time value="3071023" />
+        <MServer
+            ip=""
+            namespace="VISTA"
+            serverName="VISTA.MYDOMAIN.COM"
+            stationNumber="500"
+            uci="VISTA" />
+        <MUser
+            duz="10000000054"
+            jobNumber="5048"
+            userName="ALEX VAZQUEZ" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks prospectiveOnly="true">
+                <drugTherapyCheck />
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    drugName="WARFARIN 2MG TABS"
+                    gcnSeqNo="6561"
+                    ien="3776"
+                    orderNumber="I;;PROSPECTIVE"
+                    vuid="4005197" />
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    drugName="DIPYRIDAMOLE 10 MG"
+                    gcnSeqNo="41698"
+                    ien="236"
+                    orderNumber="I;1459P;PROFILE|10577;1|I|1"
+                    vuid="4002646" />
+                <drug
+                    drugName="ASPIRIN BUFFERED 325MG TAB"
+                    gcnSeqNo="27896"
+                    ien="280"
+                    orderNumber="I;72U;PROFILE|10590|I|2"
+                    vuid="4005767" />
+                <drug
+                    drugName="DEXTROSE 10% IN WATER"
+                    gcnSeqNo="1977"
+                    ien="620"
+                    orderNumber="I;1417;PROFILE|10500;1|I|3"
+                    vuid="4004203" />
+                <drug
+                    drugName="DEXTROSE 10% IN WATER"
+                    gcnSeqNo="1977"
+                    ien="620"
+                    orderNumber="I;1418;PROFILE|10501;1|I|4"
+                    vuid="4004203" />
+                <drug
+                    drugName="DEXTROSE 10% 1000 ML"
+                    gcnSeqNo="1977"
+                    ien="620"
+                    orderNumber="I;1457P;PROFILE|10575;1|I|5"
+                    vuid="4004203" />
+                <drug
+                    drugName="DEXTROSE 10% 1000 ML"
+                    gcnSeqNo="1977"
+                    ien="620"
+                    orderNumber="I;1459P;PROFILE|10577;1|I|6"
+                    vuid="4004203" />
+                <drug
+                    drugName="MVI 100 ML"
+                    gcnSeqNo="0"
+                    ien="1382"
+                    orderNumber="I;1425P;PROFILE|10516;1|I|7"
+                    vuid="4002059" />
+                <drug
+                    drugName="MULTIVITAMIN INJECTION 10ML"
+                    gcnSeqNo="0"
+                    ien="1382"
+                    orderNumber="I;1429;PROFILE|10521;1|I|8"
+                    vuid="4002059" />
+                <drug
+                    drugName="GENTAMICIN 2 MG"
+                    gcnSeqNo="9299"
+                    ien="1550"
+                    orderNumber="I;1457P;PROFILE|10575;1|I|9"
+                    vuid="4004126" />
+                <drug
+                    drugName="GENTAMICIN 1 MG"
+                    gcnSeqNo="9299"
+                    ien="1550"
+                    orderNumber="I;1459P;PROFILE|10577;1|I|10"
+                    vuid="4004126" />
+                <drug
+                    drugName="WARFARIN SODIUM 5MG S.T."
+                    gcnSeqNo="6562"
+                    ien="1812"
+                    orderNumber="I;1426P;PROFILE|10517;1|I|11"
+                    vuid="4005199" />
+                <drug
+                    drugName="WARFARIN SODIUM 5MG S.T."
+                    gcnSeqNo="6562"
+                    ien="1812"
+                    orderNumber="I;1462P;PROFILE|10581;1|I|12"
+                    vuid="4005199" />
+                <drug
+                    drugName="POTASSIUM CHLORIDE 1000 MEQ"
+                    gcnSeqNo="1255"
+                    ien="2668"
+                    orderNumber="I;1425P;PROFILE|10516;1|I|13"
+                    vuid="4000853" />
+                <drug
+                    drugName="WARFARIN 2MG TABS"
+                    gcnSeqNo="6561"
+                    ien="3776"
+                    orderNumber="I;1414P;PROFILE|10491;1|I|14"
+                    vuid="4005197" />
+                <drug
+                    drugName="WARFARIN 2MG TABS"
+                    gcnSeqNo="6561"
+                    ien="3776"
+                    orderNumber="I;1426P;PROFILE|10517;1|I|15"
+                    vuid="4005197" />
+                <drug
+                    drugName="HEPARIN 1,000 UNITS/ML 30ML "
+                    gcnSeqNo="6543"
+                    ien="4476"
+                    orderNumber="I;1427P;PROFILE|10519;1|I|16"
+                    vuid="4001349" />
+                <drug
+                    drugName="CEFOXITIN 10 GM"
+                    gcnSeqNo="15944"
+                    ien="5057"
+                    orderNumber="I;1428P;PROFILE|10520;1|I|17"
+                    vuid="4002985" />
+            </medicationProfile>
+        </drugCheck>
+    </Body>

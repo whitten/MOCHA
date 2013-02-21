@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1007"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>7</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="B;L34" ien="95" vuid="6666" gcnSeqNo="6562"/>
+                        <drug orderNumber="B;L34" ien="96" vuid="7777" gcnSeqNo="11666"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>ANTICOAGULANTS/CIMETIDINE</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and CIMETIDINE ORAL TABLET 300 MG may interact based on the potential interaction between ANTICOAGULANTS and CIMETIDINE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Cimetidine</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Inhibition of warfarin hepatic metabolism. The effect appears to be greater on the less active R-warfarin than on the S-warfarin.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The pharmacologic effects of warfarin may be increased resulting in severe bleeding.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Coadministration of cimetidine and warfarin should be avoided. If they are administered concurrently, monitor anticoagulant activity and adjust the dose of warfarin indicated. The H-2 antagonists famotidine and nizatidine are unlikely to interact with warfarin.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated or discontinued. Contact the prescriber before initiating, altering the dose or discontinuing either drug.</patientManagement>
+                        <discussion>DISCUSSION:  The majority of drug interaction reports involving H-2 antagonists and warfarin have occurred with cimetidine. Reports of a possibly significant interaction between ranitidine and warfarin have been equivocal. Famotidine and nizatidine do not appear to affect prothrombin time.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Silver BA, Bell WR. Cimetidine potentiation of the hypoprothrombinemic effect of warfarin. Ann Intern Med 1979 Mar;90(3):348-9.]]></reference>
+                            <reference><![CDATA[2.Wallin BA, Jacknowitz A, Raich PC. Cimetidine and effect of warfarin. Ann Intern Med 1979 Jun;90(6):993.]]></reference>
+                            <reference><![CDATA[3.Serlin MJ, Sibeon RG, Breckenridge AM. Lack of effect of ranitidine on warfarin action. Br J Clin Pharmacol 1981 Dec;12(6):791-4.]]></reference>
+                            <reference><![CDATA[4.Kerley B, Ali M. Cimetidine potentiation of warfarin action. Can Med Assoc J 1982 Jan 15;126(2):116.]]></reference>
+                            <reference><![CDATA[5.Desmond PV, Mashford ML, Harman PJ, Morphett BJ, Breen KJ, Wang YM. Decreased oral warfarin clearance after ranitidine and cimetidine. Clin Pharmacol Ther 1984 Mar;35(3):338-41.]]></reference>
+                            <reference><![CDATA[6.Toon S, Hopkins KJ, Garstang FM, Rowland M. Comparative effects of ranitidine and cimetidine on the pharmacokinetics and pharmacodynamics of warfarin in man. Eur J Clin Pharmacol 1987;32(2):165-72.]]></reference>
+                            <reference><![CDATA[7.Cournot A, Berlin I, Sallord JC, Singlas E. Lack of interaction between nizatidine and warfarin during chronic administration. J Clin Pharmacol 1988 Dec;28(12):1120-2.]]></reference>
+                            <reference><![CDATA[8.Hussey EK, Dukes GE. Do all histamine2-antagonists cause a warfarin drug interaction?. DICP 1989 Sep;23(9):675-9.]]></reference>
+                            <reference><![CDATA[9.Hunt BA, Sax MJ, Chretien SD, Gray DR, Frank WO, Lalonde RL. Stereoselective alterations in the pharmacokinetics of warfarin enantiomers with two cimetidine dose regimens. Pharmacotherapy 1989; 9(3):184.]]></reference>
+                            <reference><![CDATA[10.Baciewicz AM, Morgan PJ. Ranitidine-warfarin interaction. Ann Intern Med 1990 Jan 1;112(1):76-7.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>8</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="B;L34" ien="95" vuid="6666" gcnSeqNo="6562"/>
+                        <drug orderNumber="C;L34" ien="97" vuid="8888" gcnSeqNo="222"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>ANTICOAGULANTS/QUINIDINE</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and QUINIDINE SULFATE ORAL TABLET 200 MG may interact based on the potential interaction between ANTICOAGULANTS and QUINIDINE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Quinidine</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Appears to be due to synergistic effects on vitamin K clotting factors in the liver.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  May observe reduced prothrombin activity or increased bleeding.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If both drugs are administered, adjust the anticoagulant dose as needed based on prothrombin activity.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated or discontinued. Contact the prescriber before initiating, altering the dose or discontinuing either drug.</patientManagement>
+                        <discussion>DISCUSSION:  Excessive hypoprothrombinemia and hemorrhage has been reported in patients receiving warfarin 6 to 10 days after starting quinidine. Anticipate a similar time period to be needed for the effects of quinidine to dissipate after stopping quinidine therapy.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Koch-Weser J. Quinidine-induced hypoprothrombinemic hemorrhage in patients on chronic warfarin therapy. Ann Intern Med 1968 Mar;68(3):511-7.]]></reference>
+                            <reference><![CDATA[2.Jones FL Jr. More on quinidine-induced hypoprothrombinemia. Ann Intern Med 1968 Nov;69(5):1074.]]></reference>
+                            <reference><![CDATA[3.Gazzaniga AB, Stewart DR. Possible quinidine-induced hemorrhage in a patient on warfarin sodium. N Engl J Med 1969 Mar 27;280(13):711-2.]]></reference>
+                            <reference><![CDATA[4.Udall JA. Drug interference with warfarin therapy. Clin Med 1970 Aug; 77:20-5.]]></reference>
+                            <reference><![CDATA[5.Sylven C, Anderson P. Evidence that disopyramide does not interact with warfarin. Br Med J (Clin Res Ed) 1983 Apr 9;286(6372):1181.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>27</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="A3333" ien="93" vuid="4444" gcnSeqNo="266"/>
+                        <drug orderNumber="B;L34" ien="95" vuid="6666" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>AMIODARONE/ANTICOAGULANTS</interaction>
+                    <shortText>AMIODARONE HCL ORAL TABLET 200 MG and WARFARIN SODIUM ORAL TABLET 5 MG may interact based on the potential interaction between AMIODARONE and ANTICOAGULANTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Anticoagulants</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone has been shown to inhibit the metabolism of the R- and S-enantiomers of warfarin by CYP P-450 in vitro and in vivo.(1-4) Amiodarone may also inhibit the metabolism of acenocoumarol(5) and other anticoagulants.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone and an anticoagulant may result in an increase in the clinical effects of the anticoagulant and an increased risk of bleeding.(1-22)  It may take several weeks of concurrent therapy before the full effects of this interaction are noted.  The effect of amiodarone on anticoagulant levels may continue for several months after amiodarone is discontinued.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  Amiodarone-induced thyrotoxicosis may increase the metabolic clearance of some vitamin K-dependent clotting factors, decreasing anticoagulant requirements.(6)</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If both drugs are administered concurrently, adjust the anticoagulant dose as needed based on carefully monitored prothrombin activity.  The US manufacturer of amiodarone recommends decreasing the anticoagulant dose by 1/3 to 1/2, followed by close monitoring of prothrombin activity.(22)</patientManagement>
+                        <discussion>DISCUSSION:  Several studies and case reports have documented the potential interaction between warfarin and amiodarone.  In several studies, the dosage of warfarin had to be decreased between 32.9% and 70% to maintain satisfactory prothrombin activity.(1-4,6-11)Several case reports and retrospective chart reviews have also documented the potential interaction between amiodarone and acenocoumarol.  The dosage reduction of acenocoumarol required to maintain satisfactory prothrombin activity ranged from 20% to 60%.(12-18)A case report describes a 66-year-old male with a history of recurrent atrial fibrillation.  While taking both amiodarone and a low-dose warfarin therapy, prothrombin times were prolonged, INR values were increased and bleeding occurred.  Both drugs were withheld, and the effect of the interaction continued for an extended period of time.(19)One study evaluated the role desethylamiodarone, the active metabolite of amiodarone, played on concurrent warfarin therapy.  After analyzing 25 patients with structural heart disease and arrhythmias, it was found that the concentration of desethylamiodarone played a larger role in augmenting the INR, than the concentration of amiodarone alone.  Additional examination revealed that amiodarone primarily inhibits CYP P-450-1A2 and CYP P-450-3A4, whereas desethylamiodarone primarily inhibits CYP P-450-2C9, the isozyme responsible for the metabolism of S-warfarin.(20)An observational, cohort study reviewed the interaction of amiodarone with warfarin for a period of at least one year, while evaluating the adjustments needed to achieve an INR ratio between 2 and 3.  After analyzing 43 patients, baseline warfarin therapy required a mean 44% reduction in dose after seven weeks of coadministration with amiodarone.  Five subjects experienced minor bleeding.  For patients receiving amiodarone maintenance, warfarin dose reductions were as follows: 400 mg/d, reduce warfarin dose 40%; 300 mg/d, reduce warfarin dose 35%; 200/d, reduce warfarin dose 30%; and 100 mg/d, reduce warfarin dose by 25%.  All warfarin dose reductions are approximations and must be based on aggressive INR monitoring.(21)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Almog S, Shafran N, Halkin H, Weiss P, Farfel Z, Martinowitz U, Bank H. Mechanism of warfarin potentiation by amiodarone: dose--and concentration--dependent inhibition of warfarin elimination. Eur J Clin Pharmacol 1985;28(3):257-61.]]></reference>
+                            <reference><![CDATA[2.Rees A, Dalal JJ, Reid PG, Henderson AH, Lewis MJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 May 30; 282(6278):1756-7.]]></reference>
+                            <reference><![CDATA[3.O'Reilly RA, Trager WF, Rettie AE, Goulart DA. Interaction of amiodarone with racemic warfarin and its separated enantiomorphs in humans. Clin Pharmacol Ther 1987 Sep;42(3):290-4.]]></reference>
+                            <reference><![CDATA[4.Heimark LD, Wienkers L, Kunze K, Gibaldi M, Eddy AC, Trager WF, O'Reilly RA, Goulart DA. The mechanism of the interaction between amiodarone and warfarin in humans. Clin Pharmacol Ther 1992 Apr;51(4):398-407.]]></reference>
+                            <reference><![CDATA[5.Richard C, Riou B, Berdeaux A, Fournier C, Khayat D, Rimailho A, Giudicelli JF, Auzepy P. Prospective study of the potentiation of acenocoumarol by amiodarone. Eur J Clin Pharmacol 1985;28(6):625-9.]]></reference>
+                            <reference><![CDATA[6.Woeber KA, Warner I. Potentiation of warfarin sodium by amiodarone-induced thyrotoxicosis. West J Med 1999 Jan;170(1):49-51.]]></reference>
+                            <reference><![CDATA[7.Watt AH, Stephens MR, Buss DC, Routledge PA. Amiodarone reduces plasma warfarin clearance in man. Br J Clin Pharmacol 1985 Dec;20(6):707-9.]]></reference>
+                            <reference><![CDATA[8.Hamer A, Peter T, Mandel WJ, Scheinman MM, Weiss D. The potentiation of warfarin anticoagulation by amiodarone. Circulation 1982 May;65(5):1025-9.]]></reference>
+                            <reference><![CDATA[9.Martinowitz U, Rabinovich J, Goldfarb D, Many A, Bank H. Interaction between warfarin sodium and amiodarone. N Engl J Med 1981 Mar 12; 304(11):671-2.]]></reference>
+                            <reference><![CDATA[10.Serlin MJ, Sibeon RG, Green GJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 Jul 4;283(6283):58.]]></reference>
+                            <reference><![CDATA[11.Kerin NZ, Blevins RD, Goldman L, Faitel K, Rubenfire M. The incidence, magnitude, and time course of the amiodarone-warfarin interaction. Arch Intern Med 1988 Aug;148(8):1779-81.]]></reference>
+                            <reference><![CDATA[12.Arboix M, Frati ME, Laporte JR. The potentiation of acenocoumarol anticoagulant effect by amiodarone. Br J Clin Pharmacol 1984 Sep; 18(3):355-60.]]></reference>
+                            <reference><![CDATA[13.Cheung B, Lam FM, Kumana CR. Insidiously evolving, occult drug interaction involving warfarin and amiodarone. BMJ 1996 Jan 13; 312(7023):107-8.]]></reference>
+                            <reference><![CDATA[14.El Allaf D, Sprynger M, Carlier J. Potentiation of the action of oral anticoagulants by amiodarone. Acta Clin Belg 1984;39(5):306-8.]]></reference>
+                            <reference><![CDATA[15.Fondevila C, Meschengieser S, Lazzari MA. Amiodarone potentiates acenocoumarin. Thromb Res 1989 Jan 15;53(2):203-8.]]></reference>
+                            <reference><![CDATA[16.Caraco Y, Raveh D, Flugelman M, Raz I. Enhanced anticoagulant effect of acenocoumarol induced by amiodarone coadministration. Isr J Med Sci 1988 Nov;24(11):688-9.]]></reference>
+                            <reference><![CDATA[17.Pini M, Manotti C, Quintavalla R. Interaction between amiodarone and acenocoumarin. Thromb Haemost 1985 Aug 30;54(2):549.]]></reference>
+                            <reference><![CDATA[18.Caraco Y, Chajek-Shaul T. The incidence and clinical significance of amiodarone and acenocoumarol interaction. Thromb Haemost 1989 Nov 24; 62(3):906-8.]]></reference>
+                            <reference><![CDATA[19.Hirmerova J, Suchy D, Madr T. Long-term drug interaction of warfarin with amiodarone. Cas Lek Cesk 2003 Jan 20;142(1):39-42.]]></reference>
+                            <reference><![CDATA[20.Naganuma M, Shiga T, Nishikata K, Tsuchiya T, Kasanuki H, Fujii E. Role of desethylamiodarone in the anticoagulant effect of concurrent amiodarone and warfarin therapy. J Cardiovasc Pharmacol Ther 2001 Oct; 6(4):363-7.]]></reference>
+                            <reference><![CDATA[21.Sanoski CA, Bauman JL. Clinical observations with the amiodarone/warfarin interaction: dosing relationships with long-term therapy. Chest 2002 Jan; 121(1):19-23.]]></reference>
+                            <reference><![CDATA[22.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals April, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>68</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="C;L34" ien="97" vuid="8888" gcnSeqNo="222"/>
+                        <drug orderNumber="B;L34" ien="96" vuid="7777" gcnSeqNo="11666"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>QUINIDINE/CIMETIDINE</interaction>
+                    <shortText>QUINIDINE SULFATE ORAL TABLET 200 MG and CIMETIDINE ORAL TABLET 300 MG may interact based on the potential interaction between QUINIDINE and CIMETIDINE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Quinidine/Cimetidine</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  The mechanism is not known but may involve inhibition of quinidine metabolism and a decrease in renal clearance.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Potentiation of quinidine effects by cimetidine with possible quinidine toxicity.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If both drugs are administered, adjust the quinidine dose as needed based on serum quinidine levels, cardiac function, and patient response. Since other H-2 antagonists (e.g., ranitidine, famotidine) do not appear to interact, substituting cimetidine with one of these agents may be desirable. Ventricular arrhythmia has been reported during concurrent use of ranitidine and quinidine. However, if a patient is already receiving this combination and is not experiencing adverse effects, substitution is probably not necessary.</patientManagement>
+                        <discussion>DISCUSSION:  The onset and reversal of the interaction may occur within 48 hours of starting or stopping cimetidine in a patient receiving quinidine. Signs and symptoms of quinidine toxicity include nausea, vomiting and diarrhea, headache, tinnitus, vertigo and confusion. Electrocardiogram changes, including prolongation of the QT and QRS intervals may also occur.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Polish LB, Branch RA, Fitzgerald GA. Digitoxin-quinidine interaction: potentiation during administration of cimetidine. South Med J 1981 May; 74(5):633-4.]]></reference>
+                            <reference><![CDATA[2.Hardy BG, Zador IT, Golden L, Lalka D, Schentag JJ. Effect of cimetidine on the pharmacokinetics and pharmacodynamics of quinidine. Am J Cardiol 1983 Jul;52(1):172-5.]]></reference>
+                            <reference><![CDATA[3.Farringer JA, McWay-Hess K, Clementi WA. Cimetidine--quinidine interaction. Clin Pharm 1984 Jan-Feb;3(1):81-3.]]></reference>
+                            <reference><![CDATA[4.Kolb KW, Garnett WR, Small RE, Vetrovec GW, Kline BJ, Fox T. Effect of cimetidine on quinidine clearance. Ther Drug Monit 1984;6(3):306-12.]]></reference>
+                            <reference><![CDATA[5.Iliopoulou A, Kontogiannis D, Tsoutsos D, Moulopoulos S. Quinidine-ranitidine adverse reaction. Eur Heart J 1986 Apr;7(4):360.]]></reference>
+                            <reference><![CDATA[6.Hardy BG, Schentag JJ. Lack of effect of cimetidine on the metabolism of quinidine: effect on renal clearance. Int J Clin Pharmacol Ther Toxicol 1988 Aug;26(8):388-91.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>128</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="A3333" ien="93" vuid="4444" gcnSeqNo="266"/>
+                        <drug orderNumber="C;L34" ien="97" vuid="8888" gcnSeqNo="222"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>AMIODARONE/QUINIDINE</interaction>
+                    <shortText>AMIODARONE HCL ORAL TABLET 200 MG and QUINIDINE SULFATE ORAL TABLET 200 MG may interact based on the potential interaction between AMIODARONE and QUINIDINE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Quinidine</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  The exact mechanism is unknown.  Amiodarone may decrease quinidine tissue binding(1,2) or may decrease renal or hepatic clearance of quinidine.(2)  Concurrent use may result in additive or synergistic effects on the QT interval.(3)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  May see an increase in the pharmacologic effects of quinidine due to elevated serum levels.  The QTc interval may be prolonged and result in life-threatening arrhythmias, including torsades de pointes.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  Other group Ia antiarrhythmics.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The Australian manufacturer of amiodarone states that concurrent use of agents known to cause torsades de pointes, such as quinidine, is contraindicated.(3)The US manufacturer of amiodarone states that the need to co-administer amiodarone with any other drug known to prolong the QTc interval must be based on a careful assessment of the potential risks and benefits of doing so for each patient.(4)If concurrent therapy is warranted, patients should be monitored for increased quinidine levels and signs of quinidine toxicity.  Cardiac function should also be monitored.  The dosage of quinidine may need to be adjusted.  The US manufacturer of amiodarone recommends that the dosage of quinidine be reduced by one-third during concurrent amiodarone.(4)  One study recommends that the dosage of quinidine be reduced by 30-50% when amiodarone is added to therapy.(2)</patientManagement>
+                        <discussion>DISCUSSION:  In patients receiving concurrent amiodarone and quinidine, elevated serum levels and prolonged QT interval have been reported.(1,5-9) In a study in 11 patients, the addition of amiodarone to quinidine therapy resulted in an increase in quinidine levels by 32% and quinidine toxicity in seven patients.  The increase in quinidine levels was seen as early as 24 hours after the addition of amiodarone.(2)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Tartini R, Kappenberger L, Steinbrunn W, Meyer UA. Dangerous interaction between amiodarone and quinidine. Lancet 1982 Jun 12;1(8285):1327-9.]]></reference>
+                            <reference><![CDATA[2.Saal AK, Werner JA, Greene HL, Sears GK, Graham EL. Effect of amiodarone on serum quinidine and procainamide levels. Am J Cardiol 1984 May 1; 53(9):1264-7.]]></reference>
+                            <reference><![CDATA[3.Cordarone X (amiodarone hydrochloride) Australian prescribing information. Sanofi-Synthelabo Australia Pty Limited Augsut 15, 2007.]]></reference>
+                            <reference><![CDATA[4.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals April, 2009.]]></reference>
+                            <reference><![CDATA[5.Tartini R, Kappenberger L, Steinbrunn W. Harmful interactions of amiodarone and class I anti-arrhythmia agents. Schweiz Med Wochenschr 1982 Nov 6;112(45):1585-7.]]></reference>
+                            <reference><![CDATA[6.Kerin NZ, Ansari-Leesar M, Faitel K, Narala C, Frumin H, Cohen A. The effectiveness and safety of the simultaneous administration of quinidine and amiodarone in the conversion of chronic atrial fibrillation. Am Heart J 1993 Apr;125(4):1017-21.]]></reference>
+                            <reference><![CDATA[7.Tran HT, Chow MS, Kluger J. Amiodarone induced torsades de pointes with excessive QT dispersion following quinidine induced polymorphic ventricular tachycardia. Pacing Clin Electrophysiol 1997 Sep;20(9 Pt 1):2275-8.]]></reference>
+                            <reference><![CDATA[8.Genth S, Darius H, Zotz R, Treese N, Himmrich E, Meyer J. Torsade de pointes during quinidine and amiodarone therapy. Med Klin (Munich) 1996 Mar 15;91(3):171-3.]]></reference>
+                            <reference><![CDATA[9.Reingardene DI. Ventricular fibrillation caused by the combined administration of amiodarone and quinidine. Kardiologiia 1989 Jul; 29(7):121-4.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>283</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="A2222" ien="1812" vuid="3333" gcnSeqNo="25485"/>
+                        <drug orderNumber="A3333" ien="93" vuid="4444" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>SELECTED PROTEASE INHIBITORS/AMIODARONE</interaction>
+                    <shortText>INDINAVIR SULFATE ORAL CAPSULE 400 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED PROTEASE INHIBITORS and AMIODARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Protease Inhibitors/Amiodarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Indinavir,(1) nelfinavir,(2) ritonavir,(3) and tipranavir coadministered with ritonavir(4) may inhibit the metabolism of amiodarone at CYP P-450-3A4.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir,(2) ritonavir,(3) or tipranavir coadministered with ritonavir(4) may result in increased levels, clinical effects, and toxicity of amiodarone.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir(2), ritonavir,(3) or tipranavir coadministered with ritonavir(4) is contraindicated by the manufacturers of indinavir,(1) nelfinavir(2), ritonavir,(3) and tipranavir coadministered with ritonavir. (4)</patientManagement>
+                        <discussion>DISCUSSION:  Indinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of indinavir states that the concurrent administration of indinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(1)Nelfinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of nelfinavir states that the concurrent administration of nelfinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(2)Ritonavir has also been shown to inhibit CYP P-450-3A4. Therefore, the manufacturer of ritonavir state that the concurrent administration of ritonavir with amiodarone is contraindicated.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Crixivan (indinavir sulfate) US prescribing information. Merck & Co., Inc. December, 2008.]]></reference>
+                            <reference><![CDATA[2.Viracept (nelfinavir mesylate) US prescribing information. Agouron Pharmaceuticals, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[3.Norvir (ritonavir) US prescribing information. Abbott Laboratories September 30, 2008.]]></reference>
+                            <reference><![CDATA[4.Aptivus (tipranavir) US prescribing information. Boehringer Ingelheim Pharmaceuticals, Inc. June, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+        </drugCheck>
+    </Body>

@@ -1,0 +1,40 @@
+${SITE} ${VERSION} ${TIME} ${REASON} ${TYPE}
+<END>
+The ${TYPE} update to site(s) '${SITE}' FAILED
+<END>
+<HTML>
+  <BODY>
+    <P>The ${TYPE} update to site(s) '${SITE}' <FONT COLOR='RED'><B>FAILED</B></FONT>.</P>
+    
+    <TABLE border="0" cellpadding="0" cellspacing="2" width="100%">
+      <TR>
+        <TD align="right" valign="top" nowrap><B>Type:</B></TD>
+        <TD align="left" valign="top" width="100%">${TYPE}</TD>
+      </TR>  
+      <TR>
+        <TD align="right" valign="top" nowrap><B>Version:</B></TD>
+        <TD align="left" valign="top" width="100%">${VERSION}</TD>
+      </TR>  
+      <TR>  
+        <TD align="right" valign="top" nowrap><B>Session Date:</B></TD>
+        <TD align="left" valign="top" width="100%">${TIME}<TD>
+      </TR>
+      <TR>
+        <TD align="right" valign="top" nowrap><B>Reason:</B></TD>
+        <TD align="left" valign="top" width="100%">${REASON}</TD>
+      </TR>
+    </TABLE>
+        
+    <P>Please log a Remedy Ticket for help.</P>
+    
+    <HR>
+    
+    <P>
+      <CENTER>
+        <SMALL>
+          <I>This email was auto-generated.  Please contact your site administrator if you wish to modify your enrollment for these notifications.<I>
+        <SMALL>
+      </CENTER>
+    </P>
+  </BODY>
+</HTML> 

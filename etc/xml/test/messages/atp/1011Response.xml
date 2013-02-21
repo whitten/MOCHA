@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1011"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugsNotChecked>
+                <drugNotChecked status="UnableToLoadDrugForGcnSeqNo">
+                    <drug orderNumber="Z;3;Prospect" ien="0" gcnSeqNo="0"/>
+                </drugNotChecked>
+            </drugsNotChecked>
+            <drugTherapyChecks>
+                <drugTherapyCheck>
+                    <id>1065</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;Prospect" ien="124" gcnSeqNo="16600"/>
+                        <drug orderNumber="Z;1;Prospect" ien="123"
+                            vuid="98765" gcnSeqNo="5132"/>
+                    </interactedDrugList>
+                    <classification>Beta-Blockers (Systemic)</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of METOPROLOL SUCCINATE ORAL TABLET,SUSTAINED RELEASE 24HR 100 MG and METOPROLOL TARTRATE ORAL TABLET 50 MG may represent a duplication in therapy based on their association to the therapeutic drug class Beta-Blockers (Systemic).</shortText>
+                </drugTherapyCheck>
+            </drugTherapyChecks>
+        </drugCheck>
+    </Body>

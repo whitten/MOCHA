@@ -1,0 +1,217 @@
+<project name="TestTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="unitTest" uri="http://www.swri.org">
+        <sequential>
+            <swri:coverageInstrument />
+
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="unit.test.failed"
+                   failureProperty="unit.test.failed"
+                   dir="${basedir}"
+                   fork="true">
+
+                <jvmarg value="-Xmx512m" />
+                <jvmarg value="-Xms64m" />
+                <jvmarg value="-Xverify:none" />
+                <jvmarg value="-XX:PermSize=256m" />
+                <jvmarg value="-Demma.coverage.out.file=${build.dir}/coverage/coverage.emma" />
+                <jvmarg value="-Demma.coverage.out.merge=true" />
+
+                <classpath>
+                    <pathelement path="${build.dir}/coverage/instr" />
+                    <path refid="project.class.path" />
+                </classpath>
+
+                <batchtest fork="true" todir="${build.test.dir}">
+                    <fileset dir="${build.classes.dir}">
+                        <include name="**/test/**/*Test.class" />
+                        <exclude name="**/test/integration/**" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="xml" />
+            </junit>
+
+            <junitreport todir="${build.test.dir}">
+                <fileset dir="${build.test.dir}">
+                    <include name="TEST-*.xml" />
+                </fileset>
+
+                <report todir="${build.test.dir}/report" />
+            </junitreport>
+
+            <swri:coverageReport />
+
+            <fail if="unit.test.failed" unless="ignore.test.failures">One or more unit tests failed!</fail>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="integrationTest" uri="http://www.swri.org">
+        <sequential>
+            <swri:coverageInstrument />
+
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="integration.test.failed"
+                   failureProperty="integration.test.failed"
+                   dir="${basedir}"
+                   fork="true">
+
+                <jvmarg value="-Xmx512m" />
+                <jvmarg value="-Xms64m" />
+                <jvmarg value="-Xverify:none" />
+                <jvmarg value="-XX:PermSize=256m" />
+                <jvmarg value="-Demma.coverage.out.file=${build.dir}/coverage/coverage.emma" />
+                <jvmarg value="-Demma.coverage.out.merge=true" />
+
+                <classpath>
+                    <pathelement path="${build.dir}/coverage/instr" />
+                    <path refid="project.class.path" />
+                </classpath>
+
+                <sysproperty key="deploy.environment" value="${deploy.environment}" />
+
+                <batchtest fork="true" todir="${build.test.dir}">
+                    <fileset dir="${build.classes.dir}">
+                        <include name="**/test/integration/**/*Test.class" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="xml" />
+            </junit>
+
+            <junitreport todir="${build.test.dir}">
+                <fileset dir="${build.test.dir}">
+                    <include name="TEST-*.xml" />
+                </fileset>
+
+                <report todir="${build.test.dir}/report" />
+            </junitreport>
+
+            <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageGetAll />
+                </then>
+            </if>
+
+            <swri:coverageReport />
+
+            <fail if="integration.test.failed" unless="ignore.test.failures">One or more integration tests failed!</fail>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="performanceTest" uri="http://www.swri.org">
+        <sequential>
+            <swri:coverageInstrument />
+
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="performance.test.failed"
+                   failureProperty="performance.test.failed"
+                   dir="${basedir}"
+                   fork="true">
+
+                <jvmarg value="-Xmx512m" />
+                <jvmarg value="-Xms64m" />
+                <jvmarg value="-Xverify:none" />
+                <jvmarg value="-XX:PermSize=256m" />
+                <jvmarg value="-Demma.coverage.out.file=${build.dir}/coverage/coverage.emma" />
+                <jvmarg value="-Demma.coverage.out.merge=true" />
+
+                <classpath>
+                    <pathelement path="${build.dir}/coverage/instr" />
+                    <path refid="project.class.path" />
+                </classpath>
+
+                <sysproperty key="deploy.environment" value="${deploy.environment}" />
+
+                <batchtest fork="true" todir="${build.test.dir}">
+                    <fileset dir="${build.classes.dir}">
+                        <include name="**/test/integration/performance/**/*Test.class" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="xml" />
+            </junit>
+
+            <junitreport todir="${build.test.dir}">
+                <fileset dir="${build.test.dir}">
+                    <include name="TEST-*.xml" />
+                </fileset>
+
+                <report todir="${build.test.dir}/report" />
+            </junitreport>
+
+            <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageGetAll />
+                </then>
+            </if>
+
+            <swri:coverageReport />
+
+            <fail if="performance.test.failed" unless="ignore.test.failures">One or more performance tests failed!</fail>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="atpTest" uri="http://www.swri.org">
+        <sequential>
+            <swri:coverageInstrument />
+
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="atp.test.failed"
+                   failureProperty="atp.test.failed"
+                   dir="${basedir}"
+                   fork="true">
+
+                <jvmarg value="-Xmx512m" />
+                <jvmarg value="-Xms64m" />
+                <jvmarg value="-Xverify:none" />
+                <jvmarg value="-XX:PermSize=256m" />
+                <jvmarg value="-Demma.coverage.out.file=${build.dir}/coverage/coverage.emma" />
+                <jvmarg value="-Demma.coverage.out.merge=true" />
+
+                <classpath>
+                    <pathelement path="${build.dir}/coverage/instr" />
+                    <path refid="project.class.path" />
+                </classpath>
+
+                <sysproperty key="deploy.environment" value="${deploy.environment}" />
+
+                <batchtest fork="true" todir="${build.test.dir}">
+                    <fileset dir="${build.classes.dir}">
+                        <include name="**/test/integration/atp/**/*Test.class" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="xml" />
+            </junit>
+
+            <junitreport todir="${build.test.dir}">
+                <fileset dir="${build.test.dir}">
+                    <include name="TEST-*.xml" />
+                </fileset>
+
+                <report todir="${build.test.dir}/report" />
+            </junitreport>
+
+            <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageGetAll />
+                </then>
+            </if>
+
+            <swri:coverageReport />
+
+            <fail if="atp.test.failed" unless="ignore.test.failures">One or more ATP tests failed!</fail>
+        </sequential>
+    </macrodef>
+</project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="1">
+  <ReviewIssue id="F3906VQ7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 13:35:25:087 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 17:15:02:353 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SM</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="47">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/common/utility/XmlNamespaceConversionUtility.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>This call to super not needed</Summary>
+    <Description>super(); This constructor is never called in this class</Description>
+    <Annotation>class is being removed</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391U4PT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:21:29:441 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 17:14:54:447 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SM</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="49">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseStatusUtility.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this call not needed</Summary>
+    <Description>super();</Description>
+    <Annotation>decided to keep the super() call</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F391W3X5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 14:23:01:721 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 17:15:20:962 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SM</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="33">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseStatusUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>may need null check for status</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

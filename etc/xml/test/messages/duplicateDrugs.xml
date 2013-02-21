@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <Time value="3090810" />
+        <MServer
+            ip="127.0.0.1"
+            namespace=""
+            serverName="VEHUCACHE.FO-BIRM.DOMAIN.EXT"
+            stationNumber="1"
+            uci="" />
+        <MUser
+            duz="10000000187"
+            jobNumber="540050259"
+            userName="OSTOVARI,PARVIZ" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks
+                prospectiveOnly="true"
+                useCustomTables="false">
+                <drugDrugCheck />
+                <drugTherapyCheck />
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    drugName="AMIODARONE HCL (PACERONE) 200MG TAB"
+                    gcnSeqNo="266"
+                    ien="520"
+                    orderNumber="I;;PROSPECTIVE;1||"
+                    vuid="4024876">
+                </drug>
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    drugName="AMANTADINE HCL 100MG CAP"
+                    gcnSeqNo="4575"
+                    ien="1606"
+                    orderNumber="I;68U;PROFILE;1|23346|I"
+                    vuid="4005192">
+                </drug>
+                <drug
+                    drugName="CIMETIDINE 200MG TAB"
+                    gcnSeqNo="11665"
+                    ien="1849"
+                    orderNumber="O;404444;PROFILE;2||O"
+                    vuid="4006818">
+                </drug>
+                <drug
+                    drugName="PAROXETINE HCL 10MG TAB"
+                    gcnSeqNo="46222"
+                    ien="1772"
+                    orderNumber="O;404451;PROFILE;4||O"
+                    vuid="4010281">
+                </drug>
+                <drug
+                    drugName="TIMOLOL MALEATE 0.25% OPH GEL"
+                    gcnSeqNo="21400"
+                    ien="2067"
+                    orderNumber="O;404452;PROFILE;5||O"
+                    vuid="4002853">
+                </drug>
+                <drug
+                    drugName="AMANTADINE HCL 100MG CAP"
+                    gcnSeqNo="4575"
+                    ien="1606"
+                    orderNumber="O;404513;PROFILE;1||O"
+                    vuid="4005192">
+                </drug>
+                <drug
+                    drugName="CEPHALEXIN 250MG CAP"
+                    gcnSeqNo="9042"
+                    ien="1197"
+                    orderNumber="P;376;PROFILE;9|23119|O"
+                    vuid="4007021">
+                </drug>
+            </medicationProfile>
+        </drugCheck>
+    </Body>

@@ -1,0 +1,134 @@
+<project name="CompileTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <!-- Standard compile all used in build -->
+    <macrodef name="compile" uri="http://www.swri.org">
+        <sequential>
+            <javac destdir="${build.classes.dir}" classpathref="project.class.path" debug="on">
+                <src path="${src.dir}" />
+                <src path="${build.src.dir}" />
+                <src path="${test.dir}" />
+
+                <include name="**/*.java" />
+            </javac>
+        </sequential>
+    </macrodef>
+
+    <!-- Compile environment macrodefs used in buildUnitTest, buildIntegrationTest, and buildTestAll -->
+    <macrodef name="setClassPaths" uri="http://www.swri.org">
+        <attribute name="project" default="${ant.project.name}" />
+        <element name="includepatternset" />
+        <sequential>
+            <delete dir="${build.tmp.dir}/classes" />
+            <mkdir dir="${build.tmp.dir}/classes" />
+
+            <for list="${dependencies},@{project}" delimiter=",;:" param="module">
+                <sequential>
+                    <copy todir="${build.tmp.dir}">
+                        <fileset dir="${module.@{module}.dir}/${build}">
+                            <includepatternset />
+
+                            <include name="${classes}/schema/**/*.class" />
+                            <exclude name="**/test/**" />
+                        </fileset>
+                        <fileset dir="${module.@{module}.dir}">
+                            <include name="${lib}/**/*.jar" />
+                            <exclude name="${lib}/${build}/**" />
+                        </fileset>
+                        <fileset dir="${module.@{module}.dir}">
+                            <include name="${lib}/${build}/weblogic/wlfullclient.jar" />
+                        </fileset>
+                    </copy>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileCommon" uri="http://www.swri.org">
+        <sequential>
+            <swri:progress msg="Compiling common environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <include name="**/common/**/*.class" />
+                    <exclude name="**/local/**/*.class" />
+                    <exclude name="**/national/**/*.class" />
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <include name="**/common/**/*.java" />
+                    <exclude name="**/local/**/*.java" />
+                    <exclude name="**/national/**/*.java" />
+                </includepatternset>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileLocal" uri="http://www.swri.org">
+        <sequential>
+            <swri:progress msg="Compiling local environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <include name="**/common/**/*.class" />
+                    <include name="**/local/**/*.class" />
+                    <include name="**/national/**/session/*.class" />
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <include name="**/common/**/*.java" />
+                    <include name="**/local/**/*.java" />
+                    <include name="**/national/**/session/*.java" />
+                </includepatternset>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileNational" uri="http://www.swri.org">
+        <sequential>
+            <swri:progress msg="Compiling national environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <include name="**/common/**/*.class" />
+                    <include name="**/national/**/*.class" />
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <include name="**/common/**/*.java" />
+                    <include name="**/national/**/*.java" />
+                </includepatternset>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileEnvironment" uri="http://www.swri.org">
+        <element name="includepatternset" />
+        <sequential>
+            <javac destdir="${build.classes.dir}" sourcepath="" debug="on">
+                <src path="${src.dir}" />
+                <src path="${build.src.dir}" />
+
+                <include name="schema/**/*.java" />
+                <includepatternset />
+
+                <classpath>
+                    <fileset dir="${build.tmp.dir}/${lib}">
+                        <include name="**/*.jar" />
+                        <exclude name="build/**/*.jar" />
+                    </fileset>
+
+                    <fileset dir="${build.tmp.dir}/${lib}">
+                        <include name="${build}/weblogic/wlfullclient.jar" />
+                    </fileset>
+
+                    <dirset dir="${build.tmp.dir}/${classes}" />
+                </classpath>
+            </javac>
+        </sequential>
+    </macrodef>
+</project>

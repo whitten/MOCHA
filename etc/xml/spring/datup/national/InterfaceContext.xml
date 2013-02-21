@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+    <import
+        resource="classpath*:xml/spring/mocha/InterfaceContext.xml" />
+    <import
+        resource="classpath*:xml/spring/datup/national/InterfaceContextTemplate.xml" />
+    <bean
+        id="sendToExternalCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.messaging.impl.SendToExternalCapabilityImpl">
+        <property
+            name="connectionFactory"
+            value="jms/EXT/DOMAIN/pharmacy/peps/messagingservice/factory" />
+        <property
+            name="topicName"
+            value="jms/EXT/DOMAIN/pharmacy/peps/messagingservice/topic/external/datup" />
+        <property
+            name="jndiTemplate"
+            ref="jndiTemplate" />
+    </bean>
+    <jee:jndi-lookup
+        id="datupDataSource"
+        jndi-name="datasource/DATUP" />
+        
+    <bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+                <prop key="weblogic.jndi.replicateBindings">true</prop>
+            </props>
+        </property>
+    </bean>

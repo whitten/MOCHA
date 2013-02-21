@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1004"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>27</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="A3333" ien="93" vuid="4444" gcnSeqNo="266"/>
+                        <drug orderNumber="B;L34" ien="95" vuid="6666" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>AMIODARONE/ANTICOAGULANTS</interaction>
+                    <shortText>AMIODARONE HCL ORAL TABLET 200 MG and WARFARIN SODIUM ORAL TABLET 5 MG may interact based on the potential interaction between AMIODARONE and ANTICOAGULANTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Anticoagulants</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone has been shown to inhibit the metabolism of the R- and S-enantiomers of warfarin by CYP P-450 in vitro and in vivo.(1-4) Amiodarone may also inhibit the metabolism of acenocoumarol(5) and other anticoagulants.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone and an anticoagulant may result in an increase in the clinical effects of the anticoagulant and an increased risk of bleeding.(1-22)  It may take several weeks of concurrent therapy before the full effects of this interaction are noted.  The effect of amiodarone on anticoagulant levels may continue for several months after amiodarone is discontinued.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  Amiodarone-induced thyrotoxicosis may increase the metabolic clearance of some vitamin K-dependent clotting factors, decreasing anticoagulant requirements.(6)</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If both drugs are administered concurrently, adjust the anticoagulant dose as needed based on carefully monitored prothrombin activity.  The US manufacturer of amiodarone recommends decreasing the anticoagulant dose by 1/3 to 1/2, followed by close monitoring of prothrombin activity.(22)</patientManagement>
+                        <discussion>DISCUSSION:  Several studies and case reports have documented the potential interaction between warfarin and amiodarone.  In several studies, the dosage of warfarin had to be decreased between 32.9% and 70% to maintain satisfactory prothrombin activity.(1-4,6-11)Several case reports and retrospective chart reviews have also documented the potential interaction between amiodarone and acenocoumarol.  The dosage reduction of acenocoumarol required to maintain satisfactory prothrombin activity ranged from 20% to 60%.(12-18)A case report describes a 66-year-old male with a history of recurrent atrial fibrillation.  While taking both amiodarone and a low-dose warfarin therapy, prothrombin times were prolonged, INR values were increased and bleeding occurred.  Both drugs were withheld, and the effect of the interaction continued for an extended period of time.(19)One study evaluated the role desethylamiodarone, the active metabolite of amiodarone, played on concurrent warfarin therapy.  After analyzing 25 patients with structural heart disease and arrhythmias, it was found that the concentration of desethylamiodarone played a larger role in augmenting the INR, than the concentration of amiodarone alone.  Additional examination revealed that amiodarone primarily inhibits CYP P-450-1A2 and CYP P-450-3A4, whereas desethylamiodarone primarily inhibits CYP P-450-2C9, the isozyme responsible for the metabolism of S-warfarin.(20)An observational, cohort study reviewed the interaction of amiodarone with warfarin for a period of at least one year, while evaluating the adjustments needed to achieve an INR ratio between 2 and 3.  After analyzing 43 patients, baseline warfarin therapy required a mean 44% reduction in dose after seven weeks of coadministration with amiodarone.  Five subjects experienced minor bleeding.  For patients receiving amiodarone maintenance, warfarin dose reductions were as follows: 400 mg/d, reduce warfarin dose 40%; 300 mg/d, reduce warfarin dose 35%; 200/d, reduce warfarin dose 30%; and 100 mg/d, reduce warfarin dose by 25%.  All warfarin dose reductions are approximations and must be based on aggressive INR monitoring.(21)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Almog S, Shafran N, Halkin H, Weiss P, Farfel Z, Martinowitz U, Bank H. Mechanism of warfarin potentiation by amiodarone: dose--and concentration--dependent inhibition of warfarin elimination. Eur J Clin Pharmacol 1985;28(3):257-61.]]></reference>
+                            <reference><![CDATA[2.Rees A, Dalal JJ, Reid PG, Henderson AH, Lewis MJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 May 30; 282(6278):1756-7.]]></reference>
+                            <reference><![CDATA[3.O'Reilly RA, Trager WF, Rettie AE, Goulart DA. Interaction of amiodarone with racemic warfarin and its separated enantiomorphs in humans. Clin Pharmacol Ther 1987 Sep;42(3):290-4.]]></reference>
+                            <reference><![CDATA[4.Heimark LD, Wienkers L, Kunze K, Gibaldi M, Eddy AC, Trager WF, O'Reilly RA, Goulart DA. The mechanism of the interaction between amiodarone and warfarin in humans. Clin Pharmacol Ther 1992 Apr;51(4):398-407.]]></reference>
+                            <reference><![CDATA[5.Richard C, Riou B, Berdeaux A, Fournier C, Khayat D, Rimailho A, Giudicelli JF, Auzepy P. Prospective study of the potentiation of acenocoumarol by amiodarone. Eur J Clin Pharmacol 1985;28(6):625-9.]]></reference>
+                            <reference><![CDATA[6.Woeber KA, Warner I. Potentiation of warfarin sodium by amiodarone-induced thyrotoxicosis. West J Med 1999 Jan;170(1):49-51.]]></reference>
+                            <reference><![CDATA[7.Watt AH, Stephens MR, Buss DC, Routledge PA. Amiodarone reduces plasma warfarin clearance in man. Br J Clin Pharmacol 1985 Dec;20(6):707-9.]]></reference>
+                            <reference><![CDATA[8.Hamer A, Peter T, Mandel WJ, Scheinman MM, Weiss D. The potentiation of warfarin anticoagulation by amiodarone. Circulation 1982 May;65(5):1025-9.]]></reference>
+                            <reference><![CDATA[9.Martinowitz U, Rabinovich J, Goldfarb D, Many A, Bank H. Interaction between warfarin sodium and amiodarone. N Engl J Med 1981 Mar 12; 304(11):671-2.]]></reference>
+                            <reference><![CDATA[10.Serlin MJ, Sibeon RG, Green GJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 Jul 4;283(6283):58.]]></reference>
+                            <reference><![CDATA[11.Kerin NZ, Blevins RD, Goldman L, Faitel K, Rubenfire M. The incidence, magnitude, and time course of the amiodarone-warfarin interaction. Arch Intern Med 1988 Aug;148(8):1779-81.]]></reference>
+                            <reference><![CDATA[12.Arboix M, Frati ME, Laporte JR. The potentiation of acenocoumarol anticoagulant effect by amiodarone. Br J Clin Pharmacol 1984 Sep; 18(3):355-60.]]></reference>
+                            <reference><![CDATA[13.Cheung B, Lam FM, Kumana CR. Insidiously evolving, occult drug interaction involving warfarin and amiodarone. BMJ 1996 Jan 13; 312(7023):107-8.]]></reference>
+                            <reference><![CDATA[14.El Allaf D, Sprynger M, Carlier J. Potentiation of the action of oral anticoagulants by amiodarone. Acta Clin Belg 1984;39(5):306-8.]]></reference>
+                            <reference><![CDATA[15.Fondevila C, Meschengieser S, Lazzari MA. Amiodarone potentiates acenocoumarin. Thromb Res 1989 Jan 15;53(2):203-8.]]></reference>
+                            <reference><![CDATA[16.Caraco Y, Raveh D, Flugelman M, Raz I. Enhanced anticoagulant effect of acenocoumarol induced by amiodarone coadministration. Isr J Med Sci 1988 Nov;24(11):688-9.]]></reference>
+                            <reference><![CDATA[17.Pini M, Manotti C, Quintavalla R. Interaction between amiodarone and acenocoumarin. Thromb Haemost 1985 Aug 30;54(2):549.]]></reference>
+                            <reference><![CDATA[18.Caraco Y, Chajek-Shaul T. The incidence and clinical significance of amiodarone and acenocoumarol interaction. Thromb Haemost 1989 Nov 24; 62(3):906-8.]]></reference>
+                            <reference><![CDATA[19.Hirmerova J, Suchy D, Madr T. Long-term drug interaction of warfarin with amiodarone. Cas Lek Cesk 2003 Jan 20;142(1):39-42.]]></reference>
+                            <reference><![CDATA[20.Naganuma M, Shiga T, Nishikata K, Tsuchiya T, Kasanuki H, Fujii E. Role of desethylamiodarone in the anticoagulant effect of concurrent amiodarone and warfarin therapy. J Cardiovasc Pharmacol Ther 2001 Oct; 6(4):363-7.]]></reference>
+                            <reference><![CDATA[21.Sanoski CA, Bauman JL. Clinical observations with the amiodarone/warfarin interaction: dosing relationships with long-term therapy. Chest 2002 Jan; 121(1):19-23.]]></reference>
+                            <reference><![CDATA[22.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals April, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>283</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;Prospect" ien="1812"
+                            vuid="3333" gcnSeqNo="25485"/>
+                        <drug orderNumber="A3333" ien="93" vuid="4444" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>SELECTED PROTEASE INHIBITORS/AMIODARONE</interaction>
+                    <shortText>INDINAVIR SULFATE ORAL CAPSULE 400 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED PROTEASE INHIBITORS and AMIODARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Protease Inhibitors/Amiodarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Indinavir,(1) nelfinavir,(2) ritonavir,(3) and tipranavir coadministered with ritonavir(4) may inhibit the metabolism of amiodarone at CYP P-450-3A4.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir,(2) ritonavir,(3) or tipranavir coadministered with ritonavir(4) may result in increased levels, clinical effects, and toxicity of amiodarone.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir(2), ritonavir,(3) or tipranavir coadministered with ritonavir(4) is contraindicated by the manufacturers of indinavir,(1) nelfinavir(2), ritonavir,(3) and tipranavir coadministered with ritonavir. (4)</patientManagement>
+                        <discussion>DISCUSSION:  Indinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of indinavir states that the concurrent administration of indinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(1)Nelfinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of nelfinavir states that the concurrent administration of nelfinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(2)Ritonavir has also been shown to inhibit CYP P-450-3A4. Therefore, the manufacturer of ritonavir state that the concurrent administration of ritonavir with amiodarone is contraindicated.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Crixivan (indinavir sulfate) US prescribing information. Merck & Co., Inc. December, 2008.]]></reference>
+                            <reference><![CDATA[2.Viracept (nelfinavir mesylate) US prescribing information. Agouron Pharmaceuticals, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[3.Norvir (ritonavir) US prescribing information. Abbott Laboratories September 30, 2008.]]></reference>
+                            <reference><![CDATA[4.Aptivus (tipranavir) US prescribing information. Boehringer Ingelheim Pharmaceuticals, Inc. June, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+        </drugCheck>
+    </Body>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="3B">
+  <ReviewIssue id="FF1KUDZ7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-14 :: 16:47:52:771 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 07:14:08:532 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="192">src/EXT/DOMAIN/pharmacy/peps/external/tools/grinder/MergeLogs.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>LogFileComparator could be parameterized</Summary>
+    <Description>Java suggests that this class be Parameterized. Given the comparator assumes its getting two members of the  File class, you may as well make this properly parameterized. Could throw class cast exceptions if mistakenly used.&#xD;
+&#xD;
+It could also throw null pointers if passed a null file, if thats intended its fine.</Description>
+    <Annotation />
+    <Revision>Made Comparator&lt;File&gt; and corrected for potential NPE.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2X5J9I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 15:20:14:406 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 07:21:18:131 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="94">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/impl/PerformDrugDoseCheckCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Code somewhat difficult to read</Summary>
+    <Description>convertResults ends up having a rather large number of lines of code in a row without much to break them up. A few comments to keep things broken up and easier to read may make future changes related to class easier to deal with&#xD;
+&#xD;
+Break all of the related Message/Status/StatusCode calls into a related block, rather than ahve the blocks of code run into each other.</Description>
+    <Annotation />
+    <Revision>Added comments to distinguish what values are getting set, also separated sections with white space</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2ZDGXJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:22:23:863 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 07:14:15:297 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="96">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/impl/PerformDrugTherapyCheckCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line format longer than 125 lines</Summary>
+    <Description>Only by one character, but it does violate the coding standards.</Description>
+    <Annotation />
+    <Revision>Wrapped line</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF427BZ9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:29:22:533 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 07:14:21:953 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="32">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/test/integration/DrugInfoServletTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125 characters</Summary>
+    <Description>assertActualResponseEqual("xml/test/messages/drugInfoMultiple.xml", "xml/test/messages/drugInfoMultipleResponse.xml");</Description>
+    <Annotation />
+    <Revision>Wrapped line</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF42869X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:30:01:797 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 07:14:30:344 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="51">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/test/integration/OrderCheckServletTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Commented out test case to be removed or re added</Summary>
+    <Description>At the very least made non-javadoc.&#xD;
+&#xD;
+   /**&#xD;
+     * Test order checks using custom tables&#xD;
+     * &#xD;
+     * @throws Exception&#xD;
+     */&#xD;
+    /**&#xD;
+     * public void testOrderCheckCustomTables() throws Exception { InputStream xmlInputStream =&#xD;
+     * Thread.currentThread().getContextClassLoader().getResourceAsStream( "xml/test/messages/orderCheckCustomTables.xml");&#xD;
+     * XmlObject requestVO = XmlBeansUtility.unmarshallXMLtoVO(xmlInputStream); System.out.println("request:\n" +&#xD;
+     * requestVO.xmlText(validationOptions)); String result = call.sendRequest(requestVO.xmlText(validationOptions));&#xD;
+     * System.out.println("response:\n" + result); assertDocumentsEqual(result,&#xD;
+     * "xml/test/messages/orderCheckBigResponse.xml"); }&#xD;
+     */</Description>
+    <Annotation />
+    <Revision>Removed unused test case</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

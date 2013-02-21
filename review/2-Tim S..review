@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="2">
+  <ReviewIssue id="F6ASWEOX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 09:45:58:497 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:44:14:531 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="96">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we have a solution for this?</Summary>
+    <Description>I remember noticing this now that I see the TODO I added ... Since we're using the GCN sequence number as the key to the Map, if two prospective drugs have the same GCN sequence number, only one will end up in the Map. When we go to get the prospective drug out of the map, we'll end up with only one instead of two (or more).&#xD;
+&#xD;
+Is this really an issue? I had thought it could be in the case of a drug being prescribed twice, with different info besides the GCN sequence number, but maybe it isn't really a problem?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6AT2107">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 09:50:20:695 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:52:14:353 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="187">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use isSetIen() in if block?</Summary>
+    <Description>If I remember correctly, the IEN is not required, so should we put it in an if block, calling isSetIen(), as we do for the order number, VUID, and drug name?</Description>
+    <Annotation>The IEN attribute is required, so an if block is not needed here.</Annotation>
+    <Revision>invalid issue</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6AT8VT6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 09:55:40:554 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:19:57:410 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="384">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>static String</Summary>
+    <Description>We probably should make "XML Exception Message" into a static string to better meet the coding standards. This also applies to the remaining methods that call handleValidationEvents()</Description>
+    <Annotation />
+    <Revision>"XML Exception Message", "XML Request Message", and "XML Response Message" are now static strings.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATCAAG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 09:58:19:288 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:42:44:985 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="505">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/XmlUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Verify that a SAXException does not equate to invalid XML</Summary>
+    <Description>I'm not sure if it does or not, but we may want to verify that a SAXException does not mean the XML request is invalid. This method is only called during one of our test cases, so it doesn't really effect the functionality of the application, but may change how our tests work.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATLIRF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:05:30:171 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:15:44:007 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="44">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/capability/impl/ProcessOrderChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Debug instead of info?</Summary>
+    <Description>The other loggers are debug, but this is info... I'm not sure if this is intentiional or not. We could make this call debug to be consistent.</Description>
+    <Annotation />
+    <Revision>changed the log to debug</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATN90Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:06:50:858 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:15:10:257 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="34">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/capability/impl/ProcessOrderChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Make the description more descriptive</Summary>
+    <Description>Perhaps something similar to the javadoc for the class? &#xD;
+&#xD;
+Parse the XML message and call the drug data vendor to perform the order checks.</Description>
+    <Annotation />
+    <Revision>corrected the javadoc for this method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATST0P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:11:10:057 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:14:26:711 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="17">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/PerformDrugTherapyCheckCapability.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc comment</Summary>
+    <Description>Perform duplicate therapy check</Description>
+    <Annotation />
+    <Revision>javadoc added</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATTLMG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:11:47:128 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:13:29:977 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="10">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Run organize imports</Summary>
+    <Description>Eclipse is saying that two of the classes in the imports aren't used in the class. We should probably remove them.</Description>
+    <Annotation />
+    <Revision>imports were organized correctly</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6ATVZFO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:13:38:340 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:12:41:666 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="144">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Update javadoc to be correct</Summary>
+    <Description>This javadoc seems to be a copy/paste from the next method, but we didn't change the names of the Classes:&#xD;
+&#xD;
+ScreenDrug -&gt; ScreenDrugs&#xD;
+FdbScreenDrug -&gt; FdbScreenDrugs</Description>
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6AU1SWA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 10:18:09:802 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:11:43:291 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim S.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="154">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Update javadoc with correct class names</Summary>
+    <Description>This (and the next method) seems to be a copy/paste eror. We need to update the ScreenDrug class name with the correct class.&#xD;
+&#xD;
+ScreenDrug -&gt; FDBCode or Monograph</Description>
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

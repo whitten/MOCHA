@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="1">
+  <ReviewIssue id="F38TIPV3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:28:40:047 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-07-30 :: 16:01:43:315 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="53">src/EXT/DOMAIN/pharmacy/peps/common/exception/ValueObjectValidationException.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use System.getProperty("line.separator");</Summary>
+    <Description>"\n" is not standard across all platforms. We really should be using the system property, "line.separator", which stores the platform specific line separator. &#xD;
+&#xD;
+To get this value, use the System.getProperty("line.separator") call.&#xD;
+&#xD;
+Check to verify this change is made in PRE v1.0 code as well.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TLMYG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:30:56:248 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-07-30 :: 16:01:39:753 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="71">src/EXT/DOMAIN/pharmacy/peps/common/exception/ValueObjectValidationException.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use System.getProperty("line.separator");</Summary>
+    <Description>"\n" is not standard across all platforms. We really should be using the system property, "line.separator", which stores the platform specific line separator. &#xD;
+&#xD;
+To get this value, use the System.getProperty("line.separator") call.&#xD;
+&#xD;
+Check to verify this change is made in PRE v1.0 code as well.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TN134">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:32:01:216 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-26 :: 16:36:20:439 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>TS</AssignedTo>
+    <File line="18">src/EXT/DOMAIN/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This javadoc property doesn't apply anymore</Summary>
+    <Description>I think the @uml.annotations came about from last year when we created RSA design diagrams from the code. Since this code doesn't apply to those diagrams anymore, we probably should remove it.&#xD;
+&#xD;
+Check to verify this change is made in PRE v1.0 code as well.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TQ1RE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:34:22:058 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 17:14:36:683 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Javadoc comments</Summary>
+    <Description>I noticed some classes do not have comments (especially value objects).&#xD;
+&#xD;
+Please go through all classes and verify comments are present and correct.&#xD;
+&#xD;
+Check to verify this change is made in PRE v1.0 code as well (for the common classes, anyway).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TRL29">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:35:33:729 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:43:57:632 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="116">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugCheckMessageVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TUOEW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:37:58:040 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:43:40:523 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="298">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugCheckVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TVZWI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:38:59:586 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:43:17:726 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="52">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugDataRequestVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TWGWW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:39:21:632 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:43:01:258 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="68">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugDataResponseVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TWXLL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:39:43:257 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:42:13:993 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="423">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugDoseCheckResultVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TXCN9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:40:02:757 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:41:58:290 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="255">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugDrugCheckResultVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TXRVF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:40:22:491 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:41:47:962 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="86">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugIngredientCheckResultVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TY9IE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:40:45:350 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:40:15:291 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="103">src/EXT/DOMAIN/pharmacy/peps/common/vo/DrugTherapyCheckResultVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38TYPLT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:41:06:209 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:39:43:885 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="204">src/EXT/DOMAIN/pharmacy/peps/common/vo/OrderCheckVo.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove validate() method</Summary>
+    <Description>Validation logic changed in 1.0, making validate() methods irrelevant, plus we don't use them in 0.5!&#xD;
+&#xD;
+Remove the validate() methods since we don't use them in PRE v0.5. In addition, the PRE v1.0 validation design/framework has changed such that all sub classes of ValueObject do not need a validate() method (it is in the ValueObject base class).</Description>
+    <Annotation />
+    <Revision>removed validate method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38U39VT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:44:39:113 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:48:01:707 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/common/utility/XmlNamespaceConversionUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>If not using this logic, we could just remove it</Summary>
+    <Description>Since the logic is commented out, we could just remove the static final strings and these two lines of code.&#xD;
+&#xD;
+I would also suggest to find out if we really still need to change the namespace for the exception message, especially if we don't need to for the regular messages. This way we may be able to remove the class entirely.</Description>
+    <Annotation>class is no longer needed</Annotation>
+    <Revision>removed class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38UEP5K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 10:53:32:120 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:59:38:214 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="134">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Static strings some in properties file some not</Summary>
+    <Description>Right now this class is inconsistent with how it handles static strings.&#xD;
+&#xD;
+If we really need to be able to configure the static strings via a properties file (i.e., they may actually change at a point where we couldn't just recompile and redeploy), then I think we should place all of the strings in a configuration file. Otherwise, I think we should remove the use of the properties file and define private static final Strings within this class.</Description>
+    <Annotation />
+    <Revision>static strings created at top of class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38UO4A6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:00:51:630 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:35:03:967 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="12">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckRate.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we need this class?</Summary>
+    <Description>This class appears to only be used in a test case -- do we really need it at all? It seems to hold FDB values for rates, but it isn't used anywhere during our processing of order checks.</Description>
+    <Annotation />
+    <Revision>removed class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38UPFQ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:01:53:113 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:34:24:342 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="12">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckRoute.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we need this class?</Summary>
+    <Description>This class appears to only be used in a test case -- do we really need it at all? It seems to hold FDB values for routes, but it isn't used anywhere during our processing of order checks.</Description>
+    <Annotation />
+    <Revision>removed class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38URSK9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:03:43:065 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:35:36:701 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="12">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckType.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we need this class?</Summary>
+    <Description>This class appears to be used in a test case and once in the code -- do we really need it at all? It seems to hold FDB values for types, but we could see if there is an FDB class that already has the value used or just place a single private static final String in the one class that uses this interface (the MAINTENANCE_DOSE attribute in the RequestConverter class).</Description>
+    <Annotation />
+    <Revision>removed class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38UXZC4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:08:31:780 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-25 :: 16:14:02:456 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="12">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckUnit.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we need this class?</Summary>
+    <Description>This class appears to only be used in a test case -- do we really need it at all? It seems to hold FDB values for units, but it isn't used anywhere during our processing of order checks.</Description>
+    <Annotation>remove class</Annotation>
+    <Revision>removed class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38UYW79">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:09:14:373 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:08:11:740 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="51">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/capability/impl/ProcessOrderChecksCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>We could separate this into multiple methods</Summary>
+    <Description>To try and make the method read easier (and ulimately for maintenance), we could consider splitting this into separate private methods in the same capability class.&#xD;
+&#xD;
+For example, a possible separate could be something like parseRequest(), executeCheck(), and parseResponse()</Description>
+    <Annotation />
+    <Revision>Logic was moved to the XmlUtility class</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38V251D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:11:45:793 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-07-30 :: 14:52:42:509 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="24">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/message/bean/InboundPreEncapsulationBean.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>When will we remove the VistaLink message bean?</Summary>
+    <Description>This isn't necessarily a problem with the code, but if we're moving away from using VistaLink 2.0, when will we remove the message bean (as well as the interface and impl class)?&#xD;
+&#xD;
+Perhaps we could at least mark the class as deprecated with a reason being that we're moving from VistaLink to the servlet? &#xD;
+@deprecated This class is used by VistaLink 2.0, which is being replaced by a servlet.</Description>
+    <Annotation />
+    <Revision>removed VistALink message bean</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38V7QQK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:16:07:196 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 14:07:08:772 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider separating into multiple private methods</Summary>
+    <Description>It would make the method easier to read and maintain if we split this large single method into muliple private methods in the same class.&#xD;
+&#xD;
+For example, we could pull out logic from this method into separate methods to convertCheckTypes() convertDosing(), convertDrugs(), and convertPatientData().</Description>
+    <Annotation />
+    <Revision>Class was split into seperate methods</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38VBFWC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:18:59:772 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-07-30 :: 15:41:34:659 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="27">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/Parser.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>If the message bean is removed, remove this class too</Summary>
+    <Description>Since the Parser class is only used in the VistaLink message bean implementation, if/when we remove that message bean, we could also remove this class.&#xD;
+&#xD;
+Perhaps we could at least mark the class as deprecated with a reason being that we're moving from VistaLink to the servlet? &#xD;
+@deprecated This class is used by VistaLink 2.0, which is being replaced by a servlet.</Description>
+    <Annotation />
+    <Revision>class was deleted</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38VDJ6T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:20:37:349 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-07-30 :: 15:41:18:143 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="16">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/Request.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>If the message bean is removed, remove this class too</Summary>
+    <Description>Since the Request class is only used in the VistaLink message bean implementation and the Parser class (which itself is used only by the message bean implementation), if/when we remove that message bean, we could also remove this class.&#xD;
+&#xD;
+Perhaps we could at least mark the class as deprecated with a reason being that we're moving from VistaLink to the servlet? &#xD;
+@deprecated This class is used by VistaLink 2.0, which is being replaced by a servlet.</Description>
+    <Annotation />
+    <Revision>class was deleted</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F38VHMKQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-06-22 :: 11:23:48:362 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-31 :: 13:58:21:450 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>TS</ReviewerId>
+    <AssignedTo>DP</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/XmlUtility.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Not much of this class is actually used</Summary>
+    <Description>The XmlUtility really only has three methods used:&#xD;
+&#xD;
+1. createXmlErrorMessage&#xD;
+2. createDocument&#xD;
+3. getNodeByName&#xD;
+&#xD;
+#2 and #3 are used by the Parser class, which if we remove the VistaLink message bean will no longer be used and could be removed itself. &#xD;
+&#xD;
+Therefore, all of this class could be removed except for the createXmlErrorMessage() method. At that point, we should see if the method is really shared by multiple classes -- if not,we could just make it a private method of the one class that uses it (I actually think that is the way it was before we had both the servlet and the VistaLink message bean).</Description>
+    <Annotation />
+    <Revision>This class has been reworked.</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

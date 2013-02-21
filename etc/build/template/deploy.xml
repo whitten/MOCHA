@@ -1,0 +1,70 @@
+<project name="DeployTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initDeployTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="wldeploy"
+                     classname="weblogic.ant.taskdefs.management.WLDeploy"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="deploy" uri="http://www.swri.org">
+        <attribute name="host" />
+        <attribute name="targets" default="${@{host}.local.targets}" />
+        <attribute name="name" default="${ant.project.name}" />
+        <attribute name="source" default="${build.archive.dir}/@{name}.ear" />
+        <attribute name="url" default="${@{host}.j2ee.url}" />
+        <attribute name="user" default="${@{host}.j2ee.user}" />
+        <attribute name="password" default="${@{host}.j2ee.password}" />
+        <attribute name="remote" default="true" />
+        <attribute name="upload" default="true" />
+        <attribute name="debug" default="false" />
+        <attribute name="verbose" default="false" />
+        <attribute name="failonerror" default="true" />
+        <sequential>
+            <swri:progress msg="Calling deploy for @{name} on ${@{host}.j2ee.flavor.name} server @{targets} at @{url}" />
+
+            <wldeploy action="deploy"
+                      source="@{source}"
+                      name="@{name}"
+                      user="@{user}"
+                      password="@{password}"
+                      targets="@{targets}"
+                      adminurl="@{url}"
+                      remote="@{remote}"
+                      upload="@{upload}"
+                      debug="@{debug}"
+                      verbose="@{verbose}"
+                      failonerror="@{failonerror}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="undeploy" uri="http://www.swri.org">
+        <attribute name="host" />
+        <attribute name="targets" default="${@{host}.local.targets}" />
+        <attribute name="name" default="${ant.project.name}" />
+        <attribute name="url" default="${@{host}.j2ee.url}" />
+        <attribute name="user" default="${@{host}.j2ee.user}" />
+        <attribute name="password" default="${@{host}.j2ee.password}" />
+        <attribute name="remote" default="true" />
+        <attribute name="upload" default="false" />
+        <attribute name="debug" default="false" />
+        <attribute name="verbose" default="false" />
+        <attribute name="failonerror" default="false" />
+        <sequential>
+            <swri:progress msg="Calling undeploy for @{name} on ${@{host}.j2ee.flavor.name} server @{targets} at @{url}" />
+
+            <wldeploy action="undeploy"
+                      name="@{name}"
+                      user="@{user}"
+                      password="@{password}"
+                      targets="@{targets}"
+                      adminurl="@{url}"
+                      remote="@{remote}"
+                      upload="@{upload}"
+                      debug="@{debug}"
+                      verbose="@{verbose}"
+                      failonerror="@{failonerror}" />
+        </sequential>
+    </macrodef>
+</project>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+    <Header>
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="127.0.0.101"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="365"
+            duz="88660079"
+            userName="user" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks
+                prospectiveOnly="true"
+                useCustomTables="false">
+                <drugDrugCheck />
+                <drugTherapyCheck />
+                <drugDoseCheck>
+                    <demographics
+                        ageInDays="8030"
+                        weightInKG="83.2"
+                        bodySurfaceAreaInSqM="1.949235" />
+                </drugDoseCheck>
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    gcnSeqNo="266"
+                    ien="1111"
+                    orderNumber="Z;1;PROSPECTIVE" />
+                <drug
+                    gcnSeqNo="25485"
+                    ien="2222"
+                    vuid="3400"
+                    orderNumber="Z;2;PROSPECTIVE" />
+                <drug
+                    gcnSeqNo="6562"
+                    ien="3333"
+                    vuid="1234"
+                    drugName="Tylenol"
+                    orderNumber="Z;3;PROSPECTIVE" />
+                <drug
+                    gcnSeqNo="16579"
+                    ien="4444"
+                    drugName="Advil"
+                    orderNumber="Z;4;PROSPECTIVE">
+                    <doseInformation>
+                        <doseType>MAINTENANCE</doseType>
+                        <doseAmount>2</doseAmount>
+                        <doseUnit>MG</doseUnit>
+                        <doseRate>DAY</doseRate>
+                        <frequency>4</frequency>
+                        <duration>10</duration>
+                        <durationRate>DAY</durationRate>
+                        <route>ORAL</route>
+                    </doseInformation>
+                </drug>
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    gcnSeqNo="16600"
+                    ien="5555"
+                    vuid="4444"
+                    orderNumber="Z;1;PROFILE" />
+                <drug
+                    gcnSeqNo="2451"
+                    ien="6666"
+                    vuid="33445566"
+                    orderNumber="Z;2;PROFILE" />
+                <drug
+                    gcnSeqNo="5132"
+                    ien="7777"
+                    orderNumber="Z;3;PROFILE" />
+                <drug
+                    gcnSeqNo="8209"
+                    ien="8888"
+                    orderNumber="Z;4;PROFILE" />
+                <drug
+                    gcnSeqNo="3689"
+                    ien="9999"
+                    orderNumber="Z;5;PROFILE" />
+                <drug
+                    gcnSeqNo="3590"
+                    ien="1010"
+                    vuid="8839948"
+                    orderNumber="Z;6;PROFILE" />
+            </medicationProfile>
+        </drugCheck>
+    </Body>

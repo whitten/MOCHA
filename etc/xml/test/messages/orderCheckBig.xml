@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+    <Header>
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="127.0.0.1"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="365"
+            duz="88660079"
+            userName="user" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks
+                prospectiveOnly="false"
+                useCustomTables="false">
+                <drugDrugCheck />
+                <drugTherapyCheck useDuplicateAllowance="false" />
+                <drugDoseCheck>
+                    <demographics
+                        ageInDays="8030"
+                        weightInKG="83.2"
+                        bodySurfaceAreaInSqM="1.949235" />
+                </drugDoseCheck>
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    gcnSeqNo="6562"
+                    ien="1812"
+                    orderNumber="B777"
+                    vuid="3333"
+                    drugName="Drug Name AAA">
+                    <doseInformation>
+                        <doseType>MAINTENANCE</doseType>
+                        <doseAmount>2</doseAmount>
+                        <doseUnit>MG</doseUnit>
+                        <doseRate>DAY</doseRate>
+                        <frequency>4</frequency>
+                        <duration>10</duration>
+                        <durationRate>DAY</durationRate>
+                        <route>ORAL</route>
+                    </doseInformation>
+                </drug>
+                <drug
+                    gcnSeqNo="666666"
+                    ien="9999"
+                    vuid="7777"
+                    drugName="DRUG NAME BBB"
+                    orderNumber="Z;1;Prospect" />
+                <drug
+                    gcnSeqNo="266"
+                    ien="5591"
+                    orderNumber="Z;2;Prospect">
+                    <doseInformation>
+                        <doseType>MAINTENANCE</doseType>
+                        <doseAmount>3</doseAmount>
+                        <doseUnit>MG</doseUnit>
+                        <doseRate>DAY</doseRate>
+                        <frequency>2</frequency>
+                        <duration>30</duration>
+                        <durationRate>DAY</durationRate>
+                        <route>TOPICAL</route>
+                    </doseInformation>
+                </drug>
+                <drug
+                    gcnSeqNo="3689"
+                    ien="776844"
+                    orderNumber="Z;3;Prospect" />
+                <drug
+                    gcnSeqNo="8209"
+                    ien="22331122"
+                    orderNumber="Z;4;Prospect" />
+                <drug
+                    gcnSeqNo="2451"
+                    ien="22331123"
+                    orderNumber="Z;5;Prospect" />
+                <drug
+                    gcnSeqNo="16579"
+                    ien="22331124"
+                    orderNumber="Z;6;Prospect" />
+                <drug
+                    gcnSeqNo="25485"
+                    ien="22331125"
+                    orderNumber="Z;7;Prospect" />
+                <drug
+                    gcnSeqNo="7334"
+                    ien="7777777"
+                    orderNumber="Z;8;Prospect" />
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    gcnSeqNo="16600"
+                    ien="93"
+                    vuid="4444"
+                    orderNumber="Z;1;Profile" />
+                <drug
+                    gcnSeqNo="3590"
+                    ien="876"
+                    vuid="33445566"
+                    orderNumber="Z;2;Profile" />
+                <drug
+                    gcnSeqNo="2366"
+                    ien="11112"
+                    orderNumber="Z;3;Profile" />
+                <drug
+                    gcnSeqNo="2451"
+                    ien="11113"
+                    orderNumber="Z;4;Profile" />
+                <drug
+                    gcnSeqNo="2482"
+                    ien="11114"
+                    orderNumber="Z;5;Profile" />
+                <drug
+                    gcnSeqNo="4489"
+                    ien="11115"
+                    orderNumber="Z;6;Profile" />
+                <drug
+                    gcnSeqNo="7544"
+                    ien="11116"
+                    orderNumber="Z;7;Profile" />
+            </medicationProfile>
+        </drugCheck>
+    </Body>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/info/request"
+    targetNamespace="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/info/request"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xsd:element name="drugInfoRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug"
+                    minOccurs="1"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="drug">
+        <xsd:complexType>
+            <xsd:attribute
+                name="gcnSeqNo"
+                type="xsd:integer"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugInfoResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/info/response drugInfoSchemaOutput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/info/response"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <drugsNotFound>
+        <drugNotFound status="UnableToLoadDrugForGcnSeqNo">
+            <drug gcnSeqNo="0" />
+        </drugNotFound>
+    </drugsNotFound>
+    <drug gcnSeqNo="266">
+        <routes>
+            <route>
+                <id>064</id>
+                <name>ORAL</name>
+            </route>
+        </routes>
+        <doseTypes>
+            <doseType>
+                <id>01</id>
+                <name>LOADING</name>
+            </doseType>
+            <doseType>
+                <id>02</id>
+                <name>MAINTENANCE</name>
+            </doseType>
+            <doseType>
+                <id>07</id>
+                <name>SINGLE DOSE</name>
+            </doseType>
+            <doseType>
+                <id>08</id>
+                <name>INITIAL DOSE</name>
+            </doseType>
+            <doseType>
+                <id>09</id>
+                <name>INTERMEDIATE DOSE</name>
+            </doseType>
+        </doseTypes>
+        <strengthUnit>MG</strengthUnit>
+    </drug>
+    <drug gcnSeqNo="25485">
+        <routes>
+            <route>
+                <id>064</id>
+                <name>ORAL</name>
+            </route>
+        </routes>
+        <doseTypes>
+            <doseType>
+                <id>02</id>
+                <name>MAINTENANCE</name>
+            </doseType>
+            <doseType>
+                <id>07</id>
+                <name>SINGLE DOSE</name>
+            </doseType>
+        </doseTypes>
+        <strengthUnit>MG</strengthUnit>
+    </drug>

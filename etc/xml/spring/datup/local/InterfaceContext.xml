@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+    <import
+        resource="classpath*:xml/spring/mocha/InterfaceContext.xml" />
+    <import
+        resource="InterfaceContextTemplate.xml" />
+    <bean
+        id="sendToNationalCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.local.messaging.impl.SendToNationalCapabilityImpl">
+        <property
+            name="connectionFactory"
+            value="jms/EXT/DOMAIN/pharmacy/peps/messagingservice/factory" />
+        <property
+            name="queueName"
+            value="jms/EXT/DOMAIN/pharmacy/peps/messagingservice/queue/national/datup/receive" />
+        <property
+            name="jndiTemplate"
+            ref="emptyJndiTemplate" />
+    </bean>
+    <!-- JNDI Templates -->
+    <bean
+        id="emptyJndiTemplate"
+        class="org.springframework.jndi.JndiTemplate" />
+        
+    <bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+                <prop key="weblogic.jndi.replicateBindings">true</prop>
+            </props>
+        </property>
+    </bean>

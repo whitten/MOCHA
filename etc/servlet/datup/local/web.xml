@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5">
+    <servlet>
+        <servlet-name>Timer</servlet-name>
+        <servlet-class>EXT.DOMAIN.pharmacy.peps.updater.common.servlet.TimerServlet</servlet-class>
+        <init-param>
+            <param-name>jndiName</param-name>
+            <param-value>java:comp/env/timer/FdbUpdateTimer</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--  Testing purposes only -->
+    <servlet-mapping>
+        <servlet-name>Timer</servlet-name>
+        <url-pattern>/timer</url-pattern>
+    </servlet-mapping>
+    <resource-ref>
+        <res-ref-name>timer/FdbUpdateTimer</res-ref-name>
+        <res-type>commonj.timers.TimerManager</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Unshareable</res-sharing-scope>
+    </resource-ref>

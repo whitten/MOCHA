@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <import
+        resource="InterfaceContextTemplate.xml" />
+
+    <tx:annotation-driven/>
+
+    <bean id="transactionManager" class="org.springframework.transaction.jta.WebLogicJtaTransactionManager">
+        <property name="transactionManagerName" value="javax.transaction.TransactionManager"/>
+    </bean>
+
+
+    <!-- DrugDataVendor -->
+    <jee:jndi-lookup
+        id="fdbDataSource"
+        jndi-name="datasource/FDB-DIF" />
+        
+    <bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

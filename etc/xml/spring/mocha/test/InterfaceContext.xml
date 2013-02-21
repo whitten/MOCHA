@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <import
+        resource="classpath*:xml/spring/mocha/InterfaceContextTemplate.xml" />
+    <!-- DrugDataVendor -->
+    <bean
+        id="fdbDataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property
+            name="driverClassName"
+            value="${local.fdb.dif.driver}" />
+        <property
+            name="url"
+            value="${local.fdb.dif.jdbc.url}" />
+        <property
+            name="username"
+            value="${local.fdb.dif.user}" />
+        <property
+            name="password"
+            value="${local.fdb.dif.password}" />
+    </bean>
+    <!-- Database Configuration Properties -->
+    <bean
+        id="fdbDatabaseProperties"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property
+            name="location"
+            value="classpath:properties/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.properties" />
+    </bean>
+    
+    <bean id="jndiTemplate" class="EXT.DOMAIN.pharmacy.peps.common.test.stub.JndiTemplateStub" />

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="3090810"/>
+        <MServer namespace="" uci="" ip="127.0.0.1"
+            serverName="VEHUCACHE.FO-BIRM.DOMAIN.EXT" stationNumber="1"/>
+        <MUser userName="OSTOVARI,PARVIZ" duz="10000000187" jobNumber="540050259"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>1513</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="I;;PROSPECTIVE;1||" ien="520"
+                            drugName="AMIODARONE HCL (PACERONE) 200MG TAB"
+                            vuid="4024876" gcnSeqNo="266"/>
+                        <drug orderNumber="I;68U;PROFILE;1|23346|I"
+                            ien="1606"
+                            drugName="AMANTADINE HCL 100MG CAP"
+                            vuid="4005192" gcnSeqNo="4575"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>AMIODARONE/POSSIBLE QT PROLONGING AGENTS</interaction>
+                    <shortText>AMIODARONE HCL (PACERONE) 200MG TAB and AMANTADINE HCL 100MG CAP may interact based on the potential interaction between AMIODARONE and POSSIBLE QT PROLONGING AGENTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Possible QT Prolonging Agents</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone has been shown to prolong the QTc interval. Concurrent use with other agents that prolong the QTc interval may result in additive effects on the QTc interval.(1,2)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent use of amiodarone with other agents that prolong the QTc interval may result in potentially life-threatening cardiac arrhythmias, including torsades de pointes.(1,2)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  The risk of QT prolongation may be increased by cardiovascular disease, hypokalemia, hypomagnesemia, bradycardia, and the concurrent use of agents that inhibit amiodarone metabolism.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The Australian manufacturer of amiodarone states that concurrent use of agents known to cause torsades de pointes is contraindicated.(1)The US manufacturer of amiodarone states that the need to co-administer amiodarone with any other drug known to prolong the QTc interval must be based on a careful assessment of the potential risks and benefits of doing so for each patient.(2)</patientManagement>
+                        <discussion>DISCUSSION:  QTc prolongation has been reported during concurrent amiodarone and fluoroquinolones and macrolide antibiotics.Agents that are linked to this monograph may have been associated with Torsades de Pointes and/or QT prolongation but at this time lack substantial evidence for causing Torsades de Pointes.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Cordarone X (amiodarone hydrochloride) Australian prescribing information. Sanofi-Synthelabo Australia Pty Limited Augsut 15, 2007.]]></reference>
+                            <reference><![CDATA[2.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals April, 2009.]]></reference>
+                            <reference><![CDATA[3.The University of Arizona Center for Education and Research of Therapeutics. Drugs with Risk of Torsades de Pointes and Drugs with Possible Risk of Torsades de Pointes. Available at: http://www.torsades.org. Updated Dec 17, 2002.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1513</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="I;;PROSPECTIVE;1||" ien="520"
+                            drugName="AMIODARONE HCL (PACERONE) 200MG TAB"
+                            vuid="4024876" gcnSeqNo="266"/>
+                        <drug orderNumber="O;404513;PROFILE;1||O"
+                            ien="1606"
+                            drugName="AMANTADINE HCL 100MG CAP"
+                            vuid="4005192" gcnSeqNo="4575"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>AMIODARONE/POSSIBLE QT PROLONGING AGENTS</interaction>
+                    <shortText>AMIODARONE HCL (PACERONE) 200MG TAB and AMANTADINE HCL 100MG CAP may interact based on the potential interaction between AMIODARONE and POSSIBLE QT PROLONGING AGENTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Possible QT Prolonging Agents</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone has been shown to prolong the QTc interval. Concurrent use with other agents that prolong the QTc interval may result in additive effects on the QTc interval.(1,2)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent use of amiodarone with other agents that prolong the QTc interval may result in potentially life-threatening cardiac arrhythmias, including torsades de pointes.(1,2)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  The risk of QT prolongation may be increased by cardiovascular disease, hypokalemia, hypomagnesemia, bradycardia, and the concurrent use of agents that inhibit amiodarone metabolism.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The Australian manufacturer of amiodarone states that concurrent use of agents known to cause torsades de pointes is contraindicated.(1)The US manufacturer of amiodarone states that the need to co-administer amiodarone with any other drug known to prolong the QTc interval must be based on a careful assessment of the potential risks and benefits of doing so for each patient.(2)</patientManagement>
+                        <discussion>DISCUSSION:  QTc prolongation has been reported during concurrent amiodarone and fluoroquinolones and macrolide antibiotics.Agents that are linked to this monograph may have been associated with Torsades de Pointes and/or QT prolongation but at this time lack substantial evidence for causing Torsades de Pointes.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Cordarone X (amiodarone hydrochloride) Australian prescribing information. Sanofi-Synthelabo Australia Pty Limited Augsut 15, 2007.]]></reference>
+                            <reference><![CDATA[2.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals April, 2009.]]></reference>
+                            <reference><![CDATA[3.The University of Arizona Center for Education and Research of Therapeutics. Drugs with Risk of Torsades de Pointes and Drugs with Possible Risk of Torsades de Pointes. Available at: http://www.torsades.org. Updated Dec 17, 2002.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+            <drugTherapyChecks/>
+        </drugCheck>
+    </Body>

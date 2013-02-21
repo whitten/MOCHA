@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response"
+    targetNamespace="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xsd:element
+        name="PEPSResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="Header" />
+                <xsd:element
+                    ref="Body"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="Header">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="Time" />
+                <xsd:element
+                    ref="MServer" />
+                <xsd:element
+                    ref="MUser" />
+                <xsd:element
+                    ref="PEPSVersion" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="Time">
+        <xsd:complexType>
+            <xsd:attribute
+                name="value"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="MServer">
+        <xsd:complexType>
+            <xsd:attribute
+                name="stationNumber"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="serverName"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="ip"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="uci"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="namespace"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="MUser">
+        <xsd:complexType>
+            <xsd:attribute
+                name="jobNumber"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="duz"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="userName"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="PEPSVersion">
+        <xsd:complexType>
+            <xsd:attribute
+                name="difDbVersion"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="difBuildVersion"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="difIssueDate"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="customDbVersion"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="customBuildVersion"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="customIssueDate"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="Body">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drugCheck" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drugsNotChecked"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="drugDrugChecks"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="drugTherapyChecks"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="drugDoseChecks"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugsNotChecked">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drugNotChecked"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugNotChecked">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug" />
+            </xsd:sequence>
+            <xsd:attribute
+                name="status"
+                type="notCheckedStatus" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugDrugChecks">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="message"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+                <xsd:element
+                    ref="drugDrugCheck"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugTherapyChecks">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="message"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+                <xsd:element
+                    ref="drugTherapyCheck"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugDoseChecks">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="message"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+                <xsd:element
+                    ref="drugDoseCheck"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugDrugCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="id"
+                    type="xsd:string" />
+                <xsd:element
+                    name="source"
+                    type="sourceType" />
+                <xsd:element
+                    ref="interactedDrugList" />
+                <xsd:element
+                    name="severity"
+                    type="xsd:string" />
+                <xsd:element
+                    name="interaction"
+                    type="xsd:string" />
+                <xsd:element
+                    name="shortText"
+                    type="xsd:string" />
+                <xsd:element
+                    ref="professionalMonograph"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="consumerMonograph"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugTherapyCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="id"
+                    type="xsd:string" />
+                <xsd:element
+                    name="source"
+                    type="sourceType" />
+                <xsd:element
+                    ref="interactedDrugList" />
+                <xsd:element
+                    name="classification"
+                    type="xsd:string" />
+                <xsd:element
+                    name="duplicateAllowance"
+                    type="xsd:long" />
+                <xsd:element
+                    name="shortText"
+                    type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drugDoseCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="source"
+                    type="sourceType" />
+                <xsd:element
+                    ref="message"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+                <xsd:element
+                    ref="drug" />
+                <xsd:element
+                    name="chemoInjectable"
+                    type="xsd:boolean"
+                    minOccurs="0" />
+                <xsd:element
+                    name="singleDoseStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="singleDoseStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="singleDoseMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="singleDoseMax"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="rangeDoseStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="rangeDoseStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="rangeDoseMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="rangeDoseLow"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="rangeDoseHigh"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseHigh"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseHighUnit"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseLow"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseLowUnit"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseFormHigh"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseFormHighUnit"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseFormLow"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseFormLowUnit"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="doseRouteDescription"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="durationStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="durationStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="durationMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="frequencyStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="frequencyStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="frequencyMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="dailyDoseStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="dailyDoseStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="dailyDoseMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="maxDailyDoseStatus"
+                    type="doseStatus"
+                    minOccurs="0" />
+                <xsd:element
+                    name="maxDailyDoseStatusCode"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="maxDailyDoseMessage"
+                    type="xsd:string"
+                    minOccurs="0" />
+                <xsd:element
+                    name="maxLifetimeDose"
+                    type="xsd:string"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="message">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug"
+                    minOccurs="0" />
+                <xsd:element
+                    name="severity"
+                    type="messageSeverity" />
+                <xsd:element
+                    name="type"
+                    type="messageTypeType" />
+                <xsd:element
+                    name="drugName"
+                    type="xsd:string" />
+                <xsd:element
+                    name="text"
+                    type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="professionalMonograph">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="monographSource"
+                    type="sourceType" />
+                <xsd:element
+                    name="disclaimer"
+                    type="xsd:string" />
+                <xsd:element
+                    name="monographTitle"
+                    type="xsd:string" />
+                <xsd:element
+                    name="severityLevel"
+                    type="xsd:string" />
+                <xsd:element
+                    name="mechanismOfAction"
+                    type="xsd:string" />
+                <xsd:element
+                    name="clinicalEffects"
+                    type="xsd:string" />
+                <xsd:element
+                    name="predisposingFactors"
+                    type="xsd:string" />
+                <xsd:element
+                    name="patientManagement"
+                    type="xsd:string" />
+                <xsd:element
+                    name="discussion"
+                    type="xsd:string" />
+                <xsd:element
+                    name="references"
+                    type="referencesType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="consumerMonograph">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="monographSource"
+                    type="sourceType" />
+                <xsd:element
+                    name="disclaimer"
+                    type="xsd:string" />
+                <xsd:element
+                    name="monographTitle"
+                    type="xsd:string" />
+                <xsd:element
+                    name="medicalWarning"
+                    type="xsd:string" />
+                <xsd:element
+                    name="howOccurs"
+                    type="xsd:string" />
+                <xsd:element
+                    name="whatMightHappen"
+                    type="xsd:string" />
+                <xsd:element
+                    name="whatToDo"
+                    type="xsd:string" />
+                <xsd:element
+                    name="references"
+                    type="referencesType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType
+        name="referencesType">
+        <xsd:sequence>
+            <xsd:element
+                name="reference"
+                minOccurs="0"
+                maxOccurs="unbounded"
+                type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element
+        name="interactedDrugList">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug"
+                    minOccurs="2"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element
+        name="drug">
+        <xsd:complexType>
+            <xsd:attribute
+                name="gcnSeqNo"
+                type="xsd:integer"
+                use="required" />
+            <xsd:attribute
+                name="vuid"
+                use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction
+                        base="xsd:integer">
+                        <xsd:minInclusive
+                            value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="drugName"
+                type="xsd:string"
+                use="optional" />
+            <xsd:attribute
+                name="ien"
+                use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction
+                        base="xsd:integer">
+                        <xsd:minInclusive
+                            value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="orderNumber"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType
+        name="sourceType">
+        <xsd:restriction
+            base="xsd:string">
+            <xsd:enumeration
+                value="FDB" />
+            <xsd:enumeration
+                value="Custom" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType
+        name="notCheckedStatus">
+        <xsd:restriction
+            base="xsd:string">
+            <xsd:enumeration
+                value="UnableToLoadDrugForGcnSeqNo" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType
+        name="doseStatus">
+        <xsd:restriction
+            base="xsd:string">
+            <xsd:enumeration
+                value="UnableToCheck" />
+            <xsd:enumeration
+                value="Passed" />
+            <xsd:enumeration
+                value="ExceedsMax" />
+            <xsd:enumeration
+                value="ExceedsRecommended" />
+            <xsd:enumeration
+                value="BelowRecommended" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType
+        name="messageTypeType">
+        <xsd:restriction
+            base="xsd:string">
+            <xsd:enumeration
+                value="InvalidDrugType" />
+            <xsd:enumeration
+                value="MissingInput" />
+            <xsd:enumeration
+                value="DataNotAvailable" />
+            <xsd:enumeration
+                value="NotRecommendedForAge" />
+            <xsd:enumeration
+                value="DoseNotEstablished" />
+            <xsd:enumeration
+                value="RenalImpairment" />
+            <xsd:enumeration
+                value="HepaticImpairment" />
+            <xsd:enumeration
+                value="NonIndicationDosing" />
+            <xsd:enumeration
+                value="DataPartiallyAvailable" />
+            <xsd:enumeration
+                value="DataNotUnique" />
+            <xsd:enumeration
+                value="UsedReplacedDrug" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType
+        name="messageSeverity">
+        <xsd:restriction
+            base="xsd:string">
+            <xsd:enumeration
+                value="NotScreened" />
+            <xsd:enumeration
+                value="Warning" />
+            <xsd:enumeration
+                value="Information" />
+        </xsd:restriction>
+    </xsd:simpleType>

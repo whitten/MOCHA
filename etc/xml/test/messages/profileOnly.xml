@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <Time value="3080821" />
+        <MServer
+            ip=""
+            namespace=""
+            serverName=""
+            stationNumber="1"
+            uci="" />
+        <MUser
+            duz="10000000179"
+            jobNumber="4504"
+            userName="SWRI,ACCESS" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks
+                prospectiveOnly="false"
+                useCustomTables="false">
+                <drugDrugCheck />
+                <drugTherapyCheck />
+            </checks>
+            <medicationProfile>
+                <drug
+                    drugName="PHENOBARBITAL 30MG TAB"
+                    gcnSeqNo="3590"
+                    ien="532"
+                    orderNumber="Z;10770P;1||"
+                    vuid="4000716">
+                </drug>
+                <drug
+                    drugName="TEMAZEPAM 15MG CAP"
+                    gcnSeqNo="3689"
+                    ien="3563"
+                    orderNumber="Z;11067P;1||"
+                    vuid="4002698">
+                </drug>
+                <drug
+                    drugName="LORAZEPAM 1MG TAB"
+                    gcnSeqNo="3758"
+                    ien="385"
+                    orderNumber="Z;11274P;1||"
+                    vuid="4002457">
+                </drug>
+                <drug
+                    drugName="DIAZEPAM 5MG TAB"
+                    gcnSeqNo="3768"
+                    ien="1879"
+                    orderNumber="Z;11304P;1||"
+                    vuid="4002216">
+                </drug>
+                <drug
+                    drugName="MULTIVITAMIN INJ"
+                    gcnSeqNo="58202"
+                    ien="9999998"
+                    orderNumber="Z;174606P;1||"
+                    vuid="4002076">
+                </drug>
+                <drug
+                    drugName="HEPARIN 25000 IN D5W"
+                    gcnSeqNo="60301"
+                    ien="999999"
+                    orderNumber="Z;180903P;1||"
+                    vuid="4006253">
+                </drug>
+                <drug
+                    drugName="WARFARIN (C0UMADIN) NA 5MG TAB"
+                    gcnSeqNo="6562"
+                    ien="1812"
+                    orderNumber="Z;19686P;1||"
+                    vuid="4013990">
+                </drug>
+                <drug
+                    drugName="FUROSEMIDE 40MG TAB"
+                    gcnSeqNo="8209"
+                    ien="654"
+                    orderNumber="Z;24627P;1||"
+                    vuid="4002370">
+                </drug>
+                <drug
+                    drugName="CIMETIDINE 300MG TAB"
+                    gcnSeqNo="11666"
+                    ien="1846"
+                    orderNumber="Z;34998P;1||"
+                    vuid="4006817">
+                </drug>
+                <drug
+                    drugName="THIAMINE HCL 100MG TAB"
+                    gcnSeqNo="2451"
+                    ien="1358"
+                    orderNumber="Z;7353P;1||"
+                    vuid="4001057">
+                </drug>
+            </medicationProfile>
+        </drugCheck>
+    </Body>

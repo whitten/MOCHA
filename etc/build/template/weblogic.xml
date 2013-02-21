@@ -1,0 +1,61 @@
+<project name="WeblogicTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="rebootManagedServers" uri="http://www.swri.org">
+        <sequential>
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <swri:progress msg="Rebooting @{target}" />
+                            <echo level="info" message="Shutting down @{target} on @{host}" />
+
+                            <!-- Per ANT bug 36903, we need to pass in an empty input string to get the process to end in CruiseControl -->
+                            <!-- See http://issues.apache.org/bugzilla/show_bug.cgi?id=36903 -->
+                            <java classname="weblogic.Admin"
+                                  newenvironment="true"
+                                  fork="true"
+                                  inputstring=""
+                                  failonerror="false"
+                                  classpathref="build.class.path">
+                                <arg value="-url" />
+                                <arg value="${@{host}.j2ee.url}" />
+                                <arg value="-username" />
+                                <arg value="${@{host}.j2ee.user}" />
+                                <arg value="-password" />
+                                <arg value="${@{host}.j2ee.password}" />
+                                <arg value="FORCESHUTDOWN" />
+                                <arg value="@{target}" />
+                            </java>
+
+                            <echo level="info" message="Waiting fifteen seconds for server to fully  stop" />
+                            <sleep seconds="15" />
+
+                            <echo level="info" message="Starting @{target} on @{host}" />
+
+                            <!-- Per ANT bug 36903, we need to pass in an empty input string to get the process to end in CruiseControl -->
+                            <!-- See http://issues.apache.org/bugzilla/show_bug.cgi?id=36903 -->
+                            <java classname="weblogic.Admin"
+                                  newenvironment="true"
+                                  fork="true"
+                                  inputstring=""
+                                  failonerror="false"
+                                  classpathref="build.class.path">
+                                <arg value="-url" />
+                                <arg value="${@{host}.j2ee.url}" />
+                                <arg value="-username" />
+                                <arg value="${@{host}.j2ee.user}" />
+                                <arg value="-password" />
+                                <arg value="${@{host}.j2ee.password}" />
+                                <arg value="START" />
+                                <arg value="@{target}" />
+                            </java>
+
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+
+            <echo level="info" message="Waiting two minutes for servers to fully startup" />
+            <sleep minutes="2" />
+        </sequential>
+    </macrodef>
+</project>

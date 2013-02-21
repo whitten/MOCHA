@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="3071023"/>
+        <MServer namespace="VISTA" uci="VISTA" ip=""
+            serverName="VISTA.MYDOMAIN.COM" stationNumber="500"/>
+        <MUser userName="ALEX VAZQUEZ" duz="10000000054" jobNumber="5048"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugsNotChecked>
+                <drugNotChecked status="UnableToLoadDrugForGcnSeqNo">
+                    <drug orderNumber="I;1425P;PROFILE|10516;1|I|7"
+                        ien="1382" drugName="MVI 100 ML" vuid="4002059" gcnSeqNo="0"/>
+                </drugNotChecked>
+                <drugNotChecked status="UnableToLoadDrugForGcnSeqNo">
+                    <drug orderNumber="I;1429;PROFILE|10521;1|I|8"
+                        ien="1382"
+                        drugName="MULTIVITAMIN INJECTION 10ML"
+                        vuid="4002059" gcnSeqNo="0"/>
+                </drugNotChecked>
+            </drugsNotChecked>
+            <drugTherapyChecks>
+                <drugTherapyCheck>
+                    <id>298</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="I;;PROSPECTIVE" ien="3776"
+                            drugName="WARFARIN 2MG TABS" vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1414P;PROFILE|10491;1|I|14"
+                            ien="3776" drugName="WARFARIN 2MG TABS"
+                            vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1426P;PROFILE|10517;1|I|15"
+                            ien="3776" drugName="WARFARIN 2MG TABS"
+                            vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1426P;PROFILE|10517;1|I|11"
+                            ien="1812"
+                            drugName="WARFARIN SODIUM 5MG S.T."
+                            vuid="4005199" gcnSeqNo="6562"/>
+                        <drug orderNumber="I;1462P;PROFILE|10581;1|I|12"
+                            ien="1812"
+                            drugName="WARFARIN SODIUM 5MG S.T."
+                            vuid="4005199" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <classification>Oral Anticoagulants</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of WARFARIN 2MG TABS, WARFARIN 2MG TABS, WARFARIN 2MG TABS, WARFARIN SODIUM 5MG S.T., and WARFARIN SODIUM 5MG S.T. may represent a duplication in therapy based on their association to the therapeutic drug class Oral Anticoagulants.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>1064</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="I;72U;PROFILE|10590|I|2"
+                            ien="280"
+                            drugName="ASPIRIN BUFFERED 325MG TAB"
+                            vuid="4005767" gcnSeqNo="27896"/>
+                        <drug orderNumber="I;1459P;PROFILE|10577;1|I|1"
+                            ien="236" drugName="DIPYRIDAMOLE 10 MG"
+                            vuid="4002646" gcnSeqNo="41698"/>
+                        <drug orderNumber="I;;PROSPECTIVE" ien="3776"
+                            drugName="WARFARIN 2MG TABS" vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1414P;PROFILE|10491;1|I|14"
+                            ien="3776" drugName="WARFARIN 2MG TABS"
+                            vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1426P;PROFILE|10517;1|I|15"
+                            ien="3776" drugName="WARFARIN 2MG TABS"
+                            vuid="4005197" gcnSeqNo="6561"/>
+                        <drug orderNumber="I;1426P;PROFILE|10517;1|I|11"
+                            ien="1812"
+                            drugName="WARFARIN SODIUM 5MG S.T."
+                            vuid="4005199" gcnSeqNo="6562"/>
+                        <drug orderNumber="I;1462P;PROFILE|10581;1|I|12"
+                            ien="1812"
+                            drugName="WARFARIN SODIUM 5MG S.T."
+                            vuid="4005199" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <classification>Antiplatelet and Antithrombotic Drugs</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of ASPIRIN BUFFERED 325MG TAB, DIPYRIDAMOLE 10 MG, WARFARIN 2MG TABS, WARFARIN 2MG TABS, WARFARIN 2MG TABS, WARFARIN SODIUM 5MG S.T., and WARFARIN SODIUM 5MG S.T. may represent a duplication in therapy based on their association to the therapeutic drug class Antiplatelet and Antithrombotic Drugs.</shortText>
+                </drugTherapyCheck>
+            </drugTherapyChecks>
+        </drugCheck>
+    </Body>

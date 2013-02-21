@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <!-- DrugDataVendor Capabilities -->
+    <bean
+        id="drugInfoCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.DrugInfoCapabilityImpl">
+        <property
+            name="fdbDataManager"
+            ref="fdbDataManager" />
+    </bean>
+    <bean
+        id="performDrugChecksCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.PerformDrugChecksCapabilityImpl">
+        <property
+            name="fdbDataManager"
+            ref="fdbDataManager" />
+        <property
+            name="performDrugDoseCheckCapability"
+            ref="performDrugDoseCheckCapability" />
+        <property
+            name="performDrugDrugCheckCapability"
+            ref="performDrugDrugCheckCapability" />
+        <property
+            name="performDrugTherapyCheckCapability"
+            ref="performDrugTherapyCheckCapability" />
+    </bean>
+    <bean
+        id="performDrugDoseCheckCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.PerformDrugDoseCheckCapabilityImpl">
+        <property
+            name="screening"
+            ref="fdbScreening" />
+        <property
+            name="fdbDataManager"
+            ref="fdbDataManager" />
+    </bean>
+    <bean
+        id="performDrugDrugCheckCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.PerformDrugDrugCheckCapabilityImpl">
+        <property
+            name="fdbDataManager"
+            ref="fdbDataManager" />
+        <property
+            name="screening"
+            ref="fdbScreening" />
+    </bean>
+    <bean
+        id="performDrugTherapyCheckCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.PerformDrugTherapyCheckCapabilityImpl">
+        <property
+            name="screening"
+            ref="fdbScreening" />
+    </bean>
+    <bean
+        id="versionCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.capability.impl.VersionCapabilityImpl">
+        <property
+            name="navigation"
+            ref="fdbNavigation" />
+        <property
+            name="dataSource"
+            ref="fdbDataSource" />
+    </bean>
+    <bean
+        id="randomOrderCheckCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.preencapsulation.capability.impl.RandomOrderCheckCapabilityImpl">
+        <property
+            name="dataSource"
+            ref="fdbDataSource" />
+    </bean>
+    <!-- Inbound PreEncapsulation Beans -->
+    <bean
+        id="orderCheckService"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.preencapsulation.session.impl.OrderCheckServiceImpl">
+        <property
+            name="processOrderChecksCapability"
+            ref="processOrderChecksCapability" />
+            
+        <property
+            name="jndiTemplate"
+            ref="jndiTemplate" />
+    </bean>
+    <bean
+        id="drugInfoService"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.preencapsulation.session.impl.DrugInfoServiceImpl">
+        <property
+            name="processDrugInfoCapability"
+            ref="processDrugInfoCapability" />
+    </bean>
+    <!-- Inbound PreEncapsulation Capabilities -->
+    <bean
+        id="processOrderChecksCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.preencapsulation.capability.impl.ProcessOrderChecksCapabilityImpl">
+        <property
+            name="performDrugChecksCapability"
+            ref="performDrugChecksCapability" />
+        <property
+            name="versionCapability"
+            ref="versionCapability" />
+    </bean>
+    <bean
+        id="processDrugInfoCapability"
+        class="EXT.DOMAIN.pharmacy.peps.external.common.preencapsulation.capability.impl.ProcessDrugInfoCapabilityImpl">
+        <property
+            name="drugInfoCapability"
+            ref="drugInfoCapability" />
+    </bean>

@@ -1,0 +1,100 @@
+<project name="PackageTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initPackageTemplate" uri="http://www.swri.org">
+        <sequential>
+            <patternset id="build.meta.dir.patternset">
+                <include name="**/*.xml" />
+                <include name="**/*.xsb" />
+                <include name="**/*.properties" />
+                <exclude name="**/test/**" />
+            </patternset>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageJar" uri="http://www.swri.org">
+        <attribute name="destFile" default="${ant.project.name}.jar" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <attribute name="springContext" default="${etc.xml.dir}/spring/peps/beanRefContext.xml" />
+        <element name="manifestattributes" optional="true" />
+        <element name="buildclassespatternset" optional="true" />
+        <element name="buildmetapatternset" optional="true" />
+        <element name="etcpatternset" optional="true" />
+        <element name="additionalfileset" optional="true" />
+        <sequential>
+            <if>
+                <istrue value="${profile}" />
+                <then>
+                    <property name="include.profile" value="true" />
+                </then>
+            </if>
+
+            <swri:createJarClasspath jarFile="@{destFile}" />
+
+            <jar destfile="@{destDir}/@{destFile}" update="true">
+                <manifest>
+                    <attribute name="Class-Path" value="${@{destFile}.class.path}" />
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                    <manifestattributes />
+                </manifest>
+
+                <fileset dir="${build.classes.dir}">
+                    <include name="**/*.class" />
+                    <exclude name="**/tools/**/*.class" />
+                    <exclude name="**/test/**/*.class" />
+                    <exclude name="**/profile/**/*.class" unless="include.profile" />
+                    <buildclassespatternset />
+                </fileset>
+
+                <fileset dir="${build.meta.dir}">
+                    <exclude name="properties/local/**" />
+                    <patternset refid="build.meta.dir.patternset" />
+                    <buildmetapatternset />
+                </fileset>
+
+                <fileset dir="${etc.dir}">
+                    <include name="xml/**/*.xsd" />
+                    <include name="xml/**/*.xml" />
+                    <exclude name="xml/**/beanRefContext.xml" />
+                    <exclude name="xml/**/spring/mocha/*Dynamic.xml" unless="include.profile" />
+                    <include name="properties/**/*.properties" />
+                    <exclude name="properties/datasource.properties" />
+                    <exclude name="properties/fdb_datup_configuration.properties" />
+                    <exclude name="properties/ftp_users.properties" />
+                    <include name="**/test/messages/atp/*.xml" />
+                    <exclude name="**/test/messages/*" />
+                    <include name="**/template/emails/**" />
+                    <etcpatternset />
+                </fileset>
+
+                <fileset file="@{springContext}" />
+
+                <fileset dir="${build.src.dir}">
+                    <include name="**/jaxb.properties" />
+                    <include name="**/bgm.ser" />
+                </fileset>
+
+                <additionalfileset />
+            </jar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="createJarClasspath" uri="http://www.swri.org">
+        <attribute name="jarFile" />
+        <sequential>
+
+            <path id="@{jarFile}.lib.path">
+                <fileset dir="${lib.dir}">
+                    <include name="**/*.jar" />
+                    <exclude name="spring/profile/**" unless="include.profile" />
+                    <exclude name="database/derbyclient*.jar" unless="deploy.derby" />
+                    <exclude name="build/**" />
+                </fileset>
+            </path>
+
+            <pathconvert property="@{jarFile}.class.path" refid="@{jarFile}.lib.path" pathsep=" " dirsep="/">
+                <map from="${basedir}${file.separator}${build}${file.separator}${archive}${file.separator}" to="" />
+                <map from="${basedir}${file.separator}${lib}" to="lib" />
+            </pathconvert>
+        </sequential>
+    </macrodef>
+</project>

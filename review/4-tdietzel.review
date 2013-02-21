@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="4">
+  <ReviewIssue id="FJD6U1XC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-01 :: 14:27:45:984 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:19:37:359 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="8">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/impl/PerformDrugDoseCheckCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unusued Imports</Summary>
+    <Description>two unused imports can be removed</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJD6VM9Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-01 :: 14:28:59:015 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:19:27:365 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="41">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/impl/DrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125 characters</Summary>
+    <Description>Hard to break it up, but is over the limit. Could remove the @see tag entirely as an alternative.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH67T6W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:21:32:936 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:17:58:153 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="34">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/utility/JdbcConnectionFactory.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Javadoc comment unclear</Summary>
+    <Description>Javadoc comment unclear. Should explain that the method closes the given connection. "Return the connection through the factory" to me implies it will get a new one to return to the user.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6DOJT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:26:06:857 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:19:11:562 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="59">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/utility/MessageConversionUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>javadoc comment not consistent</Summary>
+    <Description>other utility constructors javadocs read "Cannot instantiate", which appears to be the reason for this one as well. "empty constructor" doesn't clarify its message well (besides, this constructor isn't actually empty)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6P6VO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:35:03:828 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:18:51:277 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="33">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/capability/impl/ProcessDrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>line longer than 125 chars</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6SHYQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:37:38:162 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:18:28:759 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="25">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/DrugInfoServlet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6W4S5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:40:27:701 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:18:16:517 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/session/bean/DrugInfoServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125 chars</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6WXE0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:41:04:776 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:18:05:976 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="35">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/session/bean/OrderCheckServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125 chars</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6XOYK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:41:40:508 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:17:46:285 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/session/impl/DrugInfoServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125 chars</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH6ZAK5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 09:42:55:157 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:17:07:339 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="29">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/session/impl/OrderCheckServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125</Summary>
+    <Description>Wrap line, remove tag, or ignore this issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH8O7UQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 10:30:17:666 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:16:47:460 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="233">src/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/utility/drugcheck/ResponseConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>line longer than 125 (and on its own line)</Summary>
+    <Description>This line either needs to be cropped down to less than 125 chars, or may as well not be on its own line</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH9DCPF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 10:49:50:355 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:16:14:199 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="25">test/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lines longer than 125</Summary>
+    <Description>wrap line, remove some text, or ignore the issue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH9SQXX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:01:48:645 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:15:20:044 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="46">test/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/test/PerformDrugDrugCheckCapabilityTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Collection could be parameterized</Summary>
+    <Description>is a collection of DrugCheckVos</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJH9TJX0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:02:26:196 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:14:55:527 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="42">test/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/capability/test/PerformDrugTherapyCheckCommandTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Collection could be parameterized</Summary>
+    <Description>Collection of DrugCheckVos</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJHAAKQX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:15:40:425 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:14:30:027 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="4">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/test/atp/Atp1001Test.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Could all the atp test cases be placed in a single file</Summary>
+    <Description>Seems odd to have 18 test cases that are the exact same structure in a series of files, couldn't this be in one class called AtpTest with various methods testSendXmlAtp1001(), testSendXmlAtp1002 etc?</Description>
+    <Annotation />
+    <Revision>None -- The ATP is written with having separate files, so I have to leave the test cases as-is (for now, anyway)</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJHAKNKT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:23:30:653 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:13:52:096 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="11">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/test/DrugInfoTestCase.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused import</Summary>
+    <Description>remove import</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJHALAII">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:24:00:378 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:13:39:963 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="9">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/test/OrderCheckTestCase.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused import</Summary>
+    <Description>Remove unused import</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FJHAMEYJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-04 :: 11:24:52:795 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-07 :: 07:13:27:033 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="89">test/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/test/integration/OrderCheckServletTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line longer than 125</Summary>
+    <Description>Wrap line</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_XrAvwCDVEdynRfaOaU6b4g" name="Design Diagrams" appliedProfile="_XrwWoCDVEdynRfaOaU6b4g _XsDRkCDVEdynRfaOaU6b4g _XsNCkCDVEdynRfaOaU6b4g _Xs8pcCDVEdynRfaOaU6b4g _XvBtECDVEdynRfaOaU6b4g">
+  <eAnnotations xmi:id="_XrAvwSDVEdynRfaOaU6b4g" source="uml2.diagrams"/>
+  <eAnnotations xmi:id="_2H2pcCZ3EdyxLMZ47JA-KA" source="http://www.eclipse.org/emf/2002/Ecore"/>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_XrwWoCDVEdynRfaOaU6b4g">
+    <eAnnotations xmi:id="_XrwWoSDVEdynRfaOaU6b4g" source="attributes">
+      <details xmi:id="_XrwWoiDVEdynRfaOaU6b4g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_PROFILES/Basic.profile.uml2#_6mFRgK86Edih9-GG5afQ0g"/>
+    <importedProfile href="pathmap://UML2_PROFILES/Basic.profile.uml2#_6mFRgK86Edih9-GG5afQ0g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_XsDRkCDVEdynRfaOaU6b4g">
+    <eAnnotations xmi:id="_XsDRkSDVEdynRfaOaU6b4g" source="attributes">
+      <details xmi:id="_XsDRkiDVEdynRfaOaU6b4g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_PROFILES/Intermediate.profile.uml2#_Cz7csK87Edih9-GG5afQ0g"/>
+    <importedProfile href="pathmap://UML2_PROFILES/Intermediate.profile.uml2#_Cz7csK87Edih9-GG5afQ0g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_XsNCkCDVEdynRfaOaU6b4g">
+    <eAnnotations xmi:id="_XsNCkSDVEdynRfaOaU6b4g" source="attributes">
+      <details xmi:id="_XsNCkiDVEdynRfaOaU6b4g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_PROFILES/Complete.profile.uml2#_M7pTkK87Edih9-GG5afQ0g"/>
+    <importedProfile href="pathmap://UML2_PROFILES/Complete.profile.uml2#_M7pTkK87Edih9-GG5afQ0g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_Xs8pcCDVEdynRfaOaU6b4g">
+    <eAnnotations xmi:id="_Xs8pcSDVEdynRfaOaU6b4g" source="attributes">
+      <details xmi:id="_Xs8pciDVEdynRfaOaU6b4g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default"/>
+    <importedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_XvBtECDVEdynRfaOaU6b4g">
+    <eAnnotations xmi:id="_XvBtESDVEdynRfaOaU6b4g" source="attributes">
+      <details xmi:id="_XvBtEiDVEdynRfaOaU6b4g" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment"/>
+    <importedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment"/>
+  </packageImport>
+  <packageImport xmi:id="_X0PkQCDVEdynRfaOaU6b4g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2#_EfRZoK86EdieaYgxtVWN8Q"/>
+  </packageImport>
+  <ownedMember xmi:type="uml:Package" xmi:id="_zlXekCZ3EdyxLMZ47JA-KA" name="Class Diagrams">
+    <eAnnotations xmi:id="_zlqZgCZ3EdyxLMZ47JA-KA" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_9kTM4CZ3EdyxLMZ47JA-KA" type="Class" name="Outbound Drug Data Vendor Class Diagram">
+        <children xmi:id="_Ew9A0CZ4EdyxLMZ47JA-KA" sourceEdges="_HL-40CZ4EdyxLMZ47JA-KA _JQ-2cCZ4EdyxLMZ47JA-KA _L0f8ESZ4EdyxLMZ47JA-KA _MWTooCZ4EdyxLMZ47JA-KA _OVy0ICZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_ExGKwCZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_ExGKwSZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_ExGKwiZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_ExGKwyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_ExGKxCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ExGKxSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_ExGKxiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ExGKxyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_ExGKyCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ExGKySZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Ex_ioCZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Ex_ioSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Ew9A0SZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ew9A0iZ4EdyxLMZ47JA-KA" x="4452" y="3498"/>
+        </children>
+        <children xmi:id="_HJdJQCZ4EdyxLMZ47JA-KA" targetEdges="_HL-40CZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_HJdJQyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_HJdJRCZ4EdyxLMZ47JA-KA" width="530" height="530"/>
+          </children>
+          <children xmi:id="_HJdJRSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_HJdJRiZ4EdyxLMZ47JA-KA" type="Kind">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_HJdJRyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_HJdJSCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HJdJSSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_HJdJSiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HJdJSyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_HJdJTCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HJdJTSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_HJdJQSZ4EdyxLMZ47JA-KA" lineColor="0" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HJdJQiZ4EdyxLMZ47JA-KA" x="6360" y="1272"/>
+        </children>
+        <children xmi:id="_JQYZgCZ4EdyxLMZ47JA-KA" targetEdges="_JQ-2cCZ4EdyxLMZ47JA-KA _WBi-4CZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_JQYZgyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_JQYZhCZ4EdyxLMZ47JA-KA" width="530" height="530"/>
+          </children>
+          <children xmi:id="_JQYZhSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_JQYZhiZ4EdyxLMZ47JA-KA" type="Kind">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_JQYZhyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_JQYZiCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JQYZiSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_JQYZiiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JQYZiyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_JQYZjCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JQYZjSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_JQYZgSZ4EdyxLMZ47JA-KA" lineColor="0" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JQYZgiZ4EdyxLMZ47JA-KA" x="-3180" y="6360"/>
+        </children>
+        <children xmi:id="_Lz6GMCZ4EdyxLMZ47JA-KA" targetEdges="_L0f8ESZ4EdyxLMZ47JA-KA _RwHl8CZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_Lz6GMyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_Lz6GNCZ4EdyxLMZ47JA-KA" width="530" height="530"/>
+          </children>
+          <children xmi:id="_Lz6GNSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Lz6GNiZ4EdyxLMZ47JA-KA" type="Kind">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Lz6GNyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Lz6GOCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Lz6GOSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Lz6GOiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Lz6GOyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_Lz6GPCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Lz6GPSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_Lz6GMSZ4EdyxLMZ47JA-KA" lineColor="0" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lz6GMiZ4EdyxLMZ47JA-KA" x="13356" y="11130"/>
+        </children>
+        <children xmi:id="_MV28sCZ4EdyxLMZ47JA-KA" targetEdges="_MWTooCZ4EdyxLMZ47JA-KA _TNfi4CZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_MV28syZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_MV28tCZ4EdyxLMZ47JA-KA" width="530" height="530"/>
+          </children>
+          <children xmi:id="_MV28tSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_MV28tiZ4EdyxLMZ47JA-KA" type="Kind">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_MV28tyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_MV28uCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MV28uSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_MV28uiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MV28uyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_MV28vCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MV28vSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_MV28sSZ4EdyxLMZ47JA-KA" lineColor="0" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MV28siZ4EdyxLMZ47JA-KA" x="4770" y="11130"/>
+        </children>
+        <children xmi:id="_OVMXMCZ4EdyxLMZ47JA-KA" targetEdges="_OVy0ICZ4EdyxLMZ47JA-KA _P_FGICZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_OVMXMyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_OVMXNCZ4EdyxLMZ47JA-KA" width="530" height="530"/>
+          </children>
+          <children xmi:id="_OVMXNSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_OVMXNiZ4EdyxLMZ47JA-KA" type="Kind">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_OVMXNyZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_OVMXOCZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OVMXOSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_OVMXOiZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OVMXOyZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_OVMXPCZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OVMXPSZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_OVMXMSZ4EdyxLMZ47JA-KA" lineColor="0" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="vizref:///#jsrctype^vcore.target=uml2.Interface^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OVMXMiZ4EdyxLMZ47JA-KA" x="17172" y="6360"/>
+        </children>
+        <children xmi:id="_P-LuQCZ4EdyxLMZ47JA-KA" sourceEdges="_P_FGICZ4EdyxLMZ47JA-KA _eeTv0SZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_P-LuQyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_P-LuRCZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_P-LuRSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_P-LuRiZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_P-LuRyZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_P-LuSCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_P-LuSSZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_P-LuSiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_P-LuSyZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_P-LuTCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_P-LuTSZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_P-LuTiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_P-LuQSZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P-LuQiZ4EdyxLMZ47JA-KA" x="16854" y="16854"/>
+        </children>
+        <children xmi:id="_RvFEICZ4EdyxLMZ47JA-KA" sourceEdges="_RwHl8CZ4EdyxLMZ47JA-KA _eeTv2SZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_RvFEIyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_RvFEJCZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_RvFEJSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_RvOOECZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_RvOOESZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_RvOOEiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_RvOOEyZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_RvOOFCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_RvOOFSZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_RvOOFiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_RvOOFyZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_RvOOGCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_RvFEISZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RvFEIiZ4EdyxLMZ47JA-KA" x="13038" y="13356"/>
+        </children>
+        <children xmi:id="_TMv8ACZ4EdyxLMZ47JA-KA" sourceEdges="_TNfi4CZ4EdyxLMZ47JA-KA _eec5wCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_TMv8AyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_TMv8BCZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_TMv8BSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_TMv8BiZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_TMv8ByZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TMv8CCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_TMv8CSZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TMv8CiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_TMv8CyZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TMv8DCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_TMv8DSZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TMv8DiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TMv8ASZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TMv8AiZ4EdyxLMZ47JA-KA" x="4452" y="13356"/>
+        </children>
+        <children xmi:id="_WADxICZ4EdyxLMZ47JA-KA" sourceEdges="_WBi-4CZ4EdyxLMZ47JA-KA _eec5yCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_WADxIyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_WADxJCZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_WADxJSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_WADxJiZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_WADxJyZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WADxKCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_WADxKSZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WADxKiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_WADxKyZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WADxLCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_WADxLSZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_WADxLiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_WADxISZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WADxIiZ4EdyxLMZ47JA-KA" x="-3498" y="10494"/>
+        </children>
+        <children xmi:id="_edHdACZ4EdyxLMZ47JA-KA" targetEdges="_eeTv0SZ4EdyxLMZ47JA-KA _eeTv2SZ4EdyxLMZ47JA-KA _eec5wCZ4EdyxLMZ47JA-KA _eec5yCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_edHdAyZ4EdyxLMZ47JA-KA" type="ImageCompartment">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_edHdBCZ4EdyxLMZ47JA-KA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_edHdBSZ4EdyxLMZ47JA-KA" type="Stereotype">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_edHdBiZ4EdyxLMZ47JA-KA" type="Name">
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_edHdByZ4EdyxLMZ47JA-KA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_edHdCCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_edHdCSZ4EdyxLMZ47JA-KA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_edHdCiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_edHdCyZ4EdyxLMZ47JA-KA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_edHdDCZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <children xmi:id="_edHdDSZ4EdyxLMZ47JA-KA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_edHdDiZ4EdyxLMZ47JA-KA"/>
+            <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_edHdASZ4EdyxLMZ47JA-KA" lineColor="0"/>
+          <element xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_edHdAiZ4EdyxLMZ47JA-KA" x="6678" y="18126"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_9kTM4SZ3EdyxLMZ47JA-KA"/>
+        <edges xmi:id="_HL-40CZ4EdyxLMZ47JA-KA" source="_Ew9A0CZ4EdyxLMZ47JA-KA" target="_HJdJQCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_HL-40yZ4EdyxLMZ47JA-KA" type="NameLabel">
+            <children xmi:id="_HL-41SZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_HL-41iZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL-41CZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_HL-40SZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugChecksCapability[jcu^name=PerformDrugChecksCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HL-40iZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_JQ-2cCZ4EdyxLMZ47JA-KA" source="_Ew9A0CZ4EdyxLMZ47JA-KA" target="_JQYZgCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_JQ-2cyZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_JQ-2dSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_JQ-2dyZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_JQ-2diZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JQ-2dCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_JQ-2cSZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JQ-2ciZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_L0f8ESZ4EdyxLMZ47JA-KA" source="_Ew9A0CZ4EdyxLMZ47JA-KA" target="_Lz6GMCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_L0f8FCZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_L0f8FiZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_L0f8GCZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_L0f8FyZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0f8FSZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_L0f8EiZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L0f8EyZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_MWTooCZ4EdyxLMZ47JA-KA" source="_Ew9A0CZ4EdyxLMZ47JA-KA" target="_MV28sCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_MWTooyZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_MWTopSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_MWTopyZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_MWTopiZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MWTopCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MWTooSZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MWTooiZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_OVy0ICZ4EdyxLMZ47JA-KA" source="_Ew9A0CZ4EdyxLMZ47JA-KA" target="_OVMXMCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_OVy0IyZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_OVy0JSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_OVy0JyZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_OVy0JiZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OVy0JCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_OVy0ISZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugChecksCapabilityImpl[jcu^name=PerformDrugChecksCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OVy0IiZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_P_FGICZ4EdyxLMZ47JA-KA" source="_P-LuQCZ4EdyxLMZ47JA-KA" target="_OVMXMCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_P_FGIyZ4EdyxLMZ47JA-KA" type="NameLabel">
+            <children xmi:id="_P_FGJSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_P_FGJiZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P_FGJCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_P_FGISZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugTherapyCheckCapability[jcu^name=PerformDrugTherapyCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P_FGIiZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_RwHl8CZ4EdyxLMZ47JA-KA" source="_RvFEICZ4EdyxLMZ47JA-KA" target="_Lz6GMCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_RwHl8yZ4EdyxLMZ47JA-KA" type="NameLabel">
+            <children xmi:id="_RwHl9SZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_RwHl9iZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RwHl9CZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RwHl8SZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDoseCheckCapability[jcu^name=PerformDrugDoseCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RwHl8iZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_TNfi4CZ4EdyxLMZ47JA-KA" source="_TMv8ACZ4EdyxLMZ47JA-KA" target="_MV28sCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_TNfi4yZ4EdyxLMZ47JA-KA" type="NameLabel">
+            <children xmi:id="_TNfi5SZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_TNfi5iZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TNfi5CZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_TNfi4SZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugIngredientCheckCapability[jcu^name=PerformDrugIngredientCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TNfi4iZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_WBi-4CZ4EdyxLMZ47JA-KA" source="_WADxICZ4EdyxLMZ47JA-KA" target="_JQYZgCZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_WBi-4yZ4EdyxLMZ47JA-KA" type="NameLabel">
+            <children xmi:id="_WBi-5SZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_WBi-5iZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WBi-5CZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_WBi-4SZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Implementation" href="vizref:///#jimpl^vcore.target=uml2.Implementation[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=PerformDrugDrugCheckCapability[jcu^name=PerformDrugDrugCheckCapability.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WBi-4iZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_eeTv0SZ4EdyxLMZ47JA-KA" source="_P-LuQCZ4EdyxLMZ47JA-KA" target="_edHdACZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_eeTv1CZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_eeTv1iZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eeTv2CZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eeTv1yZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eeTv1SZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eeTv0iZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eeTv0yZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_eeTv2SZ4EdyxLMZ47JA-KA" source="_RvFEICZ4EdyxLMZ47JA-KA" target="_edHdACZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_eeTv3CZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_eeTv3iZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eeTv4CZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eeTv3yZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eeTv3SZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eeTv2iZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eeTv2yZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_eec5wCZ4EdyxLMZ47JA-KA" source="_TMv8ACZ4EdyxLMZ47JA-KA" target="_edHdACZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_eec5wyZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_eec5xSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eec5xyZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eec5xiZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eec5xCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eec5wSZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eec5wiZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_eec5yCZ4EdyxLMZ47JA-KA" source="_WADxICZ4EdyxLMZ47JA-KA" target="_edHdACZ4EdyxLMZ47JA-KA">
+          <children xmi:id="_eec5yyZ4EdyxLMZ47JA-KA" visible="false" type="KindLabel">
+            <children xmi:id="_eec5zSZ4EdyxLMZ47JA-KA" type="Stereotype">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eec5zyZ4EdyxLMZ47JA-KA" type="Kind">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <children xmi:id="_eec5ziZ4EdyxLMZ47JA-KA" type="Name">
+              <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            </children>
+            <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eec5zCZ4EdyxLMZ47JA-KA" y="-185"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eec5ySZ4EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+          <element xmi:type="uml:Usage" href="vizref:///#jdep^vcore.target=uml2.Usage[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]][jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eec5yiZ4EdyxLMZ47JA-KA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+  </ownedMember>
+  <ownedMember xmi:type="uml:Package" xmi:id="_3S6uYCZ3EdyxLMZ47JA-KA" name="Sequence Diagrams">
+    <eAnnotations xmi:id="_3S6uYSZ3EdyxLMZ47JA-KA" source="uml2.diagrams"/>
+    <ownedMember xmi:type="uml:Collaboration" xmi:id="_2oowYCZ5EdyxLMZ47JA-KA" name="Drug Dose">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_2oyhYCZ5EdyxLMZ47JA-KA" name="Perform Drug Dose Check">
+        <eAnnotations xmi:id="_2oyhYSZ5EdyxLMZ47JA-KA" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_2oyhYiZ5EdyxLMZ47JA-KA" type="Sequence" element="_2oyhYCZ5EdyxLMZ47JA-KA" name="Sequence Diagram">
+            <children xmi:id="_2oyhYyZ5EdyxLMZ47JA-KA" element="_2oyhYCZ5EdyxLMZ47JA-KA">
+              <children xmi:id="_2oyhZCZ5EdyxLMZ47JA-KA" type="interaction_compartment" element="_2oyhYCZ5EdyxLMZ47JA-KA">
+                <children xmi:id="_-_IhQCZ5EdyxLMZ47JA-KA" sourceEdges="_MzlvpCZ6EdyxLMZ47JA-KA _PBz6vCZ6EdyxLMZ47JA-KA _REkcrCZ6EdyxLMZ47JA-KA" targetEdges="_MzlvpCZ6EdyxLMZ47JA-KA _PCQmoyZ6EdyxLMZ47JA-KA _RE3XkyZ6EdyxLMZ47JA-KA" element="_---wQCZ5EdyxLMZ47JA-KA">
+                  <children xmi:id="_-_IhQyZ5EdyxLMZ47JA-KA" type="Name" element="_---wQCZ5EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-_IhQSZ5EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-_IhQiZ5EdyxLMZ47JA-KA" x="265" y="662"/>
+                </children>
+                <children xmi:id="_AQliECZ6EdyxLMZ47JA-KA" sourceEdges="_PCQmoyZ6EdyxLMZ47JA-KA" targetEdges="_PBz6vCZ6EdyxLMZ47JA-KA" element="_AQcYICZ6EdyxLMZ47JA-KA">
+                  <children xmi:id="_AQliEyZ6EdyxLMZ47JA-KA" type="Name" element="_AQcYICZ6EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_AQliESZ6EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQliEiZ6EdyxLMZ47JA-KA" x="185" y="132" width="4684" height="15875"/>
+                </children>
+                <children xmi:id="_G3FU8SZ6EdyxLMZ47JA-KA" sourceEdges="_RE3XkyZ6EdyxLMZ47JA-KA" targetEdges="_REkcrCZ6EdyxLMZ47JA-KA" element="_G28LACZ6EdyxLMZ47JA-KA">
+                  <children xmi:id="_G3FU9CZ6EdyxLMZ47JA-KA" type="Name" element="_G28LACZ6EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_G3FU8iZ6EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G3FU8yZ6EdyxLMZ47JA-KA" x="106" y="132" width="3257" height="15875"/>
+                </children>
+                <children xmi:id="_M0CbkCZ6EdyxLMZ47JA-KA" element="_Mzb-oCZ6EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_M0CbkSZ6EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M0CbkiZ6EdyxLMZ47JA-KA" x="-1" y="1323" height="714"/>
+                </children>
+                <children xmi:id="_PCQmoCZ6EdyxLMZ47JA-KA" element="_PBz6tiZ6EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_PCQmoSZ6EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCQmoiZ6EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <children xmi:id="_RE3XkCZ6EdyxLMZ47JA-KA" element="_REkcpiZ6EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_RE3XkSZ6EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RE3XkiZ6EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_2oyhZSZ5EdyxLMZ47JA-KA"/>
+              </children>
+              <children xmi:id="_2oyhZiZ5EdyxLMZ47JA-KA" type="Name" element="_2oyhYCZ5EdyxLMZ47JA-KA"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2oyhZyZ5EdyxLMZ47JA-KA" lineColor="0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2oyhaCZ5EdyxLMZ47JA-KA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_2oyhaSZ5EdyxLMZ47JA-KA"/>
+            <edges xmi:id="_MzlvpCZ6EdyxLMZ47JA-KA" element="_MzS0sCZ6EdyxLMZ47JA-KA" source="_-_IhQCZ5EdyxLMZ47JA-KA" target="_-_IhQCZ5EdyxLMZ47JA-KA">
+              <children xmi:id="_MzlvpyZ6EdyxLMZ47JA-KA" type="MessageNameLabel" element="_MzS0sCZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_MzlvqSZ6EdyxLMZ47JA-KA" type="Stereotype" element="_MzS0sCZ6EdyxLMZ47JA-KA"/>
+                <children xmi:id="_MzlvqiZ6EdyxLMZ47JA-KA" type="Name" element="_MzS0sCZ6EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MzlvqCZ6EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MzlvpSZ6EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MzlvpiZ6EdyxLMZ47JA-KA" points="[0, 0, 0, -83]$[0, 83, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MzlvqyZ6EdyxLMZ47JA-KA" id="25:900"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MzlvrCZ6EdyxLMZ47JA-KA" id="97:2196"/>
+            </edges>
+            <edges xmi:id="_PBz6vCZ6EdyxLMZ47JA-KA" element="_PBz6sCZ6EdyxLMZ47JA-KA" source="_-_IhQCZ5EdyxLMZ47JA-KA" target="_AQliECZ6EdyxLMZ47JA-KA">
+              <children xmi:id="_PBz6vyZ6EdyxLMZ47JA-KA" type="MessageNameLabel" element="_PBz6sCZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_PB9EoSZ6EdyxLMZ47JA-KA" type="Stereotype" element="_PBz6sCZ6EdyxLMZ47JA-KA"/>
+                <children xmi:id="_PB9EoiZ6EdyxLMZ47JA-KA" type="Name" element="_PBz6sCZ6EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PB9EoCZ6EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_PBz6vSZ6EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PBz6viZ6EdyxLMZ47JA-KA" points="[0, 0, -226, 0]$[226, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PB9EoyZ6EdyxLMZ47JA-KA" id="114:953"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PB9EpCZ6EdyxLMZ47JA-KA" id="176:0"/>
+            </edges>
+            <edges xmi:id="_PCQmoyZ6EdyxLMZ47JA-KA" element="_PBz6uCZ6EdyxLMZ47JA-KA" source="_AQliECZ6EdyxLMZ47JA-KA" target="_-_IhQCZ5EdyxLMZ47JA-KA">
+              <children xmi:id="_PCQmpiZ6EdyxLMZ47JA-KA" type="MessageNameLabel" element="_PBz6uCZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_PCQmqCZ6EdyxLMZ47JA-KA" type="Stereotype" element="_PBz6uCZ6EdyxLMZ47JA-KA"/>
+                <children xmi:id="_PCQmqSZ6EdyxLMZ47JA-KA" type="Name" element="_PBz6uCZ6EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCQmpyZ6EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_PCQmpCZ6EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PCQmpSZ6EdyxLMZ47JA-KA" points="[0, 0, 226, 0]$[-226, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCQmqiZ6EdyxLMZ47JA-KA" id="177:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCQmqyZ6EdyxLMZ47JA-KA" id="178:0"/>
+            </edges>
+            <edges xmi:id="_REkcrCZ6EdyxLMZ47JA-KA" element="_REkcoCZ6EdyxLMZ47JA-KA" source="_-_IhQCZ5EdyxLMZ47JA-KA" target="_G3FU8SZ6EdyxLMZ47JA-KA">
+              <children xmi:id="_REkcryZ6EdyxLMZ47JA-KA" type="MessageNameLabel" element="_REkcoCZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_REkcsSZ6EdyxLMZ47JA-KA" type="Stereotype" element="_REkcoCZ6EdyxLMZ47JA-KA"/>
+                <children xmi:id="_REkcsiZ6EdyxLMZ47JA-KA" type="Name" element="_REkcoCZ6EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_REkcsCZ6EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_REkcrSZ6EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_REkcriZ6EdyxLMZ47JA-KA" points="[0, 0, -389, 0]$[389, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_REkcsyZ6EdyxLMZ47JA-KA" id="203:2010"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_REkctCZ6EdyxLMZ47JA-KA" id="310:0"/>
+            </edges>
+            <edges xmi:id="_RE3XkyZ6EdyxLMZ47JA-KA" element="_REkcqCZ6EdyxLMZ47JA-KA" source="_G3FU8SZ6EdyxLMZ47JA-KA" target="_-_IhQCZ5EdyxLMZ47JA-KA">
+              <children xmi:id="_RE3XliZ6EdyxLMZ47JA-KA" type="MessageNameLabel" element="_REkcqCZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_RE3XmCZ6EdyxLMZ47JA-KA" type="Stereotype" element="_REkcqCZ6EdyxLMZ47JA-KA"/>
+                <children xmi:id="_RE3XmSZ6EdyxLMZ47JA-KA" type="Name" element="_REkcqCZ6EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RE3XlyZ6EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RE3XlCZ6EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RE3XlSZ6EdyxLMZ47JA-KA" points="[0, 0, 389, 0]$[-389, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RE3XmiZ6EdyxLMZ47JA-KA" id="311:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RE3XmyZ6EdyxLMZ47JA-KA" id="312:0"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedConnector xmi:id="_MzS0syZ6EdyxLMZ47JA-KA">
+          <end xmi:id="_MzS0tCZ6EdyxLMZ47JA-KA" role="_---wQSZ5EdyxLMZ47JA-KA"/>
+          <end xmi:id="_MzS0tSZ6EdyxLMZ47JA-KA" role="_---wQSZ5EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_PBz6syZ6EdyxLMZ47JA-KA">
+          <end xmi:id="_PBz6tCZ6EdyxLMZ47JA-KA" role="_---wQSZ5EdyxLMZ47JA-KA"/>
+          <end xmi:id="_PBz6tSZ6EdyxLMZ47JA-KA" role="_AQcYISZ6EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_REkcoyZ6EdyxLMZ47JA-KA">
+          <end xmi:id="_REkcpCZ6EdyxLMZ47JA-KA" role="_---wQSZ5EdyxLMZ47JA-KA"/>
+          <end xmi:id="_REkcpSZ6EdyxLMZ47JA-KA" role="_G3FU8CZ6EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <lifeline xmi:id="_---wQCZ5EdyxLMZ47JA-KA" name="performDrugDoseCheckCapabilityImpl" coveredBy="_MzS0sSZ6EdyxLMZ47JA-KA _MzS0siZ6EdyxLMZ47JA-KA _Mzb-oCZ6EdyxLMZ47JA-KA _Mzb-oSZ6EdyxLMZ47JA-KA _PBz6sSZ6EdyxLMZ47JA-KA _PBz6uyZ6EdyxLMZ47JA-KA _REkcoSZ6EdyxLMZ47JA-KA _REkcqyZ6EdyxLMZ47JA-KA" represents="_---wQSZ5EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_AQcYICZ6EdyxLMZ47JA-KA" name="messageConversionUtility" coveredBy="_PBz6siZ6EdyxLMZ47JA-KA _PBz6tiZ6EdyxLMZ47JA-KA _PBz6tyZ6EdyxLMZ47JA-KA" represents="_AQcYISZ6EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_G28LACZ6EdyxLMZ47JA-KA" name="Property" coveredBy="_REkcoiZ6EdyxLMZ47JA-KA _REkcpiZ6EdyxLMZ47JA-KA _REkcpyZ6EdyxLMZ47JA-KA" represents="_G3FU8CZ6EdyxLMZ47JA-KA"/>
+        <message xmi:id="_MzS0sCZ6EdyxLMZ47JA-KA" name="convertResults" receiveEvent="_MzS0siZ6EdyxLMZ47JA-KA" sendEvent="_MzS0sSZ6EdyxLMZ47JA-KA" connector="_MzS0syZ6EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=convertResults^sign=(QDOSEScreenResults%3bQScreenDrugs%3bQMap%3b)QDrugCheckResultsVo%3b[jsrctype^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_PBz6sCZ6EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" receiveEvent="_PBz6siZ6EdyxLMZ47JA-KA" sendEvent="_PBz6sSZ6EdyxLMZ47JA-KA" connector="_PBz6syZ6EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_PBz6uCZ6EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" messageSort="synchSignal" receiveEvent="_PBz6uyZ6EdyxLMZ47JA-KA" sendEvent="_PBz6tyZ6EdyxLMZ47JA-KA" connector="_PBz6syZ6EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_PBz6uSZ6EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_PBz6uiZ6EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_REkcoCZ6EdyxLMZ47JA-KA" name="Drug Data Vendor Dose Check" receiveEvent="_REkcoiZ6EdyxLMZ47JA-KA" sendEvent="_REkcoSZ6EdyxLMZ47JA-KA" connector="_REkcoyZ6EdyxLMZ47JA-KA"/>
+        <message xmi:id="_REkcqCZ6EdyxLMZ47JA-KA" name="Drug Data Vendor Dose Check" messageSort="synchSignal" receiveEvent="_REkcqyZ6EdyxLMZ47JA-KA" sendEvent="_REkcpyZ6EdyxLMZ47JA-KA" connector="_REkcoyZ6EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_REkcqSZ6EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_REkcqiZ6EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+        </message>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_REkcoSZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" sendMessage="_REkcoCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_REkcoiZ6EdyxLMZ47JA-KA" covered="_G28LACZ6EdyxLMZ47JA-KA" receiveMessage="_REkcoCZ6EdyxLMZ47JA-KA" startExec="_REkcpiZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_REkcpiZ6EdyxLMZ47JA-KA" covered="_G28LACZ6EdyxLMZ47JA-KA" start="_REkcoiZ6EdyxLMZ47JA-KA" finish="_REkcpyZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_REkcpyZ6EdyxLMZ47JA-KA" covered="_G28LACZ6EdyxLMZ47JA-KA" sendMessage="_REkcqCZ6EdyxLMZ47JA-KA" finishExec="_REkcpiZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_REkcqyZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" receiveMessage="_REkcqCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MzS0sSZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" sendMessage="_MzS0sCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MzS0siZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" receiveMessage="_MzS0sCZ6EdyxLMZ47JA-KA" startExec="_Mzb-oCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_Mzb-oCZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" start="_MzS0siZ6EdyxLMZ47JA-KA" finish="_Mzb-oSZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_PBz6sSZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" sendMessage="_PBz6sCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_PBz6siZ6EdyxLMZ47JA-KA" covered="_AQcYICZ6EdyxLMZ47JA-KA" receiveMessage="_PBz6sCZ6EdyxLMZ47JA-KA" startExec="_PBz6tiZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_PBz6tiZ6EdyxLMZ47JA-KA" covered="_AQcYICZ6EdyxLMZ47JA-KA" start="_PBz6siZ6EdyxLMZ47JA-KA" finish="_PBz6tyZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_PBz6tyZ6EdyxLMZ47JA-KA" covered="_AQcYICZ6EdyxLMZ47JA-KA" sendMessage="_PBz6uCZ6EdyxLMZ47JA-KA" finishExec="_PBz6tiZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_PBz6uyZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" receiveMessage="_PBz6uCZ6EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_Mzb-oSZ6EdyxLMZ47JA-KA" covered="_---wQCZ5EdyxLMZ47JA-KA" finishExec="_Mzb-oCZ6EdyxLMZ47JA-KA"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_---wQSZ5EdyxLMZ47JA-KA" end="_MzS0tCZ6EdyxLMZ47JA-KA _MzS0tSZ6EdyxLMZ47JA-KA _PBz6tCZ6EdyxLMZ47JA-KA _REkcpCZ6EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDoseCheckCapabilityImpl[jcu^name=PerformDrugDoseCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AQcYISZ6EdyxLMZ47JA-KA" end="_PBz6tSZ6EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3FU8CZ6EdyxLMZ47JA-KA" name="Drug Data Vendor" end="_REkcpSZ6EdyxLMZ47JA-KA"/>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Collaboration" xmi:id="_9F55UCZ6EdyxLMZ47JA-KA" name="Drug Drug">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_9F55USZ6EdyxLMZ47JA-KA" name="Perform Drug Drug Check">
+        <eAnnotations xmi:id="_9F55UiZ6EdyxLMZ47JA-KA" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_9F55UyZ6EdyxLMZ47JA-KA" type="Sequence" element="_9F55USZ6EdyxLMZ47JA-KA" name="Sequence Diagram">
+            <children xmi:id="_9F55VCZ6EdyxLMZ47JA-KA" element="_9F55USZ6EdyxLMZ47JA-KA">
+              <children xmi:id="_9F55VSZ6EdyxLMZ47JA-KA" type="interaction_compartment" element="_9F55USZ6EdyxLMZ47JA-KA">
+                <children xmi:id="_E1rBYCZ7EdyxLMZ47JA-KA" sourceEdges="_KopFnCZ7EdyxLMZ47JA-KA _MxXFmiZ7EdyxLMZ47JA-KA _OafmnCZ7EdyxLMZ47JA-KA" targetEdges="_Ko8AgyZ7EdyxLMZ47JA-KA _MxXFmiZ7EdyxLMZ47JA-KA _OayhgyZ7EdyxLMZ47JA-KA" element="_E1h3cCZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_E1rBYyZ7EdyxLMZ47JA-KA" type="Name" element="_E1h3cCZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_E1rBYSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E1rBYiZ7EdyxLMZ47JA-KA" x="265" y="688"/>
+                </children>
+                <children xmi:id="_FaAdgCZ7EdyxLMZ47JA-KA" sourceEdges="_OayhgyZ7EdyxLMZ47JA-KA" targetEdges="_OafmnCZ7EdyxLMZ47JA-KA" element="_FZ3TkCZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_FaAdgyZ7EdyxLMZ47JA-KA" type="Name" element="_FZ3TkCZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_FaAdgSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FaAdgiZ7EdyxLMZ47JA-KA" x="155" y="423"/>
+                </children>
+                <children xmi:id="_JOsQECZ7EdyxLMZ47JA-KA" sourceEdges="_Ko8AgyZ7EdyxLMZ47JA-KA" targetEdges="_KopFnCZ7EdyxLMZ47JA-KA" element="_JOjGICZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_JOsQEyZ7EdyxLMZ47JA-KA" type="Name" element="_JOjGICZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_JOsQESZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JOsQEiZ7EdyxLMZ47JA-KA" x="106" y="132" width="3257" height="15875"/>
+                </children>
+                <children xmi:id="_Ko8AgCZ7EdyxLMZ47JA-KA" element="_KopFliZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Ko8AgSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ko8AgiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <children xmi:id="_MxqAgCZ7EdyxLMZ47JA-KA" element="_MxXFlCZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_MxqAgSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MxqAgiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="503"/>
+                </children>
+                <children xmi:id="_OayhgCZ7EdyxLMZ47JA-KA" element="_OafmliZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OayhgSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OayhgiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_9F55ViZ6EdyxLMZ47JA-KA"/>
+              </children>
+              <children xmi:id="_9F55VyZ6EdyxLMZ47JA-KA" type="Name" element="_9F55USZ6EdyxLMZ47JA-KA"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9F55WCZ6EdyxLMZ47JA-KA" lineColor="0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9F55WSZ6EdyxLMZ47JA-KA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_9F55WiZ6EdyxLMZ47JA-KA"/>
+            <edges xmi:id="_KopFnCZ7EdyxLMZ47JA-KA" element="_KopFkCZ7EdyxLMZ47JA-KA" source="_E1rBYCZ7EdyxLMZ47JA-KA" target="_JOsQECZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_KopFnyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_KopFkCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_KopFoSZ7EdyxLMZ47JA-KA" type="Stereotype" element="_KopFkCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_KopFoiZ7EdyxLMZ47JA-KA" type="Name" element="_KopFkCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KopFoCZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_KopFnSZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KopFniZ7EdyxLMZ47JA-KA" points="[0, 0, -377, 0]$[377, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KopFoyZ7EdyxLMZ47JA-KA" id="339:2090"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KopFpCZ7EdyxLMZ47JA-KA" id="391:0"/>
+            </edges>
+            <edges xmi:id="_Ko8AgyZ7EdyxLMZ47JA-KA" element="_KopFmCZ7EdyxLMZ47JA-KA" source="_JOsQECZ7EdyxLMZ47JA-KA" target="_E1rBYCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_Ko8AhiZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_KopFmCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_Ko8AiCZ7EdyxLMZ47JA-KA" type="Stereotype" element="_KopFmCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_Ko8AiSZ7EdyxLMZ47JA-KA" type="Name" element="_KopFmCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ko8AhyZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Ko8AhCZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ko8AhSZ7EdyxLMZ47JA-KA" points="[0, 0, 377, 0]$[-377, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ko8AiiZ7EdyxLMZ47JA-KA" id="392:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ko8AiyZ7EdyxLMZ47JA-KA" id="393:0"/>
+            </edges>
+            <edges xmi:id="_MxXFmiZ7EdyxLMZ47JA-KA" element="_MxNUkCZ7EdyxLMZ47JA-KA" source="_E1rBYCZ7EdyxLMZ47JA-KA" target="_E1rBYCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_MxXFnSZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_MxNUkCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_MxXFnyZ7EdyxLMZ47JA-KA" type="Stereotype" element="_MxNUkCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_MxXFoCZ7EdyxLMZ47JA-KA" type="Name" element="_MxNUkCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MxXFniZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MxXFmyZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MxXFnCZ7EdyxLMZ47JA-KA" points="[0, 0, 0, -69]$[0, 69, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MxXFoSZ7EdyxLMZ47JA-KA" id="404:953"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MxXFoiZ7EdyxLMZ47JA-KA" id="686:1826"/>
+            </edges>
+            <edges xmi:id="_OafmnCZ7EdyxLMZ47JA-KA" element="_OafmkCZ7EdyxLMZ47JA-KA" source="_E1rBYCZ7EdyxLMZ47JA-KA" target="_FaAdgCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_OafmnyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_OafmkCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_OafmoSZ7EdyxLMZ47JA-KA" type="Stereotype" element="_OafmkCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_OafmoiZ7EdyxLMZ47JA-KA" type="Name" element="_OafmkCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OafmoCZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_OafmnSZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OafmniZ7EdyxLMZ47JA-KA" points="[0, 0, -217, 0]$[217, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OafmoyZ7EdyxLMZ47JA-KA" id="714:1138"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OafmpCZ7EdyxLMZ47JA-KA" id="761:0"/>
+            </edges>
+            <edges xmi:id="_OayhgyZ7EdyxLMZ47JA-KA" element="_OafmmCZ7EdyxLMZ47JA-KA" source="_FaAdgCZ7EdyxLMZ47JA-KA" target="_E1rBYCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_OayhhiZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_OafmmCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_OayhiCZ7EdyxLMZ47JA-KA" type="Stereotype" element="_OafmmCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_OayhiSZ7EdyxLMZ47JA-KA" type="Name" element="_OafmmCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OayhhyZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_OayhhCZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OayhhSZ7EdyxLMZ47JA-KA" points="[0, 0, 217, 0]$[-217, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OayhiiZ7EdyxLMZ47JA-KA" id="762:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OayhiyZ7EdyxLMZ47JA-KA" id="763:0"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedConnector xmi:id="_KopFkyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_KopFlCZ7EdyxLMZ47JA-KA" role="_E1h3cSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_KopFlSZ7EdyxLMZ47JA-KA" role="_JOjGISZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_MxXFkSZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_MxXFkiZ7EdyxLMZ47JA-KA" role="_E1h3cSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_MxXFkyZ7EdyxLMZ47JA-KA" role="_E1h3cSZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_OafmkyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_OafmlCZ7EdyxLMZ47JA-KA" role="_E1h3cSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_OafmlSZ7EdyxLMZ47JA-KA" role="_FZ3TkSZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <lifeline xmi:id="_E1h3cCZ7EdyxLMZ47JA-KA" name="performDrugDrugCheckCapabilityImpl" coveredBy="_KopFkSZ7EdyxLMZ47JA-KA _KopFmyZ7EdyxLMZ47JA-KA _MxNUkSZ7EdyxLMZ47JA-KA _MxXFkCZ7EdyxLMZ47JA-KA _MxXFlCZ7EdyxLMZ47JA-KA _MxXFlSZ7EdyxLMZ47JA-KA _OafmkSZ7EdyxLMZ47JA-KA _OafmmyZ7EdyxLMZ47JA-KA" represents="_E1h3cSZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_FZ3TkCZ7EdyxLMZ47JA-KA" name="messageConversionUtility" coveredBy="_OafmkiZ7EdyxLMZ47JA-KA _OafmliZ7EdyxLMZ47JA-KA _OafmlyZ7EdyxLMZ47JA-KA" represents="_FZ3TkSZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_JOjGICZ7EdyxLMZ47JA-KA" name="Property" coveredBy="_KopFkiZ7EdyxLMZ47JA-KA _KopFliZ7EdyxLMZ47JA-KA _KopFlyZ7EdyxLMZ47JA-KA" represents="_JOjGISZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_KopFkCZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Drug Drug Check" receiveEvent="_KopFkiZ7EdyxLMZ47JA-KA" sendEvent="_KopFkSZ7EdyxLMZ47JA-KA" connector="_KopFkyZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_KopFmCZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Drug Drug Check" messageSort="synchSignal" receiveEvent="_KopFmyZ7EdyxLMZ47JA-KA" sendEvent="_KopFlyZ7EdyxLMZ47JA-KA" connector="_KopFkyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_KopFmSZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_KopFmiZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+        </message>
+        <message xmi:id="_MxNUkCZ7EdyxLMZ47JA-KA" name="convertResults" receiveEvent="_MxXFkCZ7EdyxLMZ47JA-KA" sendEvent="_MxNUkSZ7EdyxLMZ47JA-KA" connector="_MxXFkSZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=convertResults^sign=(QDDIMScreenResults%3bQScreenDrugs%3bQMap%3b)QDrugCheckResultsVo%3b[jsrctype^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_OafmkCZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" receiveEvent="_OafmkiZ7EdyxLMZ47JA-KA" sendEvent="_OafmkSZ7EdyxLMZ47JA-KA" connector="_OafmkyZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_OafmmCZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" messageSort="synchSignal" receiveEvent="_OafmmyZ7EdyxLMZ47JA-KA" sendEvent="_OafmlyZ7EdyxLMZ47JA-KA" connector="_OafmkyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_OafmmSZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_OafmmiZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_KopFkSZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" sendMessage="_KopFkCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_KopFkiZ7EdyxLMZ47JA-KA" covered="_JOjGICZ7EdyxLMZ47JA-KA" receiveMessage="_KopFkCZ7EdyxLMZ47JA-KA" startExec="_KopFliZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_KopFliZ7EdyxLMZ47JA-KA" covered="_JOjGICZ7EdyxLMZ47JA-KA" start="_KopFkiZ7EdyxLMZ47JA-KA" finish="_KopFlyZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_KopFlyZ7EdyxLMZ47JA-KA" covered="_JOjGICZ7EdyxLMZ47JA-KA" sendMessage="_KopFmCZ7EdyxLMZ47JA-KA" finishExec="_KopFliZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_KopFmyZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" receiveMessage="_KopFmCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MxNUkSZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" sendMessage="_MxNUkCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MxXFkCZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" receiveMessage="_MxNUkCZ7EdyxLMZ47JA-KA" startExec="_MxXFlCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_MxXFlCZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" start="_MxXFkCZ7EdyxLMZ47JA-KA" finish="_MxXFlSZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_OafmkSZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" sendMessage="_OafmkCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_OafmkiZ7EdyxLMZ47JA-KA" covered="_FZ3TkCZ7EdyxLMZ47JA-KA" receiveMessage="_OafmkCZ7EdyxLMZ47JA-KA" startExec="_OafmliZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_OafmliZ7EdyxLMZ47JA-KA" covered="_FZ3TkCZ7EdyxLMZ47JA-KA" start="_OafmkiZ7EdyxLMZ47JA-KA" finish="_OafmlyZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_OafmlyZ7EdyxLMZ47JA-KA" covered="_FZ3TkCZ7EdyxLMZ47JA-KA" sendMessage="_OafmmCZ7EdyxLMZ47JA-KA" finishExec="_OafmliZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_OafmmyZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" receiveMessage="_OafmmCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MxXFlSZ7EdyxLMZ47JA-KA" covered="_E1h3cCZ7EdyxLMZ47JA-KA" finishExec="_MxXFlCZ7EdyxLMZ47JA-KA"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_E1h3cSZ7EdyxLMZ47JA-KA" end="_KopFlCZ7EdyxLMZ47JA-KA _MxXFkiZ7EdyxLMZ47JA-KA _MxXFkyZ7EdyxLMZ47JA-KA _OafmlCZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugDrugCheckCapabilityImpl[jcu^name=PerformDrugDrugCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FZ3TkSZ7EdyxLMZ47JA-KA" end="_OafmlSZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JOjGISZ7EdyxLMZ47JA-KA" name="Drug Data Vendor" end="_KopFlSZ7EdyxLMZ47JA-KA"/>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Collaboration" xmi:id="_egKCkCZ7EdyxLMZ47JA-KA" name="Drug Ingredient">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_egKCkSZ7EdyxLMZ47JA-KA" name="Perform Drug Ingredient Check">
+        <eAnnotations xmi:id="_egKCkiZ7EdyxLMZ47JA-KA" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_egKCkyZ7EdyxLMZ47JA-KA" type="Sequence" element="_egKCkSZ7EdyxLMZ47JA-KA" name="Sequence Diagram">
+            <children xmi:id="_egKClCZ7EdyxLMZ47JA-KA" element="_egKCkSZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_egKClSZ7EdyxLMZ47JA-KA" type="interaction_compartment" element="_egKCkSZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_i5xHICZ7EdyxLMZ47JA-KA" sourceEdges="_mgJ_DCZ7EdyxLMZ47JA-KA _pCL27CZ7EdyxLMZ47JA-KA _qU1xlyZ7EdyxLMZ47JA-KA" targetEdges="_mgc58yZ7EdyxLMZ47JA-KA _pCL27CZ7EdyxLMZ47JA-KA _qVIsgyZ7EdyxLMZ47JA-KA" element="_i5n9MCZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_i5xHIyZ7EdyxLMZ47JA-KA" type="Name" element="_i5n9MCZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_i5xHISZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i5xHIiZ7EdyxLMZ47JA-KA" x="265" y="318"/>
+                </children>
+                <children xmi:id="_j0S1siZ7EdyxLMZ47JA-KA" sourceEdges="_qVIsgyZ7EdyxLMZ47JA-KA" targetEdges="_qU1xlyZ7EdyxLMZ47JA-KA" element="_j0S1sCZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_j0S1tSZ7EdyxLMZ47JA-KA" type="Name" element="_j0S1sCZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_j0S1syZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j0S1tCZ7EdyxLMZ47JA-KA" x="155" y="290"/>
+                </children>
+                <children xmi:id="_lPJDECZ7EdyxLMZ47JA-KA" sourceEdges="_mgc58yZ7EdyxLMZ47JA-KA" targetEdges="_mgJ_DCZ7EdyxLMZ47JA-KA" element="_lO_SECZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_lPJDEyZ7EdyxLMZ47JA-KA" type="Name" element="_lO_SECZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_lPJDESZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lPJDEiZ7EdyxLMZ47JA-KA" x="265" y="8069"/>
+                </children>
+                <children xmi:id="_mgc58CZ7EdyxLMZ47JA-KA" element="_mgJ_BiZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mgc58SZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mgc58iZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <children xmi:id="_pCex0CZ7EdyxLMZ47JA-KA" element="_pCL25iZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pCex0SZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pCex0iZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="847"/>
+                </children>
+                <children xmi:id="_qVIsgCZ7EdyxLMZ47JA-KA" element="_qU1xkSZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_qVIsgSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qVIsgiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_egKCliZ7EdyxLMZ47JA-KA"/>
+              </children>
+              <children xmi:id="_egKClyZ7EdyxLMZ47JA-KA" type="Name" element="_egKCkSZ7EdyxLMZ47JA-KA"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_egKCmCZ7EdyxLMZ47JA-KA" lineColor="0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_egKCmSZ7EdyxLMZ47JA-KA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_egKCmiZ7EdyxLMZ47JA-KA"/>
+            <edges xmi:id="_mgJ_DCZ7EdyxLMZ47JA-KA" element="_mgJ_ACZ7EdyxLMZ47JA-KA" source="_i5xHICZ7EdyxLMZ47JA-KA" target="_lPJDECZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_mgJ_DyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_mgJ_ACZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_mgJ_ESZ7EdyxLMZ47JA-KA" type="Stereotype" element="_mgJ_ACZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_mgJ_EiZ7EdyxLMZ47JA-KA" type="Name" element="_mgJ_ACZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mgJ_ECZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_mgJ_DSZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mgJ_DiZ7EdyxLMZ47JA-KA" points="[0, 0, -392, 0]$[392, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mgJ_EyZ7EdyxLMZ47JA-KA" id="786:2011"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mgJ_FCZ7EdyxLMZ47JA-KA" id="838:0"/>
+            </edges>
+            <edges xmi:id="_mgc58yZ7EdyxLMZ47JA-KA" element="_mgJ_CCZ7EdyxLMZ47JA-KA" source="_lPJDECZ7EdyxLMZ47JA-KA" target="_i5xHICZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_mgc59iZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_mgJ_CCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_mgc5-CZ7EdyxLMZ47JA-KA" type="Stereotype" element="_mgJ_CCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_mgc5-SZ7EdyxLMZ47JA-KA" type="Name" element="_mgJ_CCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mgc59yZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_mgc59CZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mgc59SZ7EdyxLMZ47JA-KA" points="[0, 0, 392, 0]$[-392, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mgc5-iZ7EdyxLMZ47JA-KA" id="839:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mgc5-yZ7EdyxLMZ47JA-KA" id="840:0"/>
+            </edges>
+            <edges xmi:id="_pCL27CZ7EdyxLMZ47JA-KA" element="_pCL24CZ7EdyxLMZ47JA-KA" source="_i5xHICZ7EdyxLMZ47JA-KA" target="_i5xHICZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_pCL27yZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_pCL24CZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_pCL28SZ7EdyxLMZ47JA-KA" type="Stereotype" element="_pCL24CZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_pCL28iZ7EdyxLMZ47JA-KA" type="Name" element="_pCL24CZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pCL28CZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pCL27SZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pCL27iZ7EdyxLMZ47JA-KA" points="[0, 0, 0, -78]$[0, 78, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pCL28yZ7EdyxLMZ47JA-KA" id="855:1058"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pCL29CZ7EdyxLMZ47JA-KA" id="982:2064"/>
+            </edges>
+            <edges xmi:id="_qU1xlyZ7EdyxLMZ47JA-KA" element="_qUsAkCZ7EdyxLMZ47JA-KA" source="_i5xHICZ7EdyxLMZ47JA-KA" target="_j0S1siZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_qU1xmiZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_qUsAkCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_qU1xnCZ7EdyxLMZ47JA-KA" type="Stereotype" element="_qUsAkCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_qU1xnSZ7EdyxLMZ47JA-KA" type="Name" element="_qUsAkCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qU1xmyZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_qU1xmCZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qU1xmSZ7EdyxLMZ47JA-KA" points="[0, 0, -232, 0]$[232, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qU1xniZ7EdyxLMZ47JA-KA" id="998:873"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qU1xnyZ7EdyxLMZ47JA-KA" id="1035:0"/>
+            </edges>
+            <edges xmi:id="_qVIsgyZ7EdyxLMZ47JA-KA" element="_qU1xkyZ7EdyxLMZ47JA-KA" source="_j0S1siZ7EdyxLMZ47JA-KA" target="_i5xHICZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_qVIshiZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_qU1xkyZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_qVIsiCZ7EdyxLMZ47JA-KA" type="Stereotype" element="_qU1xkyZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_qVIsiSZ7EdyxLMZ47JA-KA" type="Name" element="_qU1xkyZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qVIshyZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_qVIshCZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qVIshSZ7EdyxLMZ47JA-KA" points="[0, 0, 232, 0]$[-232, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qVIsiiZ7EdyxLMZ47JA-KA" id="1036:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qVIsiyZ7EdyxLMZ47JA-KA" id="1037:0"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedConnector xmi:id="_mgJ_AyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_mgJ_BCZ7EdyxLMZ47JA-KA" role="_i5n9MSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_mgJ_BSZ7EdyxLMZ47JA-KA" role="_lO_SESZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_pCL24yZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_pCL25CZ7EdyxLMZ47JA-KA" role="_i5n9MSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_pCL25SZ7EdyxLMZ47JA-KA" role="_i5n9MSZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_qUsAkyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_qUsAlCZ7EdyxLMZ47JA-KA" role="_i5n9MSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_qU1xkCZ7EdyxLMZ47JA-KA" role="_j0S1sSZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <lifeline xmi:id="_i5n9MCZ7EdyxLMZ47JA-KA" name="performDrugIngredientCheckCapabilityImpl" coveredBy="_mgJ_ASZ7EdyxLMZ47JA-KA _mgJ_CyZ7EdyxLMZ47JA-KA _pCL24SZ7EdyxLMZ47JA-KA _pCL24iZ7EdyxLMZ47JA-KA _pCL25iZ7EdyxLMZ47JA-KA _pCL25yZ7EdyxLMZ47JA-KA _qUsAkSZ7EdyxLMZ47JA-KA _qU1xliZ7EdyxLMZ47JA-KA" represents="_i5n9MSZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_j0S1sCZ7EdyxLMZ47JA-KA" name="messageConversionUtility" coveredBy="_qUsAkiZ7EdyxLMZ47JA-KA _qU1xkSZ7EdyxLMZ47JA-KA _qU1xkiZ7EdyxLMZ47JA-KA" represents="_j0S1sSZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_lO_SECZ7EdyxLMZ47JA-KA" name="Property" coveredBy="_mgJ_AiZ7EdyxLMZ47JA-KA _mgJ_BiZ7EdyxLMZ47JA-KA _mgJ_ByZ7EdyxLMZ47JA-KA" represents="_lO_SESZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_mgJ_ACZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Ingredient Check" receiveEvent="_mgJ_AiZ7EdyxLMZ47JA-KA" sendEvent="_mgJ_ASZ7EdyxLMZ47JA-KA" connector="_mgJ_AyZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_mgJ_CCZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Ingredient Check" messageSort="synchSignal" receiveEvent="_mgJ_CyZ7EdyxLMZ47JA-KA" sendEvent="_mgJ_ByZ7EdyxLMZ47JA-KA" connector="_mgJ_AyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_mgJ_CSZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_mgJ_CiZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+        </message>
+        <message xmi:id="_pCL24CZ7EdyxLMZ47JA-KA" name="convertResults" receiveEvent="_pCL24iZ7EdyxLMZ47JA-KA" sendEvent="_pCL24SZ7EdyxLMZ47JA-KA" connector="_pCL24yZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=convertResults^sign=(QDIScreenResults%3bQScreenDrugs%3bQMap%3b)QDrugCheckResultsVo%3b[jsrctype^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_qUsAkCZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" receiveEvent="_qUsAkiZ7EdyxLMZ47JA-KA" sendEvent="_qUsAkSZ7EdyxLMZ47JA-KA" connector="_qUsAkyZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_qU1xkyZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" messageSort="synchSignal" receiveEvent="_qU1xliZ7EdyxLMZ47JA-KA" sendEvent="_qU1xkiZ7EdyxLMZ47JA-KA" connector="_qUsAkyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_qU1xlCZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_qU1xlSZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_mgJ_ASZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" sendMessage="_mgJ_ACZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_mgJ_AiZ7EdyxLMZ47JA-KA" covered="_lO_SECZ7EdyxLMZ47JA-KA" receiveMessage="_mgJ_ACZ7EdyxLMZ47JA-KA" startExec="_mgJ_BiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_mgJ_BiZ7EdyxLMZ47JA-KA" covered="_lO_SECZ7EdyxLMZ47JA-KA" start="_mgJ_AiZ7EdyxLMZ47JA-KA" finish="_mgJ_ByZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_mgJ_ByZ7EdyxLMZ47JA-KA" covered="_lO_SECZ7EdyxLMZ47JA-KA" sendMessage="_mgJ_CCZ7EdyxLMZ47JA-KA" finishExec="_mgJ_BiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_mgJ_CyZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" receiveMessage="_mgJ_CCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_pCL24SZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" sendMessage="_pCL24CZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_pCL24iZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" receiveMessage="_pCL24CZ7EdyxLMZ47JA-KA" startExec="_pCL25iZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_pCL25iZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" start="_pCL24iZ7EdyxLMZ47JA-KA" finish="_pCL25yZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_qUsAkSZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" sendMessage="_qUsAkCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_qUsAkiZ7EdyxLMZ47JA-KA" covered="_j0S1sCZ7EdyxLMZ47JA-KA" receiveMessage="_qUsAkCZ7EdyxLMZ47JA-KA" startExec="_qU1xkSZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_qU1xkSZ7EdyxLMZ47JA-KA" covered="_j0S1sCZ7EdyxLMZ47JA-KA" start="_qUsAkiZ7EdyxLMZ47JA-KA" finish="_qU1xkiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_qU1xkiZ7EdyxLMZ47JA-KA" covered="_j0S1sCZ7EdyxLMZ47JA-KA" sendMessage="_qU1xkyZ7EdyxLMZ47JA-KA" finishExec="_qU1xkSZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_qU1xliZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" receiveMessage="_qU1xkyZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_pCL25yZ7EdyxLMZ47JA-KA" covered="_i5n9MCZ7EdyxLMZ47JA-KA" finishExec="_pCL25iZ7EdyxLMZ47JA-KA"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_i5n9MSZ7EdyxLMZ47JA-KA" end="_mgJ_BCZ7EdyxLMZ47JA-KA _pCL25CZ7EdyxLMZ47JA-KA _pCL25SZ7EdyxLMZ47JA-KA _qUsAlCZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugIngredientCheckCapabilityImpl[jcu^name=PerformDrugIngredientCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j0S1sSZ7EdyxLMZ47JA-KA" end="_qU1xkCZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lO_SESZ7EdyxLMZ47JA-KA" name="Drug Data Vendor" end="_mgJ_BSZ7EdyxLMZ47JA-KA"/>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Collaboration" xmi:id="_xbDmUCZ7EdyxLMZ47JA-KA" name="Drug Therapy">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_xbDmUSZ7EdyxLMZ47JA-KA" name="Perform Drug Therapy Check">
+        <eAnnotations xmi:id="_xbDmUiZ7EdyxLMZ47JA-KA" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_xbDmUyZ7EdyxLMZ47JA-KA" type="Sequence" element="_xbDmUSZ7EdyxLMZ47JA-KA" name="Sequence Diagram">
+            <children xmi:id="_xbDmVCZ7EdyxLMZ47JA-KA" element="_xbDmUSZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_xbDmVSZ7EdyxLMZ47JA-KA" type="interaction_compartment" element="_xbDmUSZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_3AeWsCZ7EdyxLMZ47JA-KA" sourceEdges="_6bGDfCZ7EdyxLMZ47JA-KA _8UnJ3CZ7EdyxLMZ47JA-KA _97-JPCZ7EdyxLMZ47JA-KA" targetEdges="_6bY-YyZ7EdyxLMZ47JA-KA _8UnJ3CZ7EdyxLMZ47JA-KA _98a1ICZ7EdyxLMZ47JA-KA" element="_3AUlsCZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_3AeWsyZ7EdyxLMZ47JA-KA" type="Name" element="_3AUlsCZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_3AeWsSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AeWsiZ7EdyxLMZ47JA-KA" x="265" y="715"/>
+                </children>
+                <children xmi:id="_4VELECZ7EdyxLMZ47JA-KA" sourceEdges="_98a1ICZ7EdyxLMZ47JA-KA" targetEdges="_97-JPCZ7EdyxLMZ47JA-KA" element="_4U6aECZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_4VELEyZ7EdyxLMZ47JA-KA" type="Name" element="_4U6aECZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_4VELESZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4VELEiZ7EdyxLMZ47JA-KA" x="102" y="317"/>
+                </children>
+                <children xmi:id="_5SuGICZ7EdyxLMZ47JA-KA" sourceEdges="_6bY-YyZ7EdyxLMZ47JA-KA" targetEdges="_6bGDfCZ7EdyxLMZ47JA-KA" element="_5SkVICZ7EdyxLMZ47JA-KA">
+                  <children xmi:id="_5SuGIyZ7EdyxLMZ47JA-KA" type="Name" element="_5SkVICZ7EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5SuGISZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5SuGIiZ7EdyxLMZ47JA-KA" x="265" y="8069"/>
+                </children>
+                <children xmi:id="_6bY-YCZ7EdyxLMZ47JA-KA" element="_6bGDdiZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6bY-YSZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bY-YiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <children xmi:id="_8U6r0CZ7EdyxLMZ47JA-KA" element="_8UnJ1iZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8U6r0SZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8U6r0iZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="661"/>
+                </children>
+                <children xmi:id="_98REICZ7EdyxLMZ47JA-KA" element="_97-JNiZ7EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_98REISZ7EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_98REIiZ7EdyxLMZ47JA-KA" x="-1" y="1323" height="1323"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_xbDmViZ7EdyxLMZ47JA-KA"/>
+              </children>
+              <children xmi:id="_xbDmVyZ7EdyxLMZ47JA-KA" type="Name" element="_xbDmUSZ7EdyxLMZ47JA-KA"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xbDmWCZ7EdyxLMZ47JA-KA" lineColor="0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbDmWSZ7EdyxLMZ47JA-KA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_xbDmWiZ7EdyxLMZ47JA-KA"/>
+            <edges xmi:id="_6bGDfCZ7EdyxLMZ47JA-KA" element="_6bGDcCZ7EdyxLMZ47JA-KA" source="_3AeWsCZ7EdyxLMZ47JA-KA" target="_5SuGICZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_6bGDfyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_6bGDcCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_6bGDgSZ7EdyxLMZ47JA-KA" type="Stereotype" element="_6bGDcCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_6bGDgiZ7EdyxLMZ47JA-KA" type="Name" element="_6bGDcCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bGDgCZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_6bGDfSZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6bGDfiZ7EdyxLMZ47JA-KA" points="[0, 0, -386, 0]$[386, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bGDgyZ7EdyxLMZ47JA-KA" id="1055:2142"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bGDhCZ7EdyxLMZ47JA-KA" id="1212:0"/>
+            </edges>
+            <edges xmi:id="_6bY-YyZ7EdyxLMZ47JA-KA" element="_6bGDeCZ7EdyxLMZ47JA-KA" source="_5SuGICZ7EdyxLMZ47JA-KA" target="_3AeWsCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_6bY-ZiZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_6bGDeCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_6bivYCZ7EdyxLMZ47JA-KA" type="Stereotype" element="_6bGDeCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_6bivYSZ7EdyxLMZ47JA-KA" type="Name" element="_6bGDeCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bY-ZyZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_6bY-ZCZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6bY-ZSZ7EdyxLMZ47JA-KA" points="[0, 0, 386, 0]$[-386, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bivYiZ7EdyxLMZ47JA-KA" id="1213:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bivYyZ7EdyxLMZ47JA-KA" id="1214:0"/>
+            </edges>
+            <edges xmi:id="_8UnJ3CZ7EdyxLMZ47JA-KA" element="_8UnJ0CZ7EdyxLMZ47JA-KA" source="_3AeWsCZ7EdyxLMZ47JA-KA" target="_3AeWsCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_8UnJ3yZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_8UnJ0CZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_8UnJ4SZ7EdyxLMZ47JA-KA" type="Stereotype" element="_8UnJ0CZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_8UnJ4iZ7EdyxLMZ47JA-KA" type="Name" element="_8UnJ0CZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8UnJ4CZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_8UnJ3SZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8UnJ3iZ7EdyxLMZ47JA-KA" points="[0, 0, 0, -74]$[0, 74, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8UnJ4yZ7EdyxLMZ47JA-KA" id="1226:1217"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8UnJ5CZ7EdyxLMZ47JA-KA" id="1398:1958"/>
+            </edges>
+            <edges xmi:id="_97-JPCZ7EdyxLMZ47JA-KA" element="_97-JMCZ7EdyxLMZ47JA-KA" source="_3AeWsCZ7EdyxLMZ47JA-KA" target="_4VELECZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_97-JPyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_97-JMCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_97-JQSZ7EdyxLMZ47JA-KA" type="Stereotype" element="_97-JMCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_97-JQiZ7EdyxLMZ47JA-KA" type="Name" element="_97-JMCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_97-JQCZ7EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_97-JPSZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_97-JPiZ7EdyxLMZ47JA-KA" points="[0, 0, -226, 0]$[226, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_97-JQyZ7EdyxLMZ47JA-KA" id="1411:873"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_97-JRCZ7EdyxLMZ47JA-KA" id="1458:0"/>
+            </edges>
+            <edges xmi:id="_98a1ICZ7EdyxLMZ47JA-KA" element="_97-JOCZ7EdyxLMZ47JA-KA" source="_4VELECZ7EdyxLMZ47JA-KA" target="_3AeWsCZ7EdyxLMZ47JA-KA">
+              <children xmi:id="_98a1IyZ7EdyxLMZ47JA-KA" type="MessageNameLabel" element="_97-JOCZ7EdyxLMZ47JA-KA">
+                <children xmi:id="_98a1JSZ7EdyxLMZ47JA-KA" type="Stereotype" element="_97-JOCZ7EdyxLMZ47JA-KA"/>
+                <children xmi:id="_98a1JiZ7EdyxLMZ47JA-KA" type="Name" element="_97-JOCZ7EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_98a1JCZ7EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_98a1ISZ7EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_98a1IiZ7EdyxLMZ47JA-KA" points="[0, 0, 226, 0]$[-226, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_98a1JyZ7EdyxLMZ47JA-KA" id="1459:1323"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_98a1KCZ7EdyxLMZ47JA-KA" id="1460:0"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedConnector xmi:id="_6bGDcyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_6bGDdCZ7EdyxLMZ47JA-KA" role="_3AUlsSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_6bGDdSZ7EdyxLMZ47JA-KA" role="_5SkVISZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_8UnJ0yZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_8UnJ1CZ7EdyxLMZ47JA-KA" role="_3AUlsSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_8UnJ1SZ7EdyxLMZ47JA-KA" role="_3AUlsSZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_97-JMyZ7EdyxLMZ47JA-KA">
+          <end xmi:id="_97-JNCZ7EdyxLMZ47JA-KA" role="_3AUlsSZ7EdyxLMZ47JA-KA"/>
+          <end xmi:id="_97-JNSZ7EdyxLMZ47JA-KA" role="_4U6aESZ7EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <lifeline xmi:id="_3AUlsCZ7EdyxLMZ47JA-KA" name="performDrugTherapyCheckCapabilityImpl" coveredBy="_6bGDcSZ7EdyxLMZ47JA-KA _6bGDeyZ7EdyxLMZ47JA-KA _8UnJ0SZ7EdyxLMZ47JA-KA _8UnJ0iZ7EdyxLMZ47JA-KA _8UnJ1iZ7EdyxLMZ47JA-KA _8UnJ1yZ7EdyxLMZ47JA-KA _97-JMSZ7EdyxLMZ47JA-KA _97-JOyZ7EdyxLMZ47JA-KA" represents="_3AUlsSZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_4U6aECZ7EdyxLMZ47JA-KA" name="messageConversionUtility" coveredBy="_97-JMiZ7EdyxLMZ47JA-KA _97-JNiZ7EdyxLMZ47JA-KA _97-JNyZ7EdyxLMZ47JA-KA" represents="_4U6aESZ7EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_5SkVICZ7EdyxLMZ47JA-KA" name="Property" coveredBy="_6bGDciZ7EdyxLMZ47JA-KA _6bGDdiZ7EdyxLMZ47JA-KA _6bGDdyZ7EdyxLMZ47JA-KA" represents="_5SkVISZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_6bGDcCZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Therapy Check" receiveEvent="_6bGDciZ7EdyxLMZ47JA-KA" sendEvent="_6bGDcSZ7EdyxLMZ47JA-KA" connector="_6bGDcyZ7EdyxLMZ47JA-KA"/>
+        <message xmi:id="_6bGDeCZ7EdyxLMZ47JA-KA" name="Drug Data Vendor Therapy Check" messageSort="synchSignal" receiveEvent="_6bGDeyZ7EdyxLMZ47JA-KA" sendEvent="_6bGDdyZ7EdyxLMZ47JA-KA" connector="_6bGDcyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_6bGDeSZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_6bGDeiZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+        </message>
+        <message xmi:id="_8UnJ0CZ7EdyxLMZ47JA-KA" name="convertResults" receiveEvent="_8UnJ0iZ7EdyxLMZ47JA-KA" sendEvent="_8UnJ0SZ7EdyxLMZ47JA-KA" connector="_8UnJ0yZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=convertResults^sign=(QDTScreenResults%3bQScreenDrugs%3bQMap%3b)QDrugCheckResultsVo%3b[jsrctype^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_97-JMCZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" receiveEvent="_97-JMiZ7EdyxLMZ47JA-KA" sendEvent="_97-JMSZ7EdyxLMZ47JA-KA" connector="_97-JMyZ7EdyxLMZ47JA-KA">
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <message xmi:id="_97-JOCZ7EdyxLMZ47JA-KA" name="toDrugCheckMessageVoCollection" messageSort="synchSignal" receiveEvent="_97-JOyZ7EdyxLMZ47JA-KA" sendEvent="_97-JNyZ7EdyxLMZ47JA-KA" connector="_97-JMyZ7EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_97-JOSZ7EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_97-JOiZ7EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+          <signature xmi:type="uml:Operation" href="vizref:///#jmethod^vcore.target=uml2.Operation^name=toDrugCheckMessageVoCollection^sign=(QMessages%3bQMap%3bQScreenDrugs%3b)QCollection%3b[jsrctype^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]]"/>
+        </message>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_6bGDcSZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" sendMessage="_6bGDcCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_6bGDciZ7EdyxLMZ47JA-KA" covered="_5SkVICZ7EdyxLMZ47JA-KA" receiveMessage="_6bGDcCZ7EdyxLMZ47JA-KA" startExec="_6bGDdiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_6bGDdiZ7EdyxLMZ47JA-KA" covered="_5SkVICZ7EdyxLMZ47JA-KA" start="_6bGDciZ7EdyxLMZ47JA-KA" finish="_6bGDdyZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_6bGDdyZ7EdyxLMZ47JA-KA" covered="_5SkVICZ7EdyxLMZ47JA-KA" sendMessage="_6bGDeCZ7EdyxLMZ47JA-KA" finishExec="_6bGDdiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_6bGDeyZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" receiveMessage="_6bGDeCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_8UnJ0SZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" sendMessage="_8UnJ0CZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_8UnJ0iZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" receiveMessage="_8UnJ0CZ7EdyxLMZ47JA-KA" startExec="_8UnJ1iZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_8UnJ1iZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" start="_8UnJ0iZ7EdyxLMZ47JA-KA" finish="_8UnJ1yZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_97-JMSZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" sendMessage="_97-JMCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_97-JMiZ7EdyxLMZ47JA-KA" covered="_4U6aECZ7EdyxLMZ47JA-KA" receiveMessage="_97-JMCZ7EdyxLMZ47JA-KA" startExec="_97-JNiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_97-JNiZ7EdyxLMZ47JA-KA" covered="_4U6aECZ7EdyxLMZ47JA-KA" start="_97-JMiZ7EdyxLMZ47JA-KA" finish="_97-JNyZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_97-JNyZ7EdyxLMZ47JA-KA" covered="_4U6aECZ7EdyxLMZ47JA-KA" sendMessage="_97-JOCZ7EdyxLMZ47JA-KA" finishExec="_97-JNiZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_97-JOyZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" receiveMessage="_97-JOCZ7EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_8UnJ1yZ7EdyxLMZ47JA-KA" covered="_3AUlsCZ7EdyxLMZ47JA-KA" finishExec="_8UnJ1iZ7EdyxLMZ47JA-KA"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_3AUlsSZ7EdyxLMZ47JA-KA" end="_6bGDdCZ7EdyxLMZ47JA-KA _8UnJ1CZ7EdyxLMZ47JA-KA _8UnJ1SZ7EdyxLMZ47JA-KA _97-JNCZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=PerformDrugTherapyCheckCapabilityImpl[jcu^name=PerformDrugTherapyCheckCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4U6aESZ7EdyxLMZ47JA-KA" end="_97-JNSZ7EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=MessageConversionUtility[jcu^name=MessageConversionUtility.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.local.drugdatavendor.outbound.utility[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5SkVISZ7EdyxLMZ47JA-KA" name="Drug Data Vendor" end="_6bGDdSZ7EdyxLMZ47JA-KA"/>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Collaboration" xmi:id="_EGd8kCZ8EdyxLMZ47JA-KA" name="Version Capability">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_EGd8kSZ8EdyxLMZ47JA-KA" name="Version Capability">
+        <eAnnotations xmi:id="_EGd8kiZ8EdyxLMZ47JA-KA" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_EGd8kyZ8EdyxLMZ47JA-KA" type="Sequence" element="_EGd8kSZ8EdyxLMZ47JA-KA" name="Sequence Diagram">
+            <children xmi:id="_EGd8lCZ8EdyxLMZ47JA-KA" element="_EGd8kSZ8EdyxLMZ47JA-KA">
+              <children xmi:id="_EGd8lSZ8EdyxLMZ47JA-KA" type="interaction_compartment" element="_EGd8kSZ8EdyxLMZ47JA-KA">
+                <children xmi:id="_Ju3IcCZ8EdyxLMZ47JA-KA" sourceEdges="_MhuRpSZ8EdyxLMZ47JA-KA" targetEdges="_MiBMkCZ8EdyxLMZ47JA-KA" element="_Jut-gCZ8EdyxLMZ47JA-KA">
+                  <children xmi:id="_Ju3IcyZ8EdyxLMZ47JA-KA" type="Name" element="_Jut-gCZ8EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Ju3IcSZ8EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ju3IciZ8EdyxLMZ47JA-KA" x="265" y="450"/>
+                </children>
+                <children xmi:id="_LTrxMCZ8EdyxLMZ47JA-KA" sourceEdges="_MiBMkCZ8EdyxLMZ47JA-KA" targetEdges="_MhuRpSZ8EdyxLMZ47JA-KA" element="_LTinQCZ8EdyxLMZ47JA-KA">
+                  <children xmi:id="_LTrxMyZ8EdyxLMZ47JA-KA" type="Name" element="_LTinQCZ8EdyxLMZ47JA-KA"/>
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_LTrxMSZ8EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LTrxMiZ8EdyxLMZ47JA-KA" x="2468" y="214" width="3257" height="15875"/>
+                </children>
+                <children xmi:id="_Mh3bkCZ8EdyxLMZ47JA-KA" element="_MhkgpiZ8EdyxLMZ47JA-KA">
+                  <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Mh3bkSZ8EdyxLMZ47JA-KA" lineColor="0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mh3bkiZ8EdyxLMZ47JA-KA" x="-1" y="1323" height="1588"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_EGd8liZ8EdyxLMZ47JA-KA"/>
+              </children>
+              <children xmi:id="_EGd8lyZ8EdyxLMZ47JA-KA" type="Name" element="_EGd8kSZ8EdyxLMZ47JA-KA"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EGd8mCZ8EdyxLMZ47JA-KA" lineColor="0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EGd8mSZ8EdyxLMZ47JA-KA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_EGd8miZ8EdyxLMZ47JA-KA"/>
+            <edges xmi:id="_MhuRpSZ8EdyxLMZ47JA-KA" element="_MhkgoCZ8EdyxLMZ47JA-KA" source="_Ju3IcCZ8EdyxLMZ47JA-KA" target="_LTrxMCZ8EdyxLMZ47JA-KA">
+              <children xmi:id="_MhuRqCZ8EdyxLMZ47JA-KA" type="MessageNameLabel" element="_MhkgoCZ8EdyxLMZ47JA-KA">
+                <children xmi:id="_MhuRqiZ8EdyxLMZ47JA-KA" type="Stereotype" element="_MhkgoCZ8EdyxLMZ47JA-KA"/>
+                <children xmi:id="_MhuRqyZ8EdyxLMZ47JA-KA" type="Name" element="_MhkgoCZ8EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MhuRqSZ8EdyxLMZ47JA-KA" y="-318"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MhuRpiZ8EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MhuRpyZ8EdyxLMZ47JA-KA" points="[0, 0, -149, 0]$[149, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MhuRrCZ8EdyxLMZ47JA-KA" id="1499:2275"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MhuRrSZ8EdyxLMZ47JA-KA" id="1551:0"/>
+            </edges>
+            <edges xmi:id="_MiBMkCZ8EdyxLMZ47JA-KA" element="_MhuRoSZ8EdyxLMZ47JA-KA" source="_LTrxMCZ8EdyxLMZ47JA-KA" target="_Ju3IcCZ8EdyxLMZ47JA-KA">
+              <children xmi:id="_MiBMkyZ8EdyxLMZ47JA-KA" type="MessageNameLabel" element="_MhuRoSZ8EdyxLMZ47JA-KA">
+                <children xmi:id="_MiBMlSZ8EdyxLMZ47JA-KA" type="Stereotype" element="_MhuRoSZ8EdyxLMZ47JA-KA"/>
+                <children xmi:id="_MiBMliZ8EdyxLMZ47JA-KA" type="Name" element="_MhuRoSZ8EdyxLMZ47JA-KA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MiBMlCZ8EdyxLMZ47JA-KA" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MiBMkSZ8EdyxLMZ47JA-KA" lineColor="0" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MiBMkiZ8EdyxLMZ47JA-KA" points="[0, 0, 149, 0]$[-149, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MiBMlyZ8EdyxLMZ47JA-KA" id="1552:1588"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MiBMmCZ8EdyxLMZ47JA-KA" id="1553:0"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedConnector xmi:id="_MhkgoyZ8EdyxLMZ47JA-KA">
+          <end xmi:id="_MhkgpCZ8EdyxLMZ47JA-KA" role="_Jut-gSZ8EdyxLMZ47JA-KA"/>
+          <end xmi:id="_MhkgpSZ8EdyxLMZ47JA-KA" role="_LTinQSZ8EdyxLMZ47JA-KA"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Jut-gCZ8EdyxLMZ47JA-KA" name="versionCapabilityImpl" coveredBy="_MhkgoSZ8EdyxLMZ47JA-KA _MhuRpCZ8EdyxLMZ47JA-KA" represents="_Jut-gSZ8EdyxLMZ47JA-KA"/>
+        <lifeline xmi:id="_LTinQCZ8EdyxLMZ47JA-KA" name="Property" coveredBy="_MhkgoiZ8EdyxLMZ47JA-KA _MhkgpiZ8EdyxLMZ47JA-KA _MhuRoCZ8EdyxLMZ47JA-KA" represents="_LTinQSZ8EdyxLMZ47JA-KA"/>
+        <message xmi:id="_MhkgoCZ8EdyxLMZ47JA-KA" name="Drug Data Vendor Version Retrieval" receiveEvent="_MhkgoiZ8EdyxLMZ47JA-KA" sendEvent="_MhkgoSZ8EdyxLMZ47JA-KA" connector="_MhkgoyZ8EdyxLMZ47JA-KA"/>
+        <message xmi:id="_MhuRoSZ8EdyxLMZ47JA-KA" name="Drug Data Vendor Version Retrieval" messageSort="synchSignal" receiveEvent="_MhuRpCZ8EdyxLMZ47JA-KA" sendEvent="_MhuRoCZ8EdyxLMZ47JA-KA" connector="_MhkgoyZ8EdyxLMZ47JA-KA">
+          <eAnnotations xmi:id="_MhuRoiZ8EdyxLMZ47JA-KA" source="keywords">
+            <details xmi:id="_MhuRoyZ8EdyxLMZ47JA-KA" key="return"/>
+          </eAnnotations>
+        </message>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MhkgoSZ8EdyxLMZ47JA-KA" covered="_Jut-gCZ8EdyxLMZ47JA-KA" sendMessage="_MhkgoCZ8EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MhkgoiZ8EdyxLMZ47JA-KA" covered="_LTinQCZ8EdyxLMZ47JA-KA" receiveMessage="_MhkgoCZ8EdyxLMZ47JA-KA" startExec="_MhkgpiZ8EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:ExecutionOccurrence" xmi:id="_MhkgpiZ8EdyxLMZ47JA-KA" covered="_LTinQCZ8EdyxLMZ47JA-KA" start="_MhkgoiZ8EdyxLMZ47JA-KA" finish="_MhuRoCZ8EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MhuRoCZ8EdyxLMZ47JA-KA" covered="_LTinQCZ8EdyxLMZ47JA-KA" sendMessage="_MhuRoSZ8EdyxLMZ47JA-KA" finishExec="_MhkgpiZ8EdyxLMZ47JA-KA"/>
+        <fragment xmi:type="uml:EventOccurrence" xmi:id="_MhuRpCZ8EdyxLMZ47JA-KA" covered="_Jut-gCZ8EdyxLMZ47JA-KA" receiveMessage="_MhuRoSZ8EdyxLMZ47JA-KA"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Jut-gSZ8EdyxLMZ47JA-KA" end="_MhkgpCZ8EdyxLMZ47JA-KA">
+        <type xmi:type="uml:Class" href="vizref:///#jsrctype^vcore.target=uml2.Class^name=VersionCapabilityImpl[jcu^name=VersionCapabilityImpl.java[jpack^name=EXT.DOMAIN.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl[jsrcroot^srcfolder=src[project^vcore.target=uml2.Model^id=PepsLite]]]]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LTinQSZ8EdyxLMZ47JA-KA" name="Drug Data Vendor" end="_MhkgpSZ8EdyxLMZ47JA-KA"/>
+    </ownedMember>
+  </ownedMember>
+</uml:Model>

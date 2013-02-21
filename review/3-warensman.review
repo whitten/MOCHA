@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="3">
+  <ReviewIssue id="F92XW48S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 10:42:40:636 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:01:13:605 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="30">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/utility/MessageSeverityUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Where is it doing this stripping?</Summary>
+    <Description>public static String convert(FDBMessageSeverity severity) throws IOException {&#xD;
+&#xD;
+Clear up javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

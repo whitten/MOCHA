@@ -1,0 +1,22 @@
+<project name="XmlTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initXmlTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="xjc"
+                     classname="com.sun.tools.xjc.XJCTask"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="xmlToJava" uri="http://www.swri.org">
+        <attribute name="schemaDir" default="${etc.xml.schema.dir}" />
+        <attribute name="srcGenDir" default="${build.src.dir}" />
+        <sequential>
+            <xjc destdir="@{srcGenDir}" binding="${etc.xml.dir}/schema/globalBindings.xjb" extension="true">
+                <schema dir="@{schemaDir}">
+                    <include name="**/*.xsd" />
+                </schema>
+            </xjc>
+        </sequential>
+    </macrodef>
+</project>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="3">
+  <ReviewIssue id="F92U0DN3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 08:54:00:975 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:21:43:132 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="18">src/EXT/DOMAIN/pharmacy/peps/common/vo/DoseTypeVo.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add comment on what this ID is (GCNSEQNO I think)</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F92U1L8Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 08:54:57:490 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:21:26:757 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="74">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/DrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Don't retrieve then add to collections</Summary>
+    <Description>(Should really be on line #49) Consider replacing the getDrugs() and getDrugsNotFound() methods with addDrugInfo() and addDrugInfoNotFound() methods.  This better encapsulates the internal collections to DrugInfoResultsVo.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F92UK5M5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 09:09:23:693 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:18:11:885 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="106">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/DrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>URL not found</Summary>
+    <Description>I did see info on this subject at http://java-x.blogspot.com/2007/01/spring-prototype-beans-with-singletons.html but that is probably not a stable URL.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F92UMRA4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 09:11:25:084 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:01:07:558 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="26">src/EXT/DOMAIN/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/DrugInfoCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add info about why this class is abstract</Summary>
+    <Description>Note that this class is abstract to support Spring lookup method injection, and that it is not intended to have sub-classes defined for it.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F92W48UX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-16 :: 09:53:00:633 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-11-19 :: 07:18:03:947 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="140">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/XmlUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Possible performance enhancement</Summary>
+    <Description>Consider the user of a buffered reader here.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

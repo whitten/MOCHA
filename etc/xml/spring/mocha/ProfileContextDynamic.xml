@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+    <!-- Profile AOP -->
+    <!-- This Spring Application Context is only included if profiling is turned on. Profiling is not intended for use in a deployed production system. -->
+    <bean
+        id="profiler"
+        class="EXT.DOMAIN.pharmacy.peps.common.utility.profile.Profiler" />
+    <aop:config>
+        <aop:aspect ref="profiler">
+            <!-- Gather the capability execution times -->
+            <aop:pointcut
+                id="capability"
+                expression="within(EXT.DOMAIN.pharmacy.peps..capability.impl.*)" />
+            <aop:around
+                pointcut-ref="capability"
+                method="profile" />
+            <!-- Log the results once the order check request is complete -->
+            <aop:pointcut
+                id="service"
+                expression="within(EXT.DOMAIN.pharmacy.peps..session.impl.*)" />
+            <aop:around
+                pointcut-ref="service"
+                method="logProfile" />
+        </aop:aspect>
+    </aop:config>

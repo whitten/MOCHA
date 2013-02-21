@@ -1,0 +1,221 @@
+<project name="DatabaseTemplate" basedir="." xmlns:swri="http://www.swri.org">
+
+    <macrodef name="initDatabaseTemplate" uri="http://www.swri.org">
+        <sequential>
+            <path id="build.class.path">
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+            </path>
+
+            <taskdef name="dbunitXls"
+                     classname="org.swri.ant.task.DbUnitXlsTask"
+                     classpathref="build.class.path"
+                     loaderref="dbunit" />
+
+
+            <property file="${etc.dir}/${build}/template/properties/${local.database.flavor}.properties" prefix="local" />
+            <property file="${etc.dir}/${build}/template/properties/${national.database.flavor}.properties"
+                      prefix="national" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="refreshDatabase" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="file" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                            <echo level="info">Cleaning  data on @{environment} as @{host} using @{databaseName}</echo>
+
+                            <swri:cleanData environment="@{environment}" host="@{host}" databaseName="@{databaseName}" />
+
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}.ddl" />
+
+                            <swri:data environment="@{environment}"
+                                       host="@{host}"
+                                       databaseName="@{databaseName}"
+                                       file="@{file}.xls" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="data" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="dir" default="${etc.dir}/database/data" />
+        <attribute name="fileFormat" default="xls" />
+        <attribute name="file" default="@{databaseName}.@{fileFormat}" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Refreshing data on @{url}  as ${database.user}/${database.password}/$(database.schema) using  @{file} at @{dir}</echo>
+
+            <path id="build.class.path">
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+            </path>
+
+            <dbunitXls driver="@{driver}"
+                       url="@{url}"
+                       user="${database.user}"
+                       password="${database.password}"
+                       schema="${database.schema}"
+                       xlsPath="@{dir}/@{file}" />
+        </sequential>
+    </macrodef>
+
+
+    <macrodef name="ddl" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <attribute name="file" default="@{databaseName}.ddl" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}${database.name}${@{environment}.database.url.properties}" />
+        <attribute name="firsturl" default="${@{environment}.database.url.prefix}" />
+
+        <sequential>
+            <echo level="info">driver is @{driver} </echo>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Executing DDL on @{url} as ${database.user}/${database.password}</echo>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="oracle" />
+                <then>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         autocommit="true"
+                         caching="true"
+                         onerror="continue"
+                         delimiter="/"
+                         classpathref="build.class.path">
+
+                        <transaction src="@{dir}/@{file}" />
+                    </sql>
+                </then>
+            </if>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="cache" />
+                <then>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         onerror="continue"
+                         caching="true"
+                         classpathref="build.class.path">
+
+                        <transaction src="@{dir}/@{file}" />
+                    </sql>
+                </then>
+            </if>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="derby" />
+                <then>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         onerror="continue"
+                         caching="true"
+                         classpathref="build.class.path">
+
+                        <transaction src="@{dir}/@{file}" />
+                    </sql>
+                </then>
+            </if>
+
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="oracle" />
+                <then>
+                    <echo level="info">Purging Oracle recycle bin</echo>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         caching="true"
+                         classpathref="build.class.path">
+                       		purge recyclebin;
+                   		</sql>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <!-- Since Ant cannot double resolve attributes within a macrodef, we have another macrodef to do so as a workaround -->
+    <macrodef name="setUser" uri="http://www.swri.org">
+        <attribute name="databaseHost" />
+        <attribute name="databaseName" />
+        <attribute name="nameProperty" default="@{databaseHost}.@{databaseName}.database.name" />
+        <attribute name="userProperty" default="@{databaseHost}.@{databaseName}.user" />
+        <attribute name="passwordProperty" default="@{databaseHost}.@{databaseName}.password" />
+        <attribute name="schemaProperty" default="@{databaseHost}.@{databaseName}.schema" />
+        <sequential>
+            <var name="database.user" value="${@{userProperty}}" />
+            <var name="database.password" value="${@{passwordProperty}}" />
+            <var name="database.schema" value="${@{schemaProperty}}" />
+            <var name="database.name" value="${@{nameProperty}}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="cleanData" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <attribute name="file" default="@{databaseName}.ddl" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="cache" />
+                <then>
+                    <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+                    <echo level="info">Calling Cache CleanData procedure on @{url} as ${database.user}/${database.password}</echo>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         caching="true"
+                         onerror="continue"
+                         classpathref="build.class.path">
+                  		CALL CleanData;
+              		</sql>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+
+</project>

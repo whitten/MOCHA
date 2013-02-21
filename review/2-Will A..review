@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="2">
+  <ReviewIssue id="F6F4L6JF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-10 :: 10:24:14:811 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:40:44:878 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Will A.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="88">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should todo comments remain in delivered code?</Summary>
+    <Description>* @todo (tstavenger:Jul 31, 2007) &#xD;
+     * TODO This will not necessarily work if we have more than one prospective drug with the same GCN sequence number&#xD;
+&#xD;
+Should todo comments remain in delivered code?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6F5GKHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-10 :: 10:48:39:218 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 15:11:05:167 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Will A.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="128">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/ResponseConverter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Nitpick - fix capitalization.</Summary>
+    <Description>* Convert the DrugCHeckResultsVo into a DrugDoseChecks XML object.&#xD;
+&#xD;
+Nitpick - fix capitalization.</Description>
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

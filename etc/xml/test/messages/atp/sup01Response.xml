@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.101"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="365"/>
+        <PEPSVersion customIssueDate="20100227" customBuildVersion="6"
+            customDbVersion="3.2" difIssueDate="20100219"
+            difBuildVersion="7" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>4</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;3;PROSPECTIVE" ien="3333"
+                            drugName="Tylenol" vuid="1234" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;6;PROFILE" ien="1010"
+                            vuid="8839948" gcnSeqNo="3590"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>ANTICOAGULANTS/BARBITURATES</interaction>
+                    <shortText>Tylenol and PHENOBARBITAL ORAL TABLET 30 MG may interact based on the potential interaction between ANTICOAGULANTS and BARBITURATES.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Barbiturates</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  It is speculated that induction of hepatic microsomal enzymes results in increased metabolism of anticoagulants,(1) resulting in decreased anticoagulant response.(2,3)  Barbiturates may also increase the synthesis of clotting factors by the liver.(4)  The absorption of dicumarol, but not warfarin, from the gastrointestinal may be decreased by barbiturates.(5)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Concurrent use may result in decreased anticoagulant effects.  Increased anticoagulant effects may occur if the barbiturate is withdrawn.  The effect may be dose-related and may continue beyond the discontinuation of the barbiturate.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If possible, avoid the concurrent use of these agents. If a barbiturate is initiated or discontinued in a patient maintained on anticoagulant therapy, monitor prothrombin times and adjust the dose of the anticoagulant as needed.For hypnotic indications, benzodiazepines and diphenhydramine may be alternatives to barbiturates in patients stabilized on anticoagulant therapy.</patientManagement>
+                        <discussion>DISCUSSION:  Amobarbital,(6) aprobarbital,(7) barbital,(8) butabarbital,(9) pentobarbital,(4) phenobarbital,(1) and secobarbital(6) have been shown to interact with coumarin anticoagulants.  Dicumarol,(5) warfarin(1), and phenprocoumon(4) have been reported to interact with the barbiturates.It would be prudent to assume that all barbiturates and the indanedione derivatives would interact in a similar fashion.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated, altered, or discontinued.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Levy G, O'Reilly RA, Aggeler PM, Keech GM. Pharmacokinetic analysis of the effect of barbiturate on the anticoagulant action of warfarin in man. Clin Pharmacol Ther 1970 May-Jun;11(3):372-7.]]></reference>
+                            <reference><![CDATA[2.Goss JE, Dickhaus DW. Increased bishydroxycoumarin requirements in patients receiving phenobarbital. N Engl J Med 1965 Nov 11;273(20):1094-5.]]></reference>
+                            <reference><![CDATA[3.MacDonald MG, Robinson DS. Clinical observations of possible barbiturate interference with anticoagulation. JAMA 1968 Apr 8;204(2):97-100.]]></reference>
+                            <reference><![CDATA[4.Lucas ON. Study of the interaction of barbiturates and dicumarol and their effect on prothrombin activity, hemorrhage, and sleeping time in rats. Can J Physiol Pharmacol 1967 Sep;45(5):905-13.]]></reference>
+                            <reference><![CDATA[5.Aggeler PM, O'Reilly RA. Effect of heptabarbital on the response to bishydroxycoumarin in man. J Lab Clin Med 1969 Aug;74(2):229-38.]]></reference>
+                            <reference><![CDATA[6.Breckenridge A, Orme M. Clinical implications of enzyme induction. Ann N Y Acad Sci 1971 Jul 6;179:421-31.]]></reference>
+                            <reference><![CDATA[7.Johansson SA. Apparent resistance to oral anticoagulant therapy and influence of hypnotics on some coagulation factors. Acta Med Scand 1968 Oct;184(4):297-300.]]></reference>
+                            <reference><![CDATA[8.Welch RM, Harrison YE, Conney AH, Burns JJ. An experimental model in dogs for studying interactions of drugs with bishydroxycoumarin. Clin Pharmacol Ther 1969 Nov-Dec;10(6):817-25.]]></reference>
+                            <reference><![CDATA[9.Antlitz AM, Tolentino M, Kosai MF. Effect of butabarbital on orally administered anticoagulants. Curr Ther Res Clin Exp 1968 Feb;10(2):70-3.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>27</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;PROSPECTIVE" ien="1111" gcnSeqNo="266"/>
+                        <drug orderNumber="Z;3;PROSPECTIVE" ien="3333"
+                            drugName="Tylenol" vuid="1234" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>AMIODARONE/ANTICOAGULANTS</interaction>
+                    <shortText>AMIODARONE HCL ORAL TABLET 200 MG and Tylenol may interact based on the potential interaction between AMIODARONE and ANTICOAGULANTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Amiodarone/Anticoagulants</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone has been shown to inhibit the metabolism of the R- and S-enantiomers of warfarin by CYP P-450 in vitro and in vivo.(1-4) Amiodarone may also inhibit the metabolism of acenocoumarol(5) and other anticoagulants.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone and an anticoagulant may result in an increase in the clinical effects of the anticoagulant and an increased risk of bleeding.(1-22)  It may take several weeks of concurrent therapy before the full effects of this interaction are noted.  The effect of amiodarone on anticoagulant levels may continue for several months after amiodarone is discontinued.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  Amiodarone-induced thyrotoxicosis may increase the metabolic clearance of some vitamin K-dependent clotting factors, decreasing anticoagulant requirements.(6)</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If both drugs are administered concurrently, adjust the anticoagulant dose as needed based on carefully monitored prothrombin activity.  The US manufacturer of amiodarone recommends decreasing the anticoagulant dose by 1/3 to 1/2, followed by close monitoring of prothrombin activity.(22)</patientManagement>
+                        <discussion>DISCUSSION:  Several studies and case reports have documented the potential interaction between warfarin and amiodarone.  In several studies, the dosage of warfarin had to be decreased between 32.9% and 70% to maintain satisfactory prothrombin activity.(1-4,6-11)Several case reports and retrospective chart reviews have also documented the potential interaction between amiodarone and acenocoumarol.  The dosage reduction of acenocoumarol required to maintain satisfactory prothrombin activity ranged from 20% to 60%.(12-18)A case report describes a 66-year-old male with a history of recurrent atrial fibrillation.  While taking both amiodarone and a low-dose warfarin therapy, prothrombin times were prolonged, INR values were increased and bleeding occurred.  Both drugs were withheld, and the effect of the interaction continued for an extended period of time.(19)One study evaluated the role desethylamiodarone, the active metabolite of amiodarone, played on concurrent warfarin therapy.  After analyzing 25 patients with structural heart disease and arrhythmias, it was found that the concentration of desethylamiodarone played a larger role in augmenting the INR, than the concentration of amiodarone alone.  Additional examination revealed that amiodarone primarily inhibits CYP P-450-1A2 and CYP P-450-3A4, whereas desethylamiodarone primarily inhibits CYP P-450-2C9, the isozyme responsible for the metabolism of S-warfarin.(20)An observational, cohort study reviewed the interaction of amiodarone with warfarin for a period of at least one year, while evaluating the adjustments needed to achieve an INR ratio between 2 and 3.  After analyzing 43 patients, baseline warfarin therapy required a mean 44% reduction in dose after seven weeks of coadministration with amiodarone.  Five subjects experienced minor bleeding.  For patients receiving amiodarone maintenance, warfarin dose reductions were as follows: 400 mg/d, reduce warfarin dose 40%; 300 mg/d, reduce warfarin dose 35%; 200/d, reduce warfarin dose 30%; and 100 mg/d, reduce warfarin dose by 25%.  All warfarin dose reductions are approximations and must be based on aggressive INR monitoring.(21)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Almog S, Shafran N, Halkin H, Weiss P, Farfel Z, Martinowitz U, Bank H. Mechanism of warfarin potentiation by amiodarone: dose--and concentration--dependent inhibition of warfarin elimination. Eur J Clin Pharmacol 1985;28(3):257-61.]]></reference>
+                            <reference><![CDATA[2.Rees A, Dalal JJ, Reid PG, Henderson AH, Lewis MJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 May 30; 282(6278):1756-7.]]></reference>
+                            <reference><![CDATA[3.O'Reilly RA, Trager WF, Rettie AE, Goulart DA. Interaction of amiodarone with racemic warfarin and its separated enantiomorphs in humans. Clin Pharmacol Ther 1987 Sep;42(3):290-4.]]></reference>
+                            <reference><![CDATA[4.Heimark LD, Wienkers L, Kunze K, Gibaldi M, Eddy AC, Trager WF, O'Reilly RA, Goulart DA. The mechanism of the interaction between amiodarone and warfarin in humans. Clin Pharmacol Ther 1992 Apr;51(4):398-407.]]></reference>
+                            <reference><![CDATA[5.Richard C, Riou B, Berdeaux A, Fournier C, Khayat D, Rimailho A, Giudicelli JF, Auzepy P. Prospective study of the potentiation of acenocoumarol by amiodarone. Eur J Clin Pharmacol 1985;28(6):625-9.]]></reference>
+                            <reference><![CDATA[6.Woeber KA, Warner I. Potentiation of warfarin sodium by amiodarone-induced thyrotoxicosis. West J Med 1999 Jan;170(1):49-51.]]></reference>
+                            <reference><![CDATA[7.Watt AH, Stephens MR, Buss DC, Routledge PA. Amiodarone reduces plasma warfarin clearance in man. Br J Clin Pharmacol 1985 Dec;20(6):707-9.]]></reference>
+                            <reference><![CDATA[8.Hamer A, Peter T, Mandel WJ, Scheinman MM, Weiss D. The potentiation of warfarin anticoagulation by amiodarone. Circulation 1982 May;65(5):1025-9.]]></reference>
+                            <reference><![CDATA[9.Martinowitz U, Rabinovich J, Goldfarb D, Many A, Bank H. Interaction between warfarin sodium and amiodarone. N Engl J Med 1981 Mar 12; 304(11):671-2.]]></reference>
+                            <reference><![CDATA[10.Serlin MJ, Sibeon RG, Green GJ. Dangers of amiodarone and anticoagulant treatment. Br Med J (Clin Res Ed) 1981 Jul 4;283(6283):58.]]></reference>
+                            <reference><![CDATA[11.Kerin NZ, Blevins RD, Goldman L, Faitel K, Rubenfire M. The incidence, magnitude, and time course of the amiodarone-warfarin interaction. Arch Intern Med 1988 Aug;148(8):1779-81.]]></reference>
+                            <reference><![CDATA[12.Arboix M, Frati ME, Laporte JR. The potentiation of acenocoumarol anticoagulant effect by amiodarone. Br J Clin Pharmacol 1984 Sep; 18(3):355-60.]]></reference>
+                            <reference><![CDATA[13.Cheung B, Lam FM, Kumana CR. Insidiously evolving, occult drug interaction involving warfarin and amiodarone. BMJ 1996 Jan 13; 312(7023):107-8.]]></reference>
+                            <reference><![CDATA[14.El Allaf D, Sprynger M, Carlier J. Potentiation of the action of oral anticoagulants by amiodarone. Acta Clin Belg 1984;39(5):306-8.]]></reference>
+                            <reference><![CDATA[15.Fondevila C, Meschengieser S, Lazzari MA. Amiodarone potentiates acenocoumarin. Thromb Res 1989 Jan 15;53(2):203-8.]]></reference>
+                            <reference><![CDATA[16.Caraco Y, Raveh D, Flugelman M, Raz I. Enhanced anticoagulant effect of acenocoumarol induced by amiodarone coadministration. Isr J Med Sci 1988 Nov;24(11):688-9.]]></reference>
+                            <reference><![CDATA[17.Pini M, Manotti C, Quintavalla R. Interaction between amiodarone and acenocoumarin. Thromb Haemost 1985 Aug 30;54(2):549.]]></reference>
+                            <reference><![CDATA[18.Caraco Y, Chajek-Shaul T. The incidence and clinical significance of amiodarone and acenocoumarol interaction. Thromb Haemost 1989 Nov 24; 62(3):906-8.]]></reference>
+                            <reference><![CDATA[19.Hirmerova J, Suchy D, Madr T. Long-term drug interaction of warfarin with amiodarone. Cas Lek Cesk 2003 Jan 20;142(1):39-42.]]></reference>
+                            <reference><![CDATA[20.Naganuma M, Shiga T, Nishikata K, Tsuchiya T, Kasanuki H, Fujii E. Role of desethylamiodarone in the anticoagulant effect of concurrent amiodarone and warfarin therapy. J Cardiovasc Pharmacol Ther 2001 Oct; 6(4):363-7.]]></reference>
+                            <reference><![CDATA[21.Sanoski CA, Bauman JL. Clinical observations with the amiodarone/warfarin interaction: dosing relationships with long-term therapy. Chest 2002 Jan; 121(1):19-23.]]></reference>
+                            <reference><![CDATA[22.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals November, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>283</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;PROSPECTIVE" ien="2222"
+                            vuid="3400" gcnSeqNo="25485"/>
+                        <drug orderNumber="Z;1;PROSPECTIVE" ien="1111" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>SELECTED PROTEASE INHIBITORS/AMIODARONE</interaction>
+                    <shortText>INDINAVIR SULFATE ORAL CAPSULE 400 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED PROTEASE INHIBITORS and AMIODARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Protease Inhibitors/Amiodarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Indinavir,(1) nelfinavir,(2) ritonavir,(3) and tipranavir coadministered with ritonavir(4) may inhibit the metabolism of amiodarone at CYP P-450-3A4.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir,(2) ritonavir,(3) or tipranavir coadministered with ritonavir(4) may result in increased levels, clinical effects, and toxicity of amiodarone.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir(2), ritonavir,(3) or tipranavir coadministered with ritonavir(4) is contraindicated by the manufacturers of indinavir,(1) nelfinavir(2), ritonavir,(3) and tipranavir coadministered with ritonavir. (4)</patientManagement>
+                        <discussion>DISCUSSION:  Indinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of indinavir states that the concurrent administration of indinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(1)Nelfinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of nelfinavir states that the concurrent administration of nelfinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(2)Ritonavir has also been shown to inhibit CYP P-450-3A4. Therefore, the manufacturer of ritonavir state that the concurrent administration of ritonavir with amiodarone is contraindicated.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Crixivan (indinavir sulfate) US prescribing information. Merck & Co., Inc. December, 2008.]]></reference>
+                            <reference><![CDATA[2.Viracept (nelfinavir mesylate) US prescribing information. Agouron Pharmaceuticals, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[3.Norvir (ritonavir) US prescribing information. Abbott Laboratories November, 2009.]]></reference>
+                            <reference><![CDATA[4.Aptivus (tipranavir) US prescribing information. Boehringer Ingelheim Pharmaceuticals, Inc. June, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>419</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;3;PROSPECTIVE" ien="3333"
+                            drugName="Tylenol" vuid="1234" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                            drugName="Advil" gcnSeqNo="16579"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>SELECTED ANTICOAGULANTS/HMG-COA REDUCTASE INHIBITORS</interaction>
+                    <shortText>Tylenol and Advil may interact based on the potential interaction between SELECTED ANTICOAGULANTS and HMG-COA REDUCTASE INHIBITORS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Anticoagulants/HMG-CoA Reductase Inhibitors</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  The exact mechanism of this interaction is unknown. The HMG-CoA reductase inhibitor may inhibit the hepatic hydroxylation of warfarin.  The HMG-CoA reductase inhibitors, which are highly plasma protein bound, may displace warfarin from its binding site.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Increase hypoprothrombinemic effects of warfarin.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Patients should be monitored for changes in prothrombin time when a HMG Co-A reductase inhibitor is added to or discontinued from warfarin therapy, or if the dosage of the HMG Co-A reductase inhibitor is adjusted.</patientManagement>
+                        <discussion>DISCUSSION:  Case reports in the medical literature and to the manufacturer have documented an interaction between lovastatin and warfarin. A case report has documented an interaction between pravastatin and fluindione (an orally administered indanedione anticoagulant), suggesting that pravastatin could also interact similarly with warfarin. Information concerning a potential interaction with simvastatin is conflicting. A case report has documented an interaction between simvastatin and acenocoumarol while another case report showed no interaction with warfarin. One group of authors reported three case reports of increased international normalized ratios (INERs) following the addition of fluvastatin to warfarin therapy. The addition of rosuvastatin to patients stabilized on warfarin resulted in clinically significant changes in INR.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Ahmad S. Lovastatin. Warfarin interaction. Arch Intern Med 1990 Nov; 150(11):2407.]]></reference>
+                            <reference><![CDATA[2.Hoffman HS. The interaction of lovastatin and warfarin. Conn Med 1992 Feb; 56(2):107.]]></reference>
+                            <reference><![CDATA[3.Iliadis EA, Konwinski MF. Lovastatin during warfarin therapy resulting in bleeding. Pa Med 1995 Dec;98(12):31.]]></reference>
+                            <reference><![CDATA[4.Personal communication. Merck & Co., Inc. 1991.]]></reference>
+                            <reference><![CDATA[5.Trenque T, Choisy H, Germain ML. Pravastatin: interaction with oral anticoagulant?. BMJ 1996 Apr 6;312(7035):886.]]></reference>
+                            <reference><![CDATA[6.Grau E, Perella M, Pastor E. Simvastatin-oral anticoagulant interaction. Lancet 1996 Feb 10;347(8998):405-6.]]></reference>
+                            <reference><![CDATA[7.Gaw A, Wosornu D. Simvastatin during warfarin therapy in hyperlipoproteinaemia. Lancet 1992 Oct 17;340(8825):979-80.]]></reference>
+                            <reference><![CDATA[8.Trilli LE, Kelley CL, Aspinall SL, Kroner BA. Potential interaction between warfarin and fluvastatin. Ann Pharmacother 1996 Dec; 30(12):1399-402.]]></reference>
+                            <reference><![CDATA[9.Crestor (rosuvastatin calcium) US prescribing information. AstraZeneca Pharmaceuticals LP February, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1076</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                            drugName="Advil" gcnSeqNo="16579"/>
+                        <drug orderNumber="Z;2;PROSPECTIVE" ien="2222"
+                            vuid="3400" gcnSeqNo="25485"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>SELECTED HMG-COA REDUCTASE INHIBITORS/PROTEASE INHIBITORS</interaction>
+                    <shortText>Advil and INDINAVIR SULFATE ORAL CAPSULE 400 MG may interact based on the potential interaction between SELECTED HMG-COA REDUCTASE INHIBITORS and PROTEASE INHIBITORS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected HMG-CoA Reductase Inhibitors/Protease Inhibitors</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Protease inhibitors may inhibit the metabolism of HMG CoA reductase inhibitors that are metabolized by CYP P-450-3A4.(1-15)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Concurrent administration may result in elevated HMG levels, which may increase the risk of myopathy, including rhabdomyolysis. (1-15)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The manufacturer of lovastatin(1) and simvastatin(2,3) states that the concurrent use of these agents with protease inhibitors should be avoided.The manufacturers of atazanavir,(5) darunavir,(7) fosamprenavir,(8) the combination of lopinavir with ritonavir,(10) ritonavir,(13) and tipranavir(12) state that concurrent use of lovastatin or simvastatin is contraindicated.The manufacturers of amprenavir,(4) indinavir,(8) and nelfinavir(9) state that lovastatin and simvastatin should not be used with these agents.If atorvastatin is used with amprenavir,(4) darunavir,(7) the combination of lopinavir with ritonavir,(10) nelfinavir,(11) or tipranavir coadministered with ritonavir,(12) use only the lowest possible dose with careful monitoring.  Atorvastatin should be used with caution with atazanavir.(5,6)  If atorvastatin is used with fosamprenavir, use 20 mg or less of atorvastatin per day or consider fluvastatin, pravastatin, or rosuvastatin.(8)The manufacturer of saquinavir(14,15) states that the use of lovastatin or simvastatin is not recommended and that the concurrent use with other HMG-CoA reductase inhibitors metabolized by CYP P-450-3A4 should be approached with caution.It would be prudent to utilize fluvastatin in patients treated with protease inhibitors who require HMG-CoA reductase therapy.</patientManagement>
+                        <discussion>DISCUSSION:  A study in 15 subjects found that darunavir/ritonavir (300/100 mg twice daily) decreased the maximum concentration (Cmax) and area-under curve (AUC) of atorvastatin (10 mg daily) by 64% and 15%, when compared to atorvastatin (40 mg daily) administered alone.  Atorvastatin minimum concentration (Cmin) increased by 81% during concurrent therapy.(7)A study in 16 subjects found that fosamprenavir increased atorvastatin Cmax and AUC by 304% and 130%, respectively.  Atorvastatin Cmin decreased by 10%.(8)A study in 12 subjects found that lopinavir increased atorvastatin Cmax, AUC, and Cmin by 4.67-fold, 5.88-fold, and 2.28-fold, respectively. Atorvastatin had no clinically significant effect on lopinavir pharmacokinetics.(10)A study in 12 subjects found that lopinavir increased pravastatin Cmax and AUC by 1.26-fold and 1.33-fold, respectively.  Pravastatin had no clinically significant effect on lopinavir pharmacokinetics.(10)A randomized, controlled trial in healthy subjects examined the effects of a combination of ritonavir and saquinavir on the pharmacokinetics of atorvastatin, pravastatin, and simvastatin and the effects of pravastatin on nelfinavir pharmacokinetics.  The combination of ritonavir and saquinavir decreased pravastatin levels by 50% and increased atorvastatin and simvastatin levels by 79% and 3059%, respectively.  Pravastatin had no statistically significant effect on nelfinavir pharmacokinetics.(16)An open-label study in healthy subjects examined the effects of nelfinavir on atorvastatin and simvastatin pharmacokinetics.  Nelfinavir increased atorvastatin AUC, Cmax, and Cmin by 74%, 122%, and 39%, respectively.  Nelfinavir increased simvastatin AUC and Cmax by 505% and 517%, respectively.  There was no effect on nelfinavir pharmacokinetics when compared to historical controls.(11,17)A study in 14 healthy HIV-seronegative adults found that nelfinavir decreased median pravastatin AUC by 46.5%. Nelfinavir also decreased median pravastatin Cmax by 40.1%.(18)In a study of 25 HIV-positive patients, 13 patients were treated with pravastatin and 12 patients were treated with fluvastatin. Within the 25 patients, 8 patients were also on concomitant indinavir-containing highly active antiretroviral therapy (HAART). Indinavir plasma levels were not significantly influenced by pravastatin or fluvastatin therapy.(19)Rhabdomyolysis has been reported during concurrent use of simvastatin and nelfinavir(20) or ritonavir.(21)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Mevacor (lovastatin) US prescribing information. Merck & Co., Inc. April, 2007.]]></reference>
+                            <reference><![CDATA[2.Zocor (simvastatin) US prescribing information. Merck & Co., Inc. November, 2007.]]></reference>
+                            <reference><![CDATA[3.Vytorin (ezetimibe/simvastatin) US prescribing information. Merck/Schering-Plough Pharmaceuticals November, 2009.]]></reference>
+                            <reference><![CDATA[4.Agenerase (amprenavir) Capsules US prescribing information. GlaxoSmithKline February, 2004.]]></reference>
+                            <reference><![CDATA[5.Reyataz (atazanavir sulfate) US prescribing information. Bristol-Myers Squibb Company September, 2008.]]></reference>
+                            <reference><![CDATA[6.Prezista (darunavir) US prescribing information. Tibotec Inc. June, 2009.]]></reference>
+                            <reference><![CDATA[7.Lexiva (fosamprenavir calcium) US prescribing information. GlaxoSmithKline September, 2009.]]></reference>
+                            <reference><![CDATA[8.Crixivan (indinavir sulfate) US prescribing information. Merck & Co., Inc. December, 2008.]]></reference>
+                            <reference><![CDATA[9.Kaletra (lopinavir/ritonavir tablets) US prescribing information. Abbott Laboratories April, 2009.]]></reference>
+                            <reference><![CDATA[10.Viracept (nelfinavir mesylate) US prescribing information. Agouron Pharmaceuticals, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[11.Aptivus (tipranavir) US prescribing information. Boehringer Ingelheim Pharmaceuticals, Inc. June, 2009.]]></reference>
+                            <reference><![CDATA[12.Norvir (ritonavir) US prescribing information. Abbott Laboratories November, 2009.]]></reference>
+                            <reference><![CDATA[13.Invirase (saquinavir mesylate) US prescribing information. Roche Laboratories, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[14.Fortovase (saquinavir) US prescribing information. Roche Laboratories, Inc. December, 2004.]]></reference>
+                            <reference><![CDATA[15.Fichtenbaum CJ, Gerber JG, Rosenkranz SL, Segal Y, Aberg JA, Blaschke T, Alston B, Fang F, Kosel B, Aweeka F. Pharmacokinetic interactions between protease inhibitors and statins in HIV seronegative volunteers: ACTG Study A5047. AIDS 2002 Mar 8;16(4):569-77.]]></reference>
+                            <reference><![CDATA[16.Hsyu PH, Schultz-Smith MD, Lillibridge JH, Lewis RH, Kerr BM. Pharmacokinetic interactions between nelfinavir and 3-hydroxy-3- methylglutaryl coenzyme A reductase inhibitors atorvastatin and simvastatin. Antimicrob Agents Chemother 2001 Dec;45(12):3445-50.]]></reference>
+                            <reference><![CDATA[17.Aberg JA, Rosenkranz SL, Fichtenbaum CJ, Alston BL, Brobst SW, Segal Y, Gerber JG. Pharmacokinetic interaction between nelfinavir and pravastatin in HIV-seronegative volunteers: ACTG Study A5108. AIDS 2006 Mar 21; 20(5):725-9.]]></reference>
+                            <reference><![CDATA[18.Benesic A, Zilly M, Kluge F, Weissbrich B, Winzer R, Klinker H, Langmann P. Lipid lowering therapy with fluvastatin and pravastatin in patients with HIV infection and antiretroviral therapy: comparison of efficacy and interaction with indinavir. Infection 2004 Aug;32(4):229-33.]]></reference>
+                            <reference><![CDATA[19.Hare CB, Vu MP, Grunfeld C, Lampiris HW. Simvastatin-nelfinavir interaction implicated in rhabdomyolysis and death. Clin Infect Dis 2002 Nov 15;35(10):e111-2.]]></reference>
+                            <reference><![CDATA[20.Cheng CH, Miller C, Lowe C, Pearson VE. Rhabdomyolysis due to probable interaction between simvastatin and ritonavir. Am J Health Syst Pharm 2002 Apr 15;59(8):728-30.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1122</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;3;PROFILE" ien="7777" gcnSeqNo="5132"/>
+                        <drug orderNumber="Z;1;PROSPECTIVE" ien="1111" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>SELECTED BETA-BLOCKERS/AMIODARONE; DRONEDARONE</interaction>
+                    <shortText>METOPROLOL TARTRATE ORAL TABLET 50 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED BETA-BLOCKERS and AMIODARONE; DRONEDARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Beta-Blockers/Amiodarone; Dronedarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  The mechanism by which propranolol, metoprolol, and nebivolol and amiodarone produce severe bradycardia and hypotension has not been established. Since these beta-blockers are cleared by hepatic metabolism and amiodarone suppress hepatic metabolism; amiodarone may decrease their metabolism.(1)Dronedarone may inhibit the metabolism of metoprolol and propranolol by CYP P-450-2D6.(2)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of hepatically metabolized beta-blockers with amiodarone(1) or dronedarone may result in bradycardia and hypotension.(1)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:     Use low doses of beta-blockers initially.  Only increase the dosage of the beta-blocker after ECG verification of good tolerability.(2)Patients receiving a concurrent therapy should be closely monitored for adverse effects, such as bradycardia and hypotension. Patients experiencing this drug interaction should have their beta-adrenergic blocking drug discontinued.  Supportive therapy with sympathomimetic agents may be required.</patientManagement>
+                        <discussion>DISCUSSION:  In one case report, a patient taking amiodarone developed hypotension and atropine-resistant sinus bradycardia after receiving a single dose of metoprolol.  Three hours after receiving the metoprolol dose, the patient experienced dizziness, weakness, and blurred vision.(1) Another report described two patients who exhibited an interaction between amiodarone and propranolol.  One patient maintained on amiodarone experienced cardiac arrest after a single oral dose of propranolol.  The second patient received intravenous amiodarone followed by 2 doses of oral propranolol and developed severe bradycardia followed by ventricular fibrillation.(3)The stereoselective effect of amiodarone on the pharmacokinetics of racemic carvedilol was evaluated in 106 patients, where 52 received carvedilol monotherapy and 54 received carvedilol with amiodarone.  There was no significant differences between the serum concentration to dose ratio between the 2 groups.  However, there was an increase in the ratio of S-carvedilol to R-carvedilol.  During amiodarone, the concentration of S-carvedilol increased from 3.03 ng/ml to 6.54 ng/ml.(4)Several studies have shown that the addition of carvedilol to congestive heart failure patients currently receiving amiodarone resulted in improved hypotension/dizziness, primary AV block, and aggravated angina.(5-7)Dronedarone increased propranolol and metoprolol (exact dosages not stated) by 1.3-fold and 1.6-fold, respectively.(2)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Leor J, Levartowsky D, Sharon C, Farfel Z. Amiodarone and beta-adrenergic blockers: an interaction with metoprolol but not with atenolol. Am Heart J 1988 Jul;116(1 Pt 1):206-7.]]></reference>
+                            <reference><![CDATA[2.Multaq (dronedarone) US prescribing information. Sanofi-Aventis U.S. LLC July, 2009.]]></reference>
+                            <reference><![CDATA[3.Derrida JP, Ollagnier J, Benaim R, Haiat R, Chiche P. Amiodarone and propanolol: a dangerous combination?. Nouv Presse Med 1979 Apr 14; 8(17):1429.]]></reference>
+                            <reference><![CDATA[4.Fukumoto K, Kobayashi T, Komamura K, Kamakura S, Kitakaze M, Ueno K. Stereoselective effect of amiodarone on the pharmacokinetics of racemic carvedilol. Drug Metab Pharmacokinet 2005 Dec;20(6):423-7.]]></reference>
+                            <reference><![CDATA[5.Nagele H, Bohlmann M, Eck U, Petersen B, Rodiger W. Combination therapy with carvedilol and amiodarone in patients with severe heart failure. Eur J Heart Fail 2000 Mar;2(1):71-9.]]></reference>
+                            <reference><![CDATA[6.Macdonald PS, Keogh AM, Aboyoun C, Lund M, Amor R, McCaffrey D. Impact of concurrent amiodarone treatment on the tolerability and efficacy of carvedilol in patients with chronic heart failure. Heart 1999 Nov; 82(5):589-93.]]></reference>
+                            <reference><![CDATA[7.Krum H, Shusterman N, MacMahon S, Sharpe N. Efficacy and safety of carvedilol in patients with chronic heart failure receiving concomitant amiodarone therapy. Australia/New Zealand Heart Failure Research Collaborative Group. J Card Fail 1998 Dec;4(4):281-8.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1122</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;PROFILE" ien="5555"
+                            vuid="4444" gcnSeqNo="16600"/>
+                        <drug orderNumber="Z;1;PROSPECTIVE" ien="1111" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>SELECTED BETA-BLOCKERS/AMIODARONE; DRONEDARONE</interaction>
+                    <shortText>METOPROLOL SUCCINATE ORAL TABLET,SUSTAINED RELEASE 24HR 100 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED BETA-BLOCKERS and AMIODARONE; DRONEDARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Beta-Blockers/Amiodarone; Dronedarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  The mechanism by which propranolol, metoprolol, and nebivolol and amiodarone produce severe bradycardia and hypotension has not been established. Since these beta-blockers are cleared by hepatic metabolism and amiodarone suppress hepatic metabolism; amiodarone may decrease their metabolism.(1)Dronedarone may inhibit the metabolism of metoprolol and propranolol by CYP P-450-2D6.(2)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of hepatically metabolized beta-blockers with amiodarone(1) or dronedarone may result in bradycardia and hypotension.(1)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:     Use low doses of beta-blockers initially.  Only increase the dosage of the beta-blocker after ECG verification of good tolerability.(2)Patients receiving a concurrent therapy should be closely monitored for adverse effects, such as bradycardia and hypotension. Patients experiencing this drug interaction should have their beta-adrenergic blocking drug discontinued.  Supportive therapy with sympathomimetic agents may be required.</patientManagement>
+                        <discussion>DISCUSSION:  In one case report, a patient taking amiodarone developed hypotension and atropine-resistant sinus bradycardia after receiving a single dose of metoprolol.  Three hours after receiving the metoprolol dose, the patient experienced dizziness, weakness, and blurred vision.(1) Another report described two patients who exhibited an interaction between amiodarone and propranolol.  One patient maintained on amiodarone experienced cardiac arrest after a single oral dose of propranolol.  The second patient received intravenous amiodarone followed by 2 doses of oral propranolol and developed severe bradycardia followed by ventricular fibrillation.(3)The stereoselective effect of amiodarone on the pharmacokinetics of racemic carvedilol was evaluated in 106 patients, where 52 received carvedilol monotherapy and 54 received carvedilol with amiodarone.  There was no significant differences between the serum concentration to dose ratio between the 2 groups.  However, there was an increase in the ratio of S-carvedilol to R-carvedilol.  During amiodarone, the concentration of S-carvedilol increased from 3.03 ng/ml to 6.54 ng/ml.(4)Several studies have shown that the addition of carvedilol to congestive heart failure patients currently receiving amiodarone resulted in improved hypotension/dizziness, primary AV block, and aggravated angina.(5-7)Dronedarone increased propranolol and metoprolol (exact dosages not stated) by 1.3-fold and 1.6-fold, respectively.(2)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Leor J, Levartowsky D, Sharon C, Farfel Z. Amiodarone and beta-adrenergic blockers: an interaction with metoprolol but not with atenolol. Am Heart J 1988 Jul;116(1 Pt 1):206-7.]]></reference>
+                            <reference><![CDATA[2.Multaq (dronedarone) US prescribing information. Sanofi-Aventis U.S. LLC July, 2009.]]></reference>
+                            <reference><![CDATA[3.Derrida JP, Ollagnier J, Benaim R, Haiat R, Chiche P. Amiodarone and propanolol: a dangerous combination?. Nouv Presse Med 1979 Apr 14; 8(17):1429.]]></reference>
+                            <reference><![CDATA[4.Fukumoto K, Kobayashi T, Komamura K, Kamakura S, Kitakaze M, Ueno K. Stereoselective effect of amiodarone on the pharmacokinetics of racemic carvedilol. Drug Metab Pharmacokinet 2005 Dec;20(6):423-7.]]></reference>
+                            <reference><![CDATA[5.Nagele H, Bohlmann M, Eck U, Petersen B, Rodiger W. Combination therapy with carvedilol and amiodarone in patients with severe heart failure. Eur J Heart Fail 2000 Mar;2(1):71-9.]]></reference>
+                            <reference><![CDATA[6.Macdonald PS, Keogh AM, Aboyoun C, Lund M, Amor R, McCaffrey D. Impact of concurrent amiodarone treatment on the tolerability and efficacy of carvedilol in patients with chronic heart failure. Heart 1999 Nov; 82(5):589-93.]]></reference>
+                            <reference><![CDATA[7.Krum H, Shusterman N, MacMahon S, Sharpe N. Efficacy and safety of carvedilol in patients with chronic heart failure receiving concomitant amiodarone therapy. Australia/New Zealand Heart Failure Research Collaborative Group. J Card Fail 1998 Dec;4(4):281-8.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1194</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                            drugName="Advil" gcnSeqNo="16579"/>
+                        <drug orderNumber="Z;1;PROSPECTIVE" ien="1111" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>ATORVASTATIN; LOVASTATIN; SIMVASTATIN/AMIODARONE;DRONEDARONE</interaction>
+                    <shortText>Advil and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between ATORVASTATIN; LOVASTATIN; SIMVASTATIN and AMIODARONE;DRONEDARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Atorvastatin; Lovastatin; Simvastatin/Amiodarone; Dronedarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Amiodarone may inhibit the metabolism of atorvastatin,(1) lovastatin(2) and simvastatin(3,4) by CYP P-450.Dronedarone may inhibit the metabolism of HMG CoA reductase inhibitors by CYP P-450-3A4 and P-glycoprotein.(5)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Concurrent use of amiodarone(2) or dronedarone(5) with certain HMG CoA reductase inhibitors may increase the risk of rhabdomyolysis.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Use the lowest dose of atorvastatin necessary in patients receiving concurrent amiodarone therapy.(1)The US manufacturer of lovastatin recommends that the dose of lovastatin not exceed 40 mg daily in patients receiving concurrent amiodarone unless the potential benefit outweighs the increased risk of myopathy.(2)The US manufacturer of simvastatin recommends that the dose of simvastatin not exceed 20 mg daily in patients receiving concurrent amiodarone unless the potential benefit outweighs the increased risk of myopathy.(3,4)The US manufacturer of dronedarone recommends that these same recommendations be applied to HMG CoA reductase inhibitors when they are administered with dronedarone.(5)</patientManagement>
+                        <discussion>DISCUSSION:  Rhabdomyolysis has been reported with concurrent amiodarone and atorvastatin and simvastatin.(1)In a case report, a 63 year-old male developed rhabdomyolysis 4 weeks after starting simvastatin therapy and 2 weeks after starting amiodarone.(6)In a clinical trial, myopathy was been reported in 6% of patients receiving concurrent simvastatin (80 mg) and amiodarone.(3)In a randomized, cross-over study in 12 healthy subjects, subjects received amiodarone (400 mg daily) with either simvastatin (40 mg) or pravastatin (40 mg).  Amiodarone increase simvastatin area-under-curve (AUC) by 73%, maximum concentration (Cmax) by 100%, and half-life by 48%.  There were no significant effects on pravastatin pharmacokinetics.(7)In a case report, a 72 year-old male developed rhabdomyolysis 10 weeks after starting amiodarone (200 mg daily) therapy and 6 weeks after starting simvastatin (80 mg daily).(8)In a retrospective review of patients receiving amiodarone, the rate of adverse events in combination with a statin was 1.0%, 0.7%, and 0.4% for simvastatin, atorvastatin, and pravastatin, respectively.  The most commonly reported adverse effect was muscle soreness, which was present in 77% of reports and was found more often in older male patients.(9)Concurrent dronedarone and simvastatin (exact dosages not stated) increased exposure to simvastatin and simvastatin acid by 4-fold and 2-fold, respectively.(5)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Cordarone (amiodarone hydrochloride) US prescribing information. Wyeth Pharmaceuticals November, 2009.]]></reference>
+                            <reference><![CDATA[2.Mevacor (lovastatin) US prescribing information. Merck & Co., Inc. April, 2007.]]></reference>
+                            <reference><![CDATA[3.Zocor (simvastatin) US prescribing information. Merck & Co., Inc. November, 2007.]]></reference>
+                            <reference><![CDATA[4.Vytorin (ezetimibe/simvastatin) US prescribing information. Merck/Schering-Plough Pharmaceuticals November, 2009.]]></reference>
+                            <reference><![CDATA[5.Multaq (dronedarone) US prescribing information. Sanofi-Aventis U.S. LLC July, 2009.]]></reference>
+                            <reference><![CDATA[6.Roten L, Schoenenberger RA, Krahenbuhl S, Schlienger RG. Rhabdomyolysis in association with simvastatin and amiodarone. Ann Pharmacother 2004 Jun; 38(6):978-81.]]></reference>
+                            <reference><![CDATA[7.Becquemont L, Neuvonen M, Verstuyft C, Jaillon P, Letierce A, Neuvonen PJ, Funck-Brentano C. Amiodarone interacts with simvastatin but not with pravastatin disposition kinetics. Clin Pharmacol Ther 2007 May; 81(5):679-84.]]></reference>
+                            <reference><![CDATA[8.Ricaurte B, Guirguis A, Taylor HC, Zabriskie D. Simvastatin-amiodarone interaction resulting in rhabdomyolysis, azotemia, and possible hepatotoxicity. Ann Pharmacother 2006 Apr;40(4):753-7.]]></reference>
+                            <reference><![CDATA[9.Alsheikh-Ali AA, Karas RH. Adverse events with concomitant amiodarone and statin therapy. Prev Cardiol 2005 Spring;8(2):95-7.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+            <drugTherapyChecks/>
+            <drugDoseChecks>
+                <drugDoseCheck>
+                    <source>FDB</source>
+                    <message>
+                        <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                            drugName="Advil" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>RenalImpairment</type>
+                        <drugName>Advil</drugName>
+                        <text>Renal function is important in this drug's elimination. Dosing adjustment should be considered in patients with an estimated creatinine clearance at or below 10 ML/MIN.</text>
+                    </message>
+                    <message>
+                        <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                            drugName="Advil" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>Advil</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;4;PROSPECTIVE" ien="4444"
+                        drugName="Advil" gcnSeqNo="16579"/>
+                    <chemoInjectable>false</chemoInjectable>
+                    <singleDoseStatus>Passed</singleDoseStatus>
+                    <singleDoseStatusCode>1</singleDoseStatusCode>
+                    <singleDoseMessage></singleDoseMessage>
+                    <singleDoseMax>80 MG</singleDoseMax>
+                    <rangeDoseStatus>Passed</rangeDoseStatus>
+                    <rangeDoseStatusCode>1</rangeDoseStatusCode>
+                    <rangeDoseMessage></rangeDoseMessage>
+                    <rangeDoseLow>5 MG/DAY</rangeDoseLow>
+                    <rangeDoseHigh>80 MG/DAY</rangeDoseHigh>
+                    <doseHigh>80</doseHigh>
+                    <doseHighUnit>MG/DAY</doseHighUnit>
+                    <doseLow>5</doseLow>
+                    <doseLowUnit>MG/DAY</doseLowUnit>
+                    <doseFormHigh>2</doseFormHigh>
+                    <doseFormHighUnit>EA/DAY</doseFormHighUnit>
+                    <doseFormLow>0.125</doseFormLow>
+                    <doseFormLowUnit>EA/DAY</doseFormLowUnit>
+                    <doseRouteDescription>ORAL</doseRouteDescription>
+                    <durationStatus>BelowRecommended</durationStatus>
+                    <durationStatusCode>4</durationStatusCode>
+                    <durationMessage>Duration of 10 days is below the duration range of 28 days to indefinitely.</durationMessage>
+                    <frequencyStatus>ExceedsRecommended</frequencyStatus>
+                    <frequencyStatusCode>3</frequencyStatusCode>
+                    <frequencyMessage>Frequency of 4 administrations per day exceeds the frequency range of 1 administrations per day to 3 administrations per day.</frequencyMessage>
+                    <dailyDoseStatus>Passed</dailyDoseStatus>
+                    <dailyDoseStatusCode>1</dailyDoseStatusCode>
+                    <dailyDoseMessage></dailyDoseMessage>
+                    <maxDailyDoseStatus>Passed</maxDailyDoseStatus>
+                    <maxDailyDoseStatusCode>1</maxDailyDoseStatusCode>
+                    <maxDailyDoseMessage></maxDailyDoseMessage>
+                    <maxLifetimeDose>0</maxLifetimeDose>
+                </drugDoseCheck>
+            </drugDoseChecks>
+        </drugCheck>
+    </Body>

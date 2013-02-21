@@ -1,0 +1,55 @@
+table.report {
+	border-width: 2px 2px 2px 2px;
+	border-spacing: 1px;
+	border-style: outset;
+	border-color: #909090;
+	border-collapse: separate;
+	background-color: #B8B8B8;
+	text-align: left;
+	width: 100%;
+}
+
+table.report tr.plain td {
+	padding: 0px 2px 0px 2px;
+	background-color: white;
+	vertical-align: text-top;
+}
+
+table.report tr.highlighted td {
+	padding: 0px 2px 0px 2px;
+	background-color: #E8E8E8;
+	vertical-align: text-top;
+}
+
+table.report tr.header th {
+	text-align: center;
+	background-color: #99CCFF;
+}
+
+img.status {
+	float: left;
+	clear: left;
+	margin: 1px 2px 1px 2px;
+}
+
+table.filter {
+	border-width: 2px 2px 2px 2px;
+	border-spacing: 1px;
+	border-style: outset;
+	border-color: #909090;
+	border-collapse: separate;
+	background-color: #FFFFCC;
+	font-weight: bold;
+	padding: 2px;
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+table.status {
+	border-width: 0px;
+	border-spacing: 0px;
+	text-align: left;
+	margin: 0px; padding 0px;
+	text-align: left;
+	vertical-align: text-top;
+}

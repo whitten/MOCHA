@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1001"/>
+        <PEPSVersion customIssueDate="20100227" customBuildVersion="6"
+            customDbVersion="3.2" difIssueDate="20100219"
+            difBuildVersion="7" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>283</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;Prospect" ien="455" gcnSeqNo="25485"/>
+                        <drug orderNumber="Z;1;Prospect" ien="113"
+                            vuid="778899" gcnSeqNo="266"/>
+                    </interactedDrugList>
+                    <severity>Contraindicated Drug Combination</severity>
+                    <interaction>SELECTED PROTEASE INHIBITORS/AMIODARONE</interaction>
+                    <shortText>INDINAVIR SULFATE ORAL CAPSULE 400 MG and AMIODARONE HCL ORAL TABLET 200 MG may interact based on the potential interaction between SELECTED PROTEASE INHIBITORS and AMIODARONE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Protease Inhibitors/Amiodarone</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Indinavir,(1) nelfinavir,(2) ritonavir,(3) and tipranavir coadministered with ritonavir(4) may inhibit the metabolism of amiodarone at CYP P-450-3A4.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir,(2) ritonavir,(3) or tipranavir coadministered with ritonavir(4) may result in increased levels, clinical effects, and toxicity of amiodarone.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The concurrent administration of amiodarone with indinavir,(1) nelfinavir(2), ritonavir,(3) or tipranavir coadministered with ritonavir(4) is contraindicated by the manufacturers of indinavir,(1) nelfinavir(2), ritonavir,(3) and tipranavir coadministered with ritonavir. (4)</patientManagement>
+                        <discussion>DISCUSSION:  Indinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of indinavir states that the concurrent administration of indinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(1)Nelfinavir has been shown to inhibit CYP P-450-3A4.  Therefore, the manufacturer of nelfinavir states that the concurrent administration of nelfinavir with amiodarone, which is metabolized by CYP P-450-3A4, is contraindicated.(2)Ritonavir has also been shown to inhibit CYP P-450-3A4. Therefore, the manufacturer of ritonavir state that the concurrent administration of ritonavir with amiodarone is contraindicated.(3)</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Crixivan (indinavir sulfate) US prescribing information. Merck & Co., Inc. December, 2008.]]></reference>
+                            <reference><![CDATA[2.Viracept (nelfinavir mesylate) US prescribing information. Agouron Pharmaceuticals, Inc. July, 2007.]]></reference>
+                            <reference><![CDATA[3.Norvir (ritonavir) US prescribing information. Abbott Laboratories November, 2009.]]></reference>
+                            <reference><![CDATA[4.Aptivus (tipranavir) US prescribing information. Boehringer Ingelheim Pharmaceuticals, Inc. June, 2009.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+        </drugCheck>
+    </Body>

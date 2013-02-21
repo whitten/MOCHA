@@ -1,0 +1,384 @@
+<project name="PREv05" default="deploy" basedir="." xmlns:swri="http://www.swri.org">
+    <property name="build.type" value="all" />
+    <import file="etc/build/template/template.xml" />
+    <target name="init" depends="Template.init" description="Initialize the project" />
+    <target name="clean" depends="Template.clean" description="Clean the project" />
+    <target name="generate" depends="Template.generate" description="Generate the project artifacts">
+        <swri:xmlToJava />
+        <swri:generateNationalIntegrationProperties host="${national.hosts}" />
+        <swri:generateLocalIntegrationProperties />
+        <!-- Out of container can be overridden by hijacking Common/etc/build/template/properties/project.properties and changing its value -->
+        <propertyfile file="${build.meta.dir}/properties/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.properties">
+            <entry key="out.of.container" value="${out.of.container}" />
+        </propertyfile>
+        <swri:createJndiProperties />
+    </target>
+    <macrodef name="generateLocalIntegrationProperties" uri="http://www.swri.org">
+        <attribute name="fileName"
+                   default="${build.meta.dir}/properties/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.properties" />
+        <sequential>
+            <dirname property="file.dir" file="@{fileName}" />
+            <mkdir dir="${file.dir}" />
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <propertyfile file="@{fileName}">
+                                <entry key="local.host" value="@{host}" />
+                                <entry key="local.port" value="${server.@{target}.port}" />
+                                <entry key="local.context.factory" value="${@{host}.jndi.provider}" />
+                                <entry key="local.provider.url"
+                                       value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.@{target}.port}" />
+                                <entry key="local.fdb.dif.driver" value="${local.database.driver}" />
+                                <entry key="local.fdb.dif.jdbc.url"
+                                       value="${local.database.url.prefix}:${local.database.url.host.prefix}${@{host}.database.url.host}:${local.database.url.port}${local.database.url.port.suffix}${@{host}.fdb.dif.database.name}${local.database.url.properties}" />
+                                <entry key="local.fdb.dif.user" value="${@{host}.fdb.dif.user}" />
+                                <entry key="local.fdb.dif.password" value="${@{host}.fdb.dif.password}" />
+                            </propertyfile>
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+    <macrodef name="generateNationalIntegrationProperties" uri="http://www.swri.org">
+        <attribute name="host" />
+        <attribute name="fileName"
+                   default="${build.meta.dir}/properties/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.properties" />
+        <sequential>
+            <dirname property="file.dir" file="@{fileName}" />
+            <mkdir dir="${file.dir}" />
+            <propertyfile file="@{fileName}">
+                <entry key="national.host" value="@{host}" />
+                <entry key="national.port" value="${server.NationalPharmacyServer.port}" />
+                <entry key="national.context.factory" value="${@{host}.jndi.provider}" />
+                <entry key="national.provider.url"
+                       value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.NationalPharmacyServer.port}" />
+                <entry key="national.datup.driver" value="${national.database.driver}" />
+                <entry key="national.datup.jdbc.url"
+                       value="${national.database.url.prefix}:${national.database.url.host.prefix}${@{host}.database.url.host}:${national.database.url.port}${national.database.url.port.suffix}${@{host}.NationalFdbUpdateDatup.database.name}${national.database.url.properties}" />
+                <entry key="national.datup.user" value="${@{host}.NationalFdbUpdateDatup.user}" />
+                <entry key="national.datup.password" value="${@{host}.NationalFdbUpdateDatup.password}" />
+            </propertyfile>
+        </sequential>
+    </macrodef>
+    <macrodef name="createJndiProperties" uri="http://www.swri.org">
+        <sequential>
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <mkdir dir="${build.meta.dir}/properties/local/spring" />
+                    <propertyfile file="${build.meta.dir}/properties/local/spring/nationalJndi.properties"
+                                  comment="JNDI Template properties used by Local Spring configuration to lookup instances of National services">
+                        <entry key="national.java.naming.provider.url"
+                               value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.NationalPharmacyServer.port}" />
+                        <entry key="national.java.naming.factory.initial" value="${@{host}.jndi.provider}" />
+                        <entry key="national.java.naming.security.principal" value="${@{host}.j2ee.user}" />
+                        <entry key="national.java.naming.security.credentials" value="${@{host}.j2ee.password}" />
+                    </propertyfile>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+    <target name="refreshDatabase" depends="generate" description="Reload Updater database tables and data">
+        <!-- Datup tables -->
+        <swri:refreshDatabase environment="national" file="createUpdaterTables" />
+        <!-- add National custom version table -->
+        <swri:ddl environment="national" databaseName="fdb.dif" host="${national.hosts}" file="ctVersion.ddl" />
+        <!-- clear National custom data -->
+        <swri:ddl environment="national" databaseName="fdb.dif" host="${national.hosts}" file="deleteCustomData.sql" />
+        <!-- add Local custom version table -->
+        <swri:ddl environment="local" databaseName="fdb.dif" host="${local.hosts}" file="ctVersion.ddl" />
+        <!-- clear Local custom data -->
+        <swri:ddl environment="local" databaseName="fdb.dif" host="${local.hosts}" file="deleteCustomData.sql" />
+    </target>
+    <target name="refreshFdbDifDatabase" depends="generate" description="Refresh National and Local FDB-DIF tables">
+        <!-- drop National FDB tables -->
+        <swri:ddl environment="national" databaseName="fdb.dif" host="${national.hosts}" file="dropFdbDifTables.sql" />
+        <!-- create National FDB tables -->
+        <swri:ddl environment="national" databaseName="fdb.dif" host="${national.hosts}" file="createFdbDifTables.ddl" />
+        <!-- drop Local FDB tables -->
+        <swri:ddl environment="local" databaseName="fdb.dif" host="${local.hosts}" file="dropFdbDifTables.sql" />
+        <!-- create Local FDB tables -->
+        <swri:ddl environment="local" databaseName="fdb.dif" host="${local.hosts}" file="createFdbDifTables.ddl" />
+    </target>
+    <target name="compile" depends="Template.compile" description="Compile the source code">
+        <!-- The JUnit Ant task uses the project.class.path, which doesn't include the src folder, so we must copy these files to build/classes -->
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${build.src.dir}">
+                <include name="**/jaxb.properties" />
+                <include name="**/bgm.ser" />
+            </fileset>
+        </copy>
+    </target>
+    <target name="unitTest" depends="Template.unitTest" description="Execute the unit tests" />
+    <target name="jar" depends="Template.jar" description="Package the project artifacts">
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="mocha" />
+            </or>
+            <then>
+                <swri:packageJar destDir="${build.archive.dir}/mocha"
+                                 destFile="MOCHA.jar"
+                                 springContext="${etc.xml.dir}/spring/mocha/beanRefContext.xml">
+                    <buildclassespatternset>
+                        <exclude name="*ext/domain/pharmacy/peps/updater/**" />
+                        <exclude name="dbank/fdbdataupdater/**" />
+                    </buildclassespatternset>
+                    <etcpatternset>
+                        <exclude name="xml/spring/datup/**" />
+                        <exclude name="template/**" />
+                        <exclude name="xml/schema/datup*" />
+                    </etcpatternset>
+                </swri:packageJar>
+                <swri:packageServletWar destDir="${build.archive.dir}/mocha"
+                                        destFile="MOCHA.war"
+                                        webxml="${etc.dir}/servlet/mocha/web.xml">
+                    <additionalfilespattern>
+                        <include name="**" />
+                    </additionalfilespattern>
+                </swri:packageServletWar>
+            </then>
+        </if>
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="datup" />
+            </or>
+            <then>
+                <swri:packageJar destDir="${build.archive.dir}/national"
+                                 destFile="DATUP.jar"
+                                 springContext="${etc.xml.dir}/spring/datup/national/beanRefContext.xml">
+                    <buildclassespatternset>
+                        <exclude name="**/local/**/*.class" />
+                        <exclude name="ext/domain/pharmacy/peps/common/servlet/**" />
+                        <exclude name="ext/domain/pharmacy/peps/external/common/preencapsulation/servlet/**" />
+                    </buildclassespatternset>
+                    <etcpatternset>
+                        <exclude name="**/spring/datup/local/**" />
+                    </etcpatternset>
+                </swri:packageJar>
+                <swri:packageJar destDir="${build.archive.dir}/local"
+                                 destFile="DATUP.jar"
+                                 springContext="${etc.xml.dir}/spring/datup/local/beanRefContext.xml">
+                    <buildclassespatternset>
+                        <exclude name="**/national/**/*.class" />
+                        <exclude name="ext/domain/pharmacy/peps/common/servlet/**" />
+                        <exclude name="ext/domain/pharmacy/peps/external/common/preencapsulation/servlet/**" />
+                    </buildclassespatternset>
+                    <etcpatternset>
+                        <exclude name="**/spring/datup/national/**" />
+                    </etcpatternset>
+                </swri:packageJar>
+                <swri:packageServletWar destDir="${build.archive.dir}/national"
+                                        destFile="DATUP.war"
+                                        webxml="${etc.dir}/servlet/datup/national/web.xml">
+                    <additionalfilespattern>
+                        <include name="**" />
+                    </additionalfilespattern>
+                </swri:packageServletWar>
+                <swri:packageServletWar destDir="${build.archive.dir}/local"
+                                        destFile="DATUP.war"
+                                        webxml="${etc.dir}/servlet/datup/local/web.xml">
+                    <additionalfilespattern>
+                        <exclude name="**" />
+                    </additionalfilespattern>
+                </swri:packageServletWar>
+            </then>
+        </if>
+    </target>
+    <macrodef name="packageServletWar" uri="http://www.swri.org">
+        <attribute name="destFile" default="${ant.project.name}.war" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <attribute name="webxml" default="${etc.dir}/servlet/web.xml" />
+        <element name="additionalfilespattern" optional="true" />
+        <sequential>
+            <war destfile="@{destDir}/@{destFile}" webxml="@{webxml}">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+                <webinf dir="${etc}/servlet">
+                    <include name="applicationContext.xml" />
+                </webinf>
+                <fileset dir="${basedir}/web">
+                    <additionalfilespattern />
+                </fileset>
+            </war>
+        </sequential>
+    </macrodef>
+    <target name="packageTests"
+            depends="setAtpDeployEnvironment, jar"
+            description="Package the files required to run tests on the deployment server">
+        <property name="tests.dir" value="${build.archive.dir}/${ant.project.name}Tests" />
+        <property name="tests.lib.dir" value="${tests.dir}/lib" />
+        <property name="tests.classes.dir" value="${tests.dir}/classes" />
+        <mkdir dir="${tests.lib.dir}" />
+        <mkdir dir="${tests.classes.dir}" />
+        <copy todir="${tests.classes.dir}">
+            <fileset dir="${build.classes.dir}">
+                <include name="**/test/**/*.class" />
+            </fileset>
+            <fileset dir="${build.meta.dir}">
+                <include name="**/test/**" />
+            </fileset>
+            <fileset dir="${etc.dir}">
+                <include name="**/test/**" />
+            </fileset>
+        </copy>
+        <copy todir="${tests.lib.dir}" flatten="true">
+            <fileset dir="${lib.dir}">
+                <include name="build/test/**" />
+                <include name="jaxb/**" />
+                <include name="log/**" />
+                <include name="commons/**" />
+            </fileset>
+            <fileset dir="${build.archive.dir}">
+                <include name="${ant.project.name}.jar" />
+                <include name="${ant.project.name}Test.jar" />
+            </fileset>
+            <fileset dir="${etc.dir}">
+                <include name="log4j.xml" />
+            </fileset>
+        </copy>
+        <copy todir="${tests.dir}" flatten="true">
+            <fileset dir="${etc.dir}/atp">
+                <include name="build.xml" />
+                <include name="*.doc" />
+            </fileset>
+        </copy>
+        <zip destfile="${build.archive.dir}/${ant.project.name}Tests.zip">
+            <fileset dir="${build.archive.dir}">
+                <include name="${ant.project.name}Tests/**" />
+            </fileset>
+        </zip>
+    </target>
+    <target name="setAtpDeployEnvironment" depends="initTasks">
+        <var name="deploy.environment" value="atp" />
+    </target>
+    <target name="ear" depends="Template.ear" description="Ear the project artifacts">
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="mocha" />
+            </or>
+            <then>
+                <swri:packageEar name="MOCHA" baseDir="${build.archive.dir}/mocha" destFile="MOCHA.ear" />
+            </then>
+        </if>
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="datup" />
+            </or>
+            <then>
+                <swri:packageEar name="Local DATUP" baseDir="${build.archive.dir}/local" destFile="Local-DATUP.ear" />
+                <swri:packageEar name="National DATUP" baseDir="${build.archive.dir}/national" destFile="National-DATUP.ear" />
+            </then>
+        </if>
+    </target>
+    <target name="deploy" depends="Template.deploy" description="Deploy the project artifacts">
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="mocha" />
+            </or>
+            <then>
+                <swri:undeploy host="${local.hosts}" name="MOCHA" targets="${server.LocalPharmacyServer}" />
+                <swri:deploy host="${local.hosts}"
+                             name="MOCHA"
+                             source="${build.archive.dir}/MOCHA.ear"
+                             targets="${server.LocalPharmacyServer}" />
+            </then>
+        </if>
+        <if>
+            <or>
+                <equals arg1="${build.type}" arg2="all" />
+                <equals arg1="${build.type}" arg2="datup" />
+            </or>
+            <then>
+                <swri:undeploy host="${local.hosts}" name="Local-DATUP" targets="${server.LocalPharmacyServer}" />
+                <swri:undeploy host="${local.hosts}" name="National-DATUP" targets="${server.NationalPharmacyServer}" />
+                <swri:deploy host="${local.hosts}"
+                             name="Local-DATUP"
+                             source="${build.archive.dir}/Local-DATUP.ear"
+                             targets="${server.LocalPharmacyServer}" />
+                <swri:deploy host="${local.hosts}"
+                             name="National-DATUP"
+                             source="${build.archive.dir}/National-DATUP.ear"
+                             targets="${server.NationalPharmacyServer}" />
+            </then>
+        </if>
+    </target>
+    <target name="integrationTest"
+            depends="Template.integrationTest"
+            description="Deploy and execute the integration tests" />
+    <target name="performanceTest"
+            depends="Template.performanceTest"
+            description="Deploy and execute the performance tests" />
+    <target name="atpTest" depends="Template.atpTest" description="Deploy and execute the ATP tests" />
+    <target name="document" depends="Template.document" description="Document the project" />
+    <target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Run unit tests, then check for Checkstyle and PMD errors" />
+    <target name="buildIntegrationTest"
+            depends="Template.buildIntegrationTest"
+            description="Run integration tests, then check for Checkstyle and PMD errors" />
+    <target name="buildTestAll"
+            depends="Template.buildTestAll"
+            description="Run unit and integration tests, then check for Checkstyle and PMD errors" />
+    <target name="separateAndPackage"
+            depends="Template.init"
+            description="Separate and package the combined source code into MOCHA and DATUP projects">
+        <property name="build.mocha.dir" value="${build.dir}/MOCHA" />
+        <property name="build.datup.dir" value="${build.dir}/DATUP" />
+        <mkdir dir="${build.mocha.dir}" />
+        <mkdir dir="${build.datup.dir}" />
+        <!-- Copy combined source into separate MOCHA and DATUP folders -->
+        <copy todir="${build.mocha.dir}" includeEmptyDirs="false">
+            <fileset dir="${basedir}">
+                <exclude name="build/**" />
+                <exclude name="classes/**" />
+                <exclude name="**/EXT/DOMAIN/pharmacy/peps/updater/**" />
+                <exclude name="**/dbank/fdbdataupdater/**" />
+                <exclude name="etc/servlet/datup/**" />
+                <exclude name="etc/xml/spring/datup/**" />
+            </fileset>
+        </copy>
+        <copy todir="${build.datup.dir}" includeEmptyDirs="false">
+            <fileset dir="${basedir}">
+                <exclude name="build/**" />
+                <exclude name="classes/**" />
+                <exclude name="**/EXT/DOMAIN/pharmacy/peps/common/servlet/**" />
+                <exclude name="**/EXT/DOMAIN/pharmacy/peps/external/common/preencapsulation/servlet/**" />
+                <exclude name="etc/servlet/mocha/**" />
+            </fileset>
+        </copy>
+        <!-- Rename PRE V. 0.5 to DATUP in properties and Eclipse & Ant project files for new DATUP project -->
+        <replaceregexp file="${build.mocha.dir}/build.xml" match="PREv05" replace="MOCHA" />
+        <replaceregexp file="${build.mocha.dir}/build.xml" match="all" replace="mocha" />
+        <replaceregexp file="${build.mocha.dir}/etc/build/template/properties/project.properties"
+                       match="PREv05"
+                       replace="MOCHA"
+                       flags="g" />
+        <replaceregexp file="${build.mocha.dir}/etc/build/template/properties/project.properties"
+                       match="PepsLite"
+                       replace="MOCHA"
+                       flags="g" />
+        <replaceregexp file="${build.datup.dir}/build.xml" match="PREv05" replace="DATUP" />
+        <replaceregexp file="${build.datup.dir}/build.xml" match="all" replace="datup" />
+        <replaceregexp file="${build.datup.dir}/etc/build/template/properties/project.properties"
+                       match="PREv05"
+                       replace="DATUP"
+                       flags="g" />
+        <replaceregexp file="${build.datup.dir}/etc/build/template/properties/project.properties"
+                       match="PepsLite"
+                       replace="DATUP"
+                       flags="g" />
+        <!-- ZIP the source code -->
+        <zip destfile="${build.archive.dir}/MOCHA-src.zip" basedir="${build.mocha.dir}" />
+        <zip destfile="${build.archive.dir}/DATUP-src.zip" basedir="${build.datup.dir}" />
+        <!-- Call the ear target for new MOCHA and DATUP projects -->
+        <ant dir="${build.mocha.dir}" target="ear" inheritall="false" />
+        <ant dir="${build.datup.dir}" target="ear" inheritall="false" />
+    </target>

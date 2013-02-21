@@ -1,0 +1,51 @@
+<project name="PRE V. 0.5 Tests" basedir="." xmlns:swri="http://www.swri.org" default="atp">
+    <target name="clean">
+        <delete failonerror="true" quiet="true">
+            <fileset dir="report" />
+        </delete>
+    </target>
+
+    <target name="atp" depends="clean" description="Run the ATP test cases">
+        <swri:test type="integration/atp" />
+    </target>
+
+    <target name="performance" depends="clean" description="Run the performance test cases">
+        <swri:test type="integration/performance" />
+    </target>
+
+    <target name="integration" depends="clean" description="Run the integration test cases">
+        <swri:test type="integration" />
+    </target>
+
+    <macrodef name="test" uri="http://www.swri.org">
+        <attribute name="type" />
+        <sequential>
+            <mkdir dir="report" />
+
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="test.failed"
+                   failureProperty="test.failed">
+
+                <classpath>
+                    <fileset dir="lib">
+                        <include name="**/*.jar" />
+                    </fileset>
+                    <dirset dir="lib" />
+                    <dirset dir="classes" />
+                </classpath>
+
+                <batchtest fork="true" todir="report">
+                    <fileset dir="classes" casesensitive="false">
+                        <include name="**/test/@{type}/*Test.class" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="plain" />
+            </junit>
+
+            <fail if="test.failed">One or more tests failed!</fail>
+        </sequential>
+    </macrodef>
+</project>

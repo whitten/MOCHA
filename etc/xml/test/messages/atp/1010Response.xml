@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1010"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDoseChecks>
+                <drugDoseCheck>
+                    <source>FDB</source>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>RenalImpairment</type>
+                        <drugName>SIMVASTATIN ORAL TABLET 40 MG</drugName>
+                        <text>Renal function is important in this drug's elimination. Dosing adjustment should be considered in patients with an estimated creatinine clearance at or below 10 ML/MIN.</text>
+                    </message>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>SIMVASTATIN ORAL TABLET 40 MG</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                    <chemoInjectable>false</chemoInjectable>
+                    <singleDoseStatus>ExceedsMax</singleDoseStatus>
+                    <singleDoseStatusCode>2</singleDoseStatusCode>
+                    <singleDoseMessage>Single dose amount of 90 MG exceeds the maximum single dose amount of 80 MG.</singleDoseMessage>
+                    <singleDoseMax>80 MG</singleDoseMax>
+                    <rangeDoseStatus>ExceedsRecommended</rangeDoseStatus>
+                    <rangeDoseStatusCode>3</rangeDoseStatusCode>
+                    <rangeDoseMessage>Total dose amount of 360 MG/DAY exceeds the dosing range of 5 MG/DAY to 80 MG/DAY.</rangeDoseMessage>
+                    <rangeDoseLow>5 MG/DAY</rangeDoseLow>
+                    <rangeDoseHigh>80 MG/DAY</rangeDoseHigh>
+                    <doseHigh>80</doseHigh>
+                    <doseHighUnit>MG/DAY</doseHighUnit>
+                    <doseLow>5</doseLow>
+                    <doseLowUnit>MG/DAY</doseLowUnit>
+                    <doseFormHigh>2</doseFormHigh>
+                    <doseFormHighUnit>EA/DAY</doseFormHighUnit>
+                    <doseFormLow>0.125</doseFormLow>
+                    <doseFormLowUnit>EA/DAY</doseFormLowUnit>
+                    <doseRouteDescription>ORAL</doseRouteDescription>
+                    <durationStatus>BelowRecommended</durationStatus>
+                    <durationStatusCode>4</durationStatusCode>
+                    <durationMessage>Duration of 10 days is below the duration range of 28 days to indefinitely.</durationMessage>
+                    <frequencyStatus>ExceedsRecommended</frequencyStatus>
+                    <frequencyStatusCode>3</frequencyStatusCode>
+                    <frequencyMessage>Frequency of 4 administrations per day exceeds the frequency range of 1 administrations per day to 3 administrations per day.</frequencyMessage>
+                    <dailyDoseStatus>ExceedsMax</dailyDoseStatus>
+                    <dailyDoseStatusCode>2</dailyDoseStatusCode>
+                    <dailyDoseMessage>Total dose amount of 360 MG/DAY exceeds the maximum daily dose amount of 80 MG/DAY.</dailyDoseMessage>
+                    <maxDailyDoseStatus>ExceedsMax</maxDailyDoseStatus>
+                    <maxDailyDoseStatusCode>2</maxDailyDoseStatusCode>
+                    <maxDailyDoseMessage>Total dose amount of 360 MG/DAY exceeds the maximum daily dose amount of 80 MG/DAY.</maxDailyDoseMessage>
+                    <maxLifetimeDose>0</maxLifetimeDose>
+                </drugDoseCheck>
+            </drugDoseChecks>
+        </drugCheck>
+    </Body>

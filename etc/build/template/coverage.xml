@@ -1,0 +1,127 @@
+<project name="CoverageTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initCoverageTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef resource="emma_ant.properties" loaderref="ant-loader" classpathref="build.class.path" />
+
+            <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageResetAll />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageInstrument" uri="http://www.swri.org">
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <emma>
+                        <instr mode="overwrite" metadatafile="${build.dir}/coverage/metadata.emma" merge="true">
+                            <instrpath>
+                                <pathelement path="${build.classes.dir}" />
+                            </instrpath>
+                            <filter includes="*" excludes="*test*, *tools*" />
+                        </instr>
+                    </emma>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageGet" uri="http://www.swri.org">
+        <attribute name="port" default="47653" />
+        <attribute name="host" />
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <ctl connect="@{host}:@{port}">
+                                    <command name="coverage.get"
+                                             args="${build.dir}/coverage/coverage.emma,true,false" />
+                                </ctl>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to get coverage data on host @{host}</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageGetAll" uri="http://www.swri.org">
+        <sequential>
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:coverageGet host="@{host}" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageReset" uri="http://www.swri.org">
+        <attribute name="port" default="47653" />
+        <attribute name="host" />
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <ctl connect="@{host}:@{port}">
+                                    <command name="coverage.reset" />
+                                </ctl>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to reset coverage data on host @{host}</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageResetAll" uri="http://www.swri.org">
+        <sequential>
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:coverageReset host="@{host}" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageReport" uri="http://www.swri.org">
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <report sourcepath="${src.dir}">
+                                    <fileset dir="${build.dir}/coverage">
+                                        <include name="*.emma" />
+                                    </fileset>
+                                    <html outfile="${build.dir}/coverage/report/coverage.html" />
+                                    <xml outfile="${build.dir}/coverage/report/coverage.xml" />
+                                </report>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to generate coverage report</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+</project>

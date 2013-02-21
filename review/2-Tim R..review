@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="2">
+  <ReviewIssue id="F6B4DDNA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-07 :: 15:07:06:070 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:52:34:509 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim R.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="57">src/EXT/DOMAIN/pharmacy/peps/external/local/preencapsulation/inbound/utility/drugcheck/RequestConverter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>is the icn variable of the orderCheck object set to null when the request object's icn is not set?</Summary>
+    <Description>if (request.getBody().getDrugCheck().isSetPatient()) {</Description>
+    <Annotation>If the patient element is in the request message, the ICN attribute is required, so there will always be a value for the ICN variable.</Annotation>
+    <Revision>invalid issue</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F6F4SKUQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-10 :: 10:29:59:954 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-09-11 :: 14:52:26:244 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Tim R.</ReviewerId>
+    <AssignedTo>David P.</AssignedTo>
+    <File line="86">src/EXT/DOMAIN/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugChecksCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Are these conditions mutually exclusive?</Summary>
+    <Description>if (requestVo.isDrugDoseCheck()) {&#xD;
+            results.setDrugDoseCheckResults(drugDoseCheck.performDrugDoseCheck(doseCheckScreenDrugs, idMap, requestVo&#xD;
+                .isProspectiveOnly(), requestVo.getAgeInDays(), requestVo.getWeightInKg(), requestVo&#xD;
+                .getBodySurfaceAreaInSqM(), requestVo.isCustomTables()));&#xD;
+            LOG.info("DOSE RESULTS = " + results);&#xD;
+        }&#xD;
+&#xD;
+        if (requestVo.isDrugDrugCheck()) {&#xD;
+            results.setDrugDrugCheckResults(drugDrugCheck.performDrugDrugCheck(screenDrugs, idMap, requestVo&#xD;
+                .isProspectiveOnly(), requestVo.isCustomTables()));&#xD;
+        }&#xD;
+&#xD;
+        if (requestVo.isDrugIngredientCheck()) {&#xD;
+            results.setDrugIngredientCheckResults(drugIngredientCheck.performDrugIngredientCheck(screenDrugs, idMap,&#xD;
+                requestVo.isProspectiveOnly()));&#xD;
+        }&#xD;
+&#xD;
+        if (requestVo.isDrugTherapyCheck()) {&#xD;
+            results.setDrugTherapyCheckResults(drugTherapyCheck.performDrugTherapyCheck(screenDrugs, idMap, requestVo&#xD;
+                .isProspectiveOnly(), requestVo.isDuplicateAllowance(), requestVo.isCustomTables()));&#xD;
+        }</Description>
+    <Annotation>These conditions are not mutually exclusive.  Multiple order checks can be requested in a single request message.</Annotation>
+    <Revision>invalid issue</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request"
+    targetNamespace="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xsd:element name="PEPSRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Header" />
+                <xsd:element
+                    ref="Body"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Header">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Time" />
+                <xsd:element ref="MServer" />
+                <xsd:element ref="MUser" />
+            </xsd:sequence>
+            <xsd:attribute
+                name="pingOnly"
+                type="xsd:boolean"
+                use="optional"
+                default="false" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Time">
+        <xsd:complexType>
+            <xsd:attribute
+                name="value"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="MServer">
+        <xsd:complexType>
+            <xsd:attribute
+                name="stationNumber"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="serverName"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="ip"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="uci"
+                type="xsd:string"
+                use="required" />
+            <xsd:attribute
+                name="namespace"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="MUser">
+        <xsd:complexType>
+            <xsd:attribute
+                name="jobNumber"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="duz"
+                type="xsd:unsignedLong"
+                use="required" />
+            <xsd:attribute
+                name="userName"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Body">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="drugCheck" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="drugCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="checks" />
+                <xsd:element
+                    ref="prospectiveDrugs"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="medicationProfile"
+                    minOccurs="0" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="checks">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element
+                    ref="drugDrugCheck"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="drugTherapyCheck"
+                    minOccurs="0" />
+                <xsd:element
+                    ref="drugDoseCheck"
+                    minOccurs="0" />
+            </xsd:all>
+            <xsd:attribute
+                name="prospectiveOnly"
+                type="xsd:boolean"
+                use="required" />
+            <xsd:attribute
+                name="useCustomTables"
+                type="xsd:boolean"
+                use="optional"
+                default="true" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="drugDrugCheck">
+        <xsd:complexType />
+    </xsd:element>
+    <xsd:element name="drugTherapyCheck">
+        <xsd:complexType>
+            <xsd:attribute
+                name="useDuplicateAllowance"
+                type="xsd:boolean"
+                use="optional"
+                default="true" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="drugDoseCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="demographics" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="demographics">
+        <xsd:complexType>
+            <xsd:attribute
+                name="ageInDays"
+                use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:long">
+                        <xsd:minExclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="weightInKG"
+                use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minInclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="bodySurfaceAreaInSqM"
+                use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minInclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="medicationProfile">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="prospectiveDrugs">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="drug"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="drug">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="doseInformation"
+                    minOccurs="0" />
+            </xsd:sequence>
+            <xsd:attribute
+                name="gcnSeqNo"
+                type="xsd:integer"
+                use="required" />
+            <xsd:attribute
+                name="vuid"
+                use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:minInclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="drugName"
+                type="xsd:string"
+                use="optional" />
+            <xsd:attribute
+                name="ien"
+                use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:minInclusive value="0" />
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute
+                name="orderNumber"
+                type="xsd:string"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="doseInformation">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="doseType"
+                    type="doseTypeType" />
+                <xsd:element name="doseAmount">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:double">
+                            <xsd:minExclusive value="0" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element
+                    name="doseUnit"
+                    type="doseUnitType" />
+                <xsd:element
+                    name="doseRate"
+                    type="doseRateType" />
+                <xsd:element
+                    name="frequency"
+                    type="xsd:string" />
+                <xsd:element name="duration">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:integer">
+                            <xsd:minExclusive value="0" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element
+                    name="durationRate"
+                    type="durationRateType" />
+                <xsd:element
+                    name="route"
+                    type="routeType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="doseUnitType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="5ML SPOONFUL(S)" />
+            <xsd:enumeration value="APP" />
+            <xsd:enumeration value="APPFUL" />
+            <xsd:enumeration value="APPLIC" />
+            <xsd:enumeration value="APPLICATION" />
+            <xsd:enumeration value="APPLICATION(S)" />
+            <xsd:enumeration value="APPLICATIONS" />
+            <xsd:enumeration value="APPLICATOR" />
+            <xsd:enumeration value="APPLICATORFUL" />
+            <xsd:enumeration value="APPLICATORFUL/S" />
+            <xsd:enumeration value="APPLICATORFULS" />
+            <xsd:enumeration value="APPLICATORS" />
+            <xsd:enumeration value="APPLICATORSFUL" />
+            <xsd:enumeration value="APPS" />
+            <xsd:enumeration value="AXA IU" />
+            <xsd:enumeration value="BAR" />
+            <xsd:enumeration value="BARS" />
+            <xsd:enumeration value="BREATH" />
+            <xsd:enumeration value="BREATHS" />
+            <xsd:enumeration value="BUCCAL TABLET" />
+            <xsd:enumeration value="BUCCAL TABLETS" />
+            <xsd:enumeration value="CAP" />
+            <xsd:enumeration value="CAPLET" />
+            <xsd:enumeration value="CAPLETS" />
+            <xsd:enumeration value="CAPS" />
+            <xsd:enumeration value="CAPSULE" />
+            <xsd:enumeration value="CAPSULE(S)" />
+            <xsd:enumeration value="CAPSULES" />
+            <xsd:enumeration value="CENTIMETER" />
+            <xsd:enumeration value="CENTIMETERS" />
+            <xsd:enumeration value="CM" />
+            <xsd:enumeration value="CMS" />
+            <xsd:enumeration value="DROP" />
+            <xsd:enumeration value="DROP(S)" />
+            <xsd:enumeration value="DROPS" />
+            <xsd:enumeration value="DRP" />
+            <xsd:enumeration value="DRPS" />
+            <xsd:enumeration value="EA" />
+            <xsd:enumeration value="EACH" />
+            <xsd:enumeration value="EACHES" />
+            <xsd:enumeration value="ENEMA" />
+            <xsd:enumeration value="ENEMAS" />
+            <xsd:enumeration value="G" />
+            <xsd:enumeration value="GM" />
+            <xsd:enumeration value="GMS" />
+            <xsd:enumeration value="GRAM" />
+            <xsd:enumeration value="GRAMS" />
+            <xsd:enumeration value="GTT" />
+            <xsd:enumeration value="GTTS" />
+            <xsd:enumeration value="IMPLANT" />
+            <xsd:enumeration value="IMPLANTS" />
+            <xsd:enumeration value="IN" />
+            <xsd:enumeration value="INCH" />
+            <xsd:enumeration value="INCH(ES)" />
+            <xsd:enumeration value="INCHES" />
+            <xsd:enumeration value="INH" />
+            <xsd:enumeration value="INHALATION" />
+            <xsd:enumeration value="INHALATIONS" />
+            <xsd:enumeration value="INSERT" />
+            <xsd:enumeration value="INSERTS" />
+            <xsd:enumeration value="IRRIG" />
+            <xsd:enumeration value="IRRIGATION" />
+            <xsd:enumeration value="IRRIGATIONS" />
+            <xsd:enumeration value="IU" />
+            <xsd:enumeration value="KG" />
+            <xsd:enumeration value="KILOUNIT" />
+            <xsd:enumeration value="KILOUNITS" />
+            <xsd:enumeration value="KIU" />
+            <xsd:enumeration value="KU" />
+            <xsd:enumeration value="L" />
+            <xsd:enumeration value="LITER" />
+            <xsd:enumeration value="LITERS" />
+            <xsd:enumeration value="LITRE(S)" />
+            <xsd:enumeration value="LOZ" />
+            <xsd:enumeration value="LOZENGE" />
+            <xsd:enumeration value="LOZENGES" />
+            <xsd:enumeration value="MCG" />
+            <xsd:enumeration value="MCGS" />
+            <xsd:enumeration value="MELT" />
+            <xsd:enumeration value="MELTS" />
+            <xsd:enumeration value="MEQ" />
+            <xsd:enumeration value="MEQS" />
+            <xsd:enumeration value="MG" />
+            <xsd:enumeration value="MG PE" />
+            <xsd:enumeration value="MGS" />
+            <xsd:enumeration value="MICRO UNIT" />
+            <xsd:enumeration value="MICRO UNITS" />
+            <xsd:enumeration value="MICROGRAM" />
+            <xsd:enumeration value="MICROGRAM(S)" />
+            <xsd:enumeration value="MICROGRAMS" />
+            <xsd:enumeration value="MICROLITER" />
+            <xsd:enumeration value="MICROLITERS" />
+            <xsd:enumeration value="MICROUNIT" />
+            <xsd:enumeration value="MICROUNITS" />
+            <xsd:enumeration value="MILI U" />
+            <xsd:enumeration value="MILI UNIT" />
+            <xsd:enumeration value="MILI UNITS" />
+            <xsd:enumeration value="MILILITERS" />
+            <xsd:enumeration value="MILLIEQUIVALENT" />
+            <xsd:enumeration value="MILLIEQUIVALENTS" />
+            <xsd:enumeration value="MILLIGRAM" />
+            <xsd:enumeration value="MILLIGRAMS" />
+            <xsd:enumeration value="MILLILITER" />
+            <xsd:enumeration value="MILLILITERS" />
+            <xsd:enumeration value="MILLIMOL" />
+            <xsd:enumeration value="MILLIMOLE" />
+            <xsd:enumeration value="MILLIMOLES" />
+            <xsd:enumeration value="MILLIMOLS" />
+            <xsd:enumeration value="MILLION UNIT" />
+            <xsd:enumeration value="MILLION UNITS" />
+            <xsd:enumeration value="MILLIONUNIT(S)" />
+            <xsd:enumeration value="MILLIUNIT" />
+            <xsd:enumeration value="MILLIUNITS" />
+            <xsd:enumeration value="MILU" />
+            <xsd:enumeration value="MIU" />
+            <xsd:enumeration value="ML" />
+            <xsd:enumeration value="MLS" />
+            <xsd:enumeration value="MM" />
+            <xsd:enumeration value="MMOL" />
+            <xsd:enumeration value="MMOLE" />
+            <xsd:enumeration value="MMOLES" />
+            <xsd:enumeration value="MMOLS" />
+            <xsd:enumeration value="MMU" />
+            <xsd:enumeration value="MU" />
+            <xsd:enumeration value="NANOGRAM" />
+            <xsd:enumeration value="NANOGRAMS" />
+            <xsd:enumeration value="NG" />
+            <xsd:enumeration value="NGS" />
+            <xsd:enumeration value="OPHTHALMIC INSERT" />
+            <xsd:enumeration value="OPHTHALMIC INSERTS" />
+            <xsd:enumeration value="OVULE(S)" />
+            <xsd:enumeration value="PACKAGE" />
+            <xsd:enumeration value="PACKAGES" />
+            <xsd:enumeration value="PACKET" />
+            <xsd:enumeration value="PACKETS" />
+            <xsd:enumeration value="PAD" />
+            <xsd:enumeration value="PADS" />
+            <xsd:enumeration value="PASTILLE" />
+            <xsd:enumeration value="PASTILLES" />
+            <xsd:enumeration value="PAT" />
+            <xsd:enumeration value="PATCH" />
+            <xsd:enumeration value="PATCHES" />
+            <xsd:enumeration value="PELLET" />
+            <xsd:enumeration value="PELLETS" />
+            <xsd:enumeration value="PESSARY(IES)" />
+            <xsd:enumeration value="PIECE" />
+            <xsd:enumeration value="PIECE OF GUM" />
+            <xsd:enumeration value="PIECE(S)" />
+            <xsd:enumeration value="PIECES" />
+            <xsd:enumeration value="PIECES OF GUM" />
+            <xsd:enumeration value="PILL" />
+            <xsd:enumeration value="PILLS" />
+            <xsd:enumeration value="PKG" />
+            <xsd:enumeration value="PKGS" />
+            <xsd:enumeration value="PUFF" />
+            <xsd:enumeration value="PUFF(S)" />
+            <xsd:enumeration value="PUFFS" />
+            <xsd:enumeration value="SACHET" />
+            <xsd:enumeration value="SACHETS" />
+            <xsd:enumeration value="SC" />
+            <xsd:enumeration value="SCOOP" />
+            <xsd:enumeration value="SCOOPFUL" />
+            <xsd:enumeration value="SCOOPFULS" />
+            <xsd:enumeration value="SCOOPS" />
+            <xsd:enumeration value="SCOOPSFUL" />
+            <xsd:enumeration value="SCP" />
+            <xsd:enumeration value="SPR" />
+            <xsd:enumeration value="SPRAY" />
+            <xsd:enumeration value="SPRAY(S)" />
+            <xsd:enumeration value="SPRAYS" />
+            <xsd:enumeration value="SQUIRT" />
+            <xsd:enumeration value="SQUIRTS" />
+            <xsd:enumeration value="STRIP" />
+            <xsd:enumeration value="STRIP(S)" />
+            <xsd:enumeration value="STRIPS" />
+            <xsd:enumeration value="SUPP" />
+            <xsd:enumeration value="SUPPOSITORIES" />
+            <xsd:enumeration value="SUPPOSITORY" />
+            <xsd:enumeration value="SUPPOSITORY/IES" />
+            <xsd:enumeration value="TAB" />
+            <xsd:enumeration value="TAB-CAP" />
+            <xsd:enumeration value="TAB-CAPS" />
+            <xsd:enumeration value="TABLESPOONFUL" />
+            <xsd:enumeration value="TABLESPOONFULS" />
+            <xsd:enumeration value="TABLESPOONSFUL" />
+            <xsd:enumeration value="TABLET" />
+            <xsd:enumeration value="TABLET OR CAPSULE" />
+            <xsd:enumeration value="TABLET(S)" />
+            <xsd:enumeration value="TABLET-CAPSULE" />
+            <xsd:enumeration value="TABLETS" />
+            <xsd:enumeration value="TABLETS OR CAPSULES" />
+            <xsd:enumeration value="TABLETS-CAPSULES" />
+            <xsd:enumeration value="TABS" />
+            <xsd:enumeration value="TBSP" />
+            <xsd:enumeration value="TEASPOONFUL" />
+            <xsd:enumeration value="TEASPOONFULS" />
+            <xsd:enumeration value="TEASPOONSFUL" />
+            <xsd:enumeration value="THOUSAND UNIT" />
+            <xsd:enumeration value="THOUSAND UNITS" />
+            <xsd:enumeration value="TOWEL" />
+            <xsd:enumeration value="TOWELETT" />
+            <xsd:enumeration value="TOWELETTE" />
+            <xsd:enumeration value="TOWELETTES" />
+            <xsd:enumeration value="TOWELS" />
+            <xsd:enumeration value="TROCHE" />
+            <xsd:enumeration value="TROCHES" />
+            <xsd:enumeration value="TSP" />
+            <xsd:enumeration value="TU" />
+            <xsd:enumeration value="U" />
+            <xsd:enumeration value="UNIT" />
+            <xsd:enumeration value="UNIT(S)" />
+            <xsd:enumeration value="UNITS" />
+            <xsd:enumeration value="VAG RING" />
+            <xsd:enumeration value="VAG RINGS" />
+            <xsd:enumeration value="VAGINAL INSERT" />
+            <xsd:enumeration value="VAGINAL INSERTS" />
+            <xsd:enumeration value="VAGINAL RING" />
+            <xsd:enumeration value="VAGINAL RINGS" />
+            <xsd:enumeration value="VIAL" />
+            <xsd:enumeration value="VIALS" />
+            <xsd:enumeration value="WAFER" />
+            <xsd:enumeration value="WAFERS" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="doseTypeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="INITIAL DOSE" />
+            <xsd:enumeration value="INTERMEDIATE DOSE" />
+            <xsd:enumeration value="LOADING" />
+            <xsd:enumeration value="MAINTENANCE" />
+            <xsd:enumeration value="PROPHYLACTIC" />
+            <xsd:enumeration value="SINGLE DOSE" />
+            <xsd:enumeration value="SUP. DOSE POST DIALYSIS" />
+            <xsd:enumeration value="TEST DOSE" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="doseRateType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="HOUR" />
+            <xsd:enumeration value="HR" />
+            <xsd:enumeration value="H" />
+            <xsd:enumeration value="MINUTE" />
+            <xsd:enumeration value="MIN" />
+            <xsd:enumeration value="DAY" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="durationRateType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="HOUR" />
+            <xsd:enumeration value="HR" />
+            <xsd:enumeration value="H" />
+            <xsd:enumeration value="MINUTE" />
+            <xsd:enumeration value="MIN" />
+            <xsd:enumeration value="DAY" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="routeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="BUCCAL" />
+            <xsd:enumeration value="CAUDAL BLOCK" />
+            <xsd:enumeration value="CERVICAL" />
+            <xsd:enumeration value="CONT CAUDAL INFUSION" />
+            <xsd:enumeration value="CONT INTRAARTER INF" />
+            <xsd:enumeration value="CONT INTRAOSSEOUS IF" />
+            <xsd:enumeration value="CONT INTRATHECAL INF" />
+            <xsd:enumeration value="CONT NEBULIZATION" />
+            <xsd:enumeration value="CONT SUBCUTAN INFUSI" />
+            <xsd:enumeration value="CONTINUOUS EPIDURAL" />
+            <xsd:enumeration value="CONTINUOUS INFUSION" />
+            <xsd:enumeration value="DENTAL" />
+            <xsd:enumeration value="ENDOTRACHEAL" />
+            <xsd:enumeration value="EPIDURAL" />
+            <xsd:enumeration value="EXTRACORPOREAL" />
+            <xsd:enumeration value="FEEDING TUBE" />
+            <xsd:enumeration value="G-TUBE" />
+            <xsd:enumeration value="HAND BULB NEBULIZER" />
+            <xsd:enumeration value="INFILTRATION" />
+            <xsd:enumeration value="INHALATION" />
+            <xsd:enumeration value="INTRA-ARTERIAL" />
+            <xsd:enumeration value="INTRA-ARTICULAR" />
+            <xsd:enumeration value="INTRA-CAVERNOSAL" />
+            <xsd:enumeration value="INTRA-URETHRAL" />
+            <xsd:enumeration value="INTRABURSAL" />
+            <xsd:enumeration value="INTRACARDIAC" />
+            <xsd:enumeration value="INTRACAVITY" />
+            <xsd:enumeration value="INTRADERMAL" />
+            <xsd:enumeration value="INTRADUCTAL" />
+            <xsd:enumeration value="INTRALESIONAL" />
+            <xsd:enumeration value="INTRALUMBAR" />
+            <xsd:enumeration value="INTRALYMPHATIC" />
+            <xsd:enumeration value="INTRAMUSCULAR" />
+            <xsd:enumeration value="INTRANASAL" />
+            <xsd:enumeration value="INTRAOCULAR" />
+            <xsd:enumeration value="INTRAOSSEOUS" />
+            <xsd:enumeration value="INTRAPERICARDIAL" />
+            <xsd:enumeration value="INTRAPERITONEAL" />
+            <xsd:enumeration value="INTRAPLEURAL" />
+            <xsd:enumeration value="INTRASPINAL" />
+            <xsd:enumeration value="INTRASYNOVIAL" />
+            <xsd:enumeration value="INTRATHECAL" />
+            <xsd:enumeration value="INTRATRACHEAL" />
+            <xsd:enumeration value="INTRAUTERINE" />
+            <xsd:enumeration value="INTRAVENOUS" />
+            <xsd:enumeration value="INTRAVENTRICULAR" />
+            <xsd:enumeration value="INTRAVESICAL" />
+            <xsd:enumeration value="INTRAVITREAL" />
+            <xsd:enumeration value="IPPB" />
+            <xsd:enumeration value="IRRIGATION" />
+            <xsd:enumeration value="J-TUBE" />
+            <xsd:enumeration value="JUXTASCLERAL" />
+            <xsd:enumeration value="MISCELLANEOUS" />
+            <xsd:enumeration value="MUCOUS MEMBRANE" />
+            <xsd:enumeration value="NEBULIZATION" />
+            <xsd:enumeration value="NOT APPLICABLE" />
+            <xsd:enumeration value="O2 AEROSOLIZATION" />
+            <xsd:enumeration value="OPHTHALMIC" />
+            <xsd:enumeration value="ORAL" />
+            <xsd:enumeration value="OTIC" />
+            <xsd:enumeration value="PERFUSION" />
+            <xsd:enumeration value="PERIBULBAR" />
+            <xsd:enumeration value="RECTAL" />
+            <xsd:enumeration value="RETROBULBAR" />
+            <xsd:enumeration value="SUBCONJUNCTIVAL" />
+            <xsd:enumeration value="SUBCUTANEOUS" />
+            <xsd:enumeration value="SUBDERMAL" />
+            <xsd:enumeration value="SUBLESIONALLY" />
+            <xsd:enumeration value="SUBLINGUAL" />
+            <xsd:enumeration value="SUBMUCOSAL INJ" />
+            <xsd:enumeration value="TENDON SHEATH INJ." />
+            <xsd:enumeration value="TOPICAL" />
+            <xsd:enumeration value="TRANSDERMAL" />
+            <xsd:enumeration value="TRANSLINGUAL" />
+            <xsd:enumeration value="TRANSTRACHEAL" />
+            <xsd:enumeration value="TRANSURETHRAL" />
+            <xsd:enumeration value="VAGINAL" />
+        </xsd:restriction>
+    </xsd:simpleType>

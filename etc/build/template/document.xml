@@ -1,0 +1,118 @@
+<project name="DocumentTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initDocumentTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef resource="checkstyletask.properties" classpathref="build.class.path" loaderref="ant-loader" />
+            <taskdef name="pmd"
+                     classname="net.sourceforge.pmd.ant.PMDTask"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="javadoc" uri="http://www.swri.org">
+        <sequential>
+            <swri:progress msg="Documenting JavaDoc" />
+
+            <pathconvert property="${ant.project.name}SourceFiles" setonempty="false">
+                <path>
+                    <fileset dir="${basedir}">
+                        <include name="${build}/${src}/**/*.java" />
+                        <include name="${src}/**/*.java" />
+                        <include name="${test}/**/*.java" />
+                    </fileset>
+                </path>
+            </pathconvert>
+
+            <if>
+                <isset property="${ant.project.name}SourceFiles" />
+                <then>
+                    <javadoc destdir="${build.dir}/javadoc"
+                             failonerror="false"
+                             classpathref="project.class.path"
+                             verbose="false"
+                             useexternalfile="true">
+                        <fileset dir="${basedir}">
+                            <include name="${build}/${src}/**/*.java" />
+                            <include name="${src}/**/*.java" />
+                            <include name="${test}/**/*.java" />
+                        </fileset>
+                    </javadoc>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="checkstyle" uri="http://www.swri.org">
+        <attribute name="html" default="true" />
+        <sequential>
+            <swri:progress msg="Documenting Checkstyle" />
+
+            <checkstyle config="${etc.build.dir}/checkstyle/pharmacy.xml"
+                        failOnViolation="false"
+                        failureProperty="checkstyle.failure"
+                        classpathref="build.class.path">
+                <fileset dir="${basedir}">
+                    <include name="${src}/**/*.java" />
+                    <include name="${test}/**/*.java" />
+                </fileset>
+                <formatter type="xml" tofile="${build.dir}/checkstyle/checkstyle.xml" />
+            </checkstyle>
+
+            <if>
+                <istrue value="@{html}" />
+                <then>
+                    <xslt basedir="${build.dir}/checkstyle"
+                          destdir="${build.dir}/checkstyle/report"
+                          style="${etc.build.dir}/checkstyle/checkstyle-noframes-sorted.xsl"
+                          scanincludeddirectories="false" />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="pmd" uri="http://www.swri.org">
+        <attribute name="html" default="true" />
+        <attribute name="errorOnly" default="false" />
+        <sequential>
+            <swri:progress msg="Documenting PMD" />
+
+            <if>
+                <istrue value="@{errorOnly}" />
+                <then>
+                    <property name="pmd.minimum.priority" value="2" />
+                </then>
+                <else>
+                    <property name="pmd.minimum.priority" value="5" />
+                </else>
+            </if>
+
+            <pmd shortFilenames="true"
+                 rulesetfiles="${etc.build.dir}/pmd/pmd_ruleset.xml"
+                 failuresPropertyName="pmd.violations"
+                 minimumPriority="${pmd.minimum.priority}">
+                <formatter type="xml" toFile="${build.dir}/pmd/pmd.xml" />
+                <fileset dir="${basedir}">
+                    <include name="${src}/**/*.java" />
+                    <include name="${test}/**/*.java" />
+                </fileset>
+            </pmd>
+
+            <if>
+                <isset property="pmd.violations" />
+                <then>
+                    <property name="pmd.failure" value="true" />
+                </then>
+            </if>
+
+            <if>
+                <istrue value="@{html}" />
+                <then>
+                    <xslt basedir="${build.dir}/pmd"
+                          destdir="${build.dir}/pmd/report"
+                          style="${etc.build.dir}/pmd/pmd-report-per-class.xslt"
+                          scanincludeddirectories="false" />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+</project>

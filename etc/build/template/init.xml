@@ -1,0 +1,85 @@
+<project name="InitTemplate" basedir="../../.." xmlns:swri="http://www.swri.org">
+    <target name="initTasks" unless="init.ignore.Tasks">
+        <path id="build.class.path">
+            <dirset dir="etc/build" />
+
+            <fileset dir="lib">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+
+        <taskdef resource="net/sf/antcontrib/antlib.xml" loaderref="ant-loader" classpathref="build.class.path" />
+
+        <taskdef name="classpath"
+                 classname="org.swri.ant.task.ClasspathTask"
+                 loaderref="ant-loader"
+                 classpathref="build.class.path"
+                 uri="http://www.swri.org" />
+
+        <property name="init.ignore.Tasks" value="true" />
+    </target>
+
+    <target name="initProperties">
+        <condition property="path.prefix" value="/">
+            <os family="unix" />
+        </condition>
+
+        <condition property="path.prefix" value="C:">
+            <os family="windows" />
+        </condition>
+
+        <property file="${etc}/${build}/developer/${user.name}.properties" />
+        <property file="${etc}/${build}/developer/default.properties" />
+        <property file="${etc}/${build}/template/properties/server.properties" />
+        <property file="${etc}/${build}/template/properties/deploy/${deploy.environment}.properties" />
+        <property file="${etc}/${build}/template/properties/database/${local.database.flavor}.properties" prefix="local" />
+        <property file="${etc}/${build}/template/properties/database/${national.database.flavor}.properties"
+                  prefix="national" />
+
+        <swri:audible success="${sound.success}" failure="${sound.failure}" />
+
+        <tstamp>
+            <format property="build.date" pattern="EEEE, MMMM dd, yyyy hh:mm:ss aa z" />
+        </tstamp>
+    </target>
+
+    <target name="initTemplate" unless="init.ignore.Template">
+        <swri:initDocumentTemplate />
+        <swri:initDatabaseTemplate />
+        <swri:initPackageTemplate />
+        <swri:initEarTemplate />
+        <swri:initDeployTemplate />
+        <swri:initXmlTemplate />
+
+        <property name="init.ignore.Template" value="true" />
+    </target>
+
+    <target name="initStructure">
+        <mkdir dir="${src.dir}" />
+        <mkdir dir="${lib.dir}" />
+        <mkdir dir="${build.src.dir}" />
+        <mkdir dir="${build.classes.dir}" />
+        <mkdir dir="${build.meta.dir}" />
+        <mkdir dir="${build.archive.dir}" />
+        <mkdir dir="${build.archive.dir}/mocha" />
+        <mkdir dir="${build.archive.dir}/national" />
+        <mkdir dir="${build.archive.dir}/local" />
+        <mkdir dir="${build.test.report.dir}" />
+        <mkdir dir="${test.dir}" />
+        <mkdir dir="${etc.build.dir}" />
+        <mkdir dir="${build.dir}/javadoc" />
+        <mkdir dir="${build.dir}/checkstyle/report" />
+        <mkdir dir="${build.dir}/pmd/report" />
+        <mkdir dir="${build.dir}/coverage/report" />
+        <mkdir dir="${build.dir}/coverage/instr" />
+        <mkdir dir="${build.tmp.dir}/classes" />
+        <mkdir dir="${build.tmp.dir}/lib" />
+        <mkdir dir="${build.tmp.dir}/meta" />
+        <mkdir dir="${build.tmp.dir}/src" />
+        <mkdir dir="${build.log.dir}" />
+    </target>
+
+    <target name="initClasspath">
+        <swri:classpath />
+    </target>
+</project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1009"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugTherapyChecks>
+                <drugTherapyCheck>
+                    <id>32</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;Prospect" gcnSeqNo="3689"/>
+                        <drug orderNumber="Z;4;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;3;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Antianxiety Agents</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of TEMAZEPAM ORAL CAPSULE 15 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Antianxiety Agents.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>40</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;Profile" gcnSeqNo="3590"/>
+                        <drug orderNumber="Z;4;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;3;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Anticonvulsants</classification>
+                    <duplicateAllowance>2</duplicateAllowance>
+                    <shortText>Use of PHENOBARBITAL ORAL TABLET 30 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Anticonvulsants.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>93</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;Prospect" gcnSeqNo="3689"/>
+                        <drug orderNumber="Z;4;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;3;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Benzodiazepines</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of TEMAZEPAM ORAL CAPSULE 15 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Benzodiazepines.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>1088</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;1;Profile" gcnSeqNo="3590"/>
+                        <drug orderNumber="Z;1;Prospect" gcnSeqNo="3689"/>
+                    </interactedDrugList>
+                    <classification>Hypnotics</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of PHENOBARBITAL ORAL TABLET 30 MG and TEMAZEPAM ORAL CAPSULE 15 MG may represent a duplication in therapy based on their association to the therapeutic drug class Hypnotics.</shortText>
+                </drugTherapyCheck>
+            </drugTherapyChecks>
+        </drugCheck>
+    </Body>

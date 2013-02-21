@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1014"/>
+        <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDrugChecks>
+                <drugDrugCheck>
+                    <id>4</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;5;Profile" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;10;Profile" gcnSeqNo="3590"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>ANTICOAGULANTS/BARBITURATES</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and PHENOBARBITAL ORAL TABLET 30 MG may interact based on the potential interaction between ANTICOAGULANTS and BARBITURATES.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Barbiturates</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  It is speculated that induction of hepatic microsomal enzymes results in increased metabolism of anticoagulants,(1) resulting in decreased anticoagulant response.(2,3)  Barbiturates may also increase the synthesis of clotting factors by the liver.(4)  The absorption of dicumarol, but not warfarin, from the gastrointestinal may be decreased by barbiturates.(5)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Concurrent use may result in decreased anticoagulant effects.  Increased anticoagulant effects may occur if the barbiturate is withdrawn.  The effect may be dose-related and may continue beyond the discontinuation of the barbiturate.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  If possible, avoid the concurrent use of these agents. If a barbiturate is initiated or discontinued in a patient maintained on anticoagulant therapy, monitor prothrombin times and adjust the dose of the anticoagulant as needed.For hypnotic indications, benzodiazepines and diphenhydramine may be alternatives to barbiturates in patients stabilized on anticoagulant therapy.</patientManagement>
+                        <discussion>DISCUSSION:  Amobarbital,(6) aprobarbital,(7) barbital,(8) butabarbital,(9) pentobarbital,(4) phenobarbital,(1) and secobarbital(6) have been shown to interact with coumarin anticoagulants.  Dicumarol,(5) warfarin(1), and phenprocoumon(4) have been reported to interact with the barbiturates.It would be prudent to assume that all barbiturates and the indanedione derivatives would interact in a similar fashion.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated, altered, or discontinued.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Levy G, O'Reilly RA, Aggeler PM, Keech GM. Pharmacokinetic analysis of the effect of barbiturate on the anticoagulant action of warfarin in man. Clin Pharmacol Ther 1970 May-Jun;11(3):372-7.]]></reference>
+                            <reference><![CDATA[2.Goss JE, Dickhaus DW. Increased bishydroxycoumarin requirements in patients receiving phenobarbital. N Engl J Med 1965 Nov 11;273(20):1094-5.]]></reference>
+                            <reference><![CDATA[3.MacDonald MG, Robinson DS. Clinical observations of possible barbiturate interference with anticoagulation. JAMA 1968 Apr 8;204(2):97-100.]]></reference>
+                            <reference><![CDATA[4.Lucas ON. Study of the interaction of barbiturates and dicumarol and their effect on prothrombin activity, hemorrhage, and sleeping time in rats. Can J Physiol Pharmacol 1967 Sep;45(5):905-13.]]></reference>
+                            <reference><![CDATA[5.Aggeler PM, O'Reilly RA. Effect of heptabarbital on the response to bishydroxycoumarin in man. J Lab Clin Med 1969 Aug;74(2):229-38.]]></reference>
+                            <reference><![CDATA[6.Breckenridge A, Orme M. Clinical implications of enzyme induction. Ann N Y Acad Sci 1971 Jul 6;179:421-31.]]></reference>
+                            <reference><![CDATA[7.Johansson SA. Apparent resistance to oral anticoagulant therapy and influence of hypnotics on some coagulation factors. Acta Med Scand 1968 Oct;184(4):297-300.]]></reference>
+                            <reference><![CDATA[8.Welch RM, Harrison YE, Conney AH, Burns JJ. An experimental model in dogs for studying interactions of drugs with bishydroxycoumarin. Clin Pharmacol Ther 1969 Nov-Dec;10(6):817-25.]]></reference>
+                            <reference><![CDATA[9.Antlitz AM, Tolentino M, Kosai MF. Effect of butabarbital on orally administered anticoagulants. Curr Ther Res Clin Exp 1968 Feb;10(2):70-3.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>7</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;5;Profile" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;8;Profile" gcnSeqNo="11666"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>ANTICOAGULANTS/CIMETIDINE</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and CIMETIDINE ORAL TABLET 300 MG may interact based on the potential interaction between ANTICOAGULANTS and CIMETIDINE.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Cimetidine</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Inhibition of warfarin hepatic metabolism. The effect appears to be greater on the less active R-warfarin than on the S-warfarin.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The pharmacologic effects of warfarin may be increased resulting in severe bleeding.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Coadministration of cimetidine and warfarin should be avoided. If they are administered concurrently, monitor anticoagulant activity and adjust the dose of warfarin indicated. The H-2 antagonists famotidine and nizatidine are unlikely to interact with warfarin.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated or discontinued. Contact the prescriber before initiating, altering the dose or discontinuing either drug.</patientManagement>
+                        <discussion>DISCUSSION:  The majority of drug interaction reports involving H-2 antagonists and warfarin have occurred with cimetidine. Reports of a possibly significant interaction between ranitidine and warfarin have been equivocal. Famotidine and nizatidine do not appear to affect prothrombin time.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Silver BA, Bell WR. Cimetidine potentiation of the hypoprothrombinemic effect of warfarin. Ann Intern Med 1979 Mar;90(3):348-9.]]></reference>
+                            <reference><![CDATA[2.Wallin BA, Jacknowitz A, Raich PC. Cimetidine and effect of warfarin. Ann Intern Med 1979 Jun;90(6):993.]]></reference>
+                            <reference><![CDATA[3.Serlin MJ, Sibeon RG, Breckenridge AM. Lack of effect of ranitidine on warfarin action. Br J Clin Pharmacol 1981 Dec;12(6):791-4.]]></reference>
+                            <reference><![CDATA[4.Kerley B, Ali M. Cimetidine potentiation of warfarin action. Can Med Assoc J 1982 Jan 15;126(2):116.]]></reference>
+                            <reference><![CDATA[5.Desmond PV, Mashford ML, Harman PJ, Morphett BJ, Breen KJ, Wang YM. Decreased oral warfarin clearance after ranitidine and cimetidine. Clin Pharmacol Ther 1984 Mar;35(3):338-41.]]></reference>
+                            <reference><![CDATA[6.Toon S, Hopkins KJ, Garstang FM, Rowland M. Comparative effects of ranitidine and cimetidine on the pharmacokinetics and pharmacodynamics of warfarin in man. Eur J Clin Pharmacol 1987;32(2):165-72.]]></reference>
+                            <reference><![CDATA[7.Cournot A, Berlin I, Sallord JC, Singlas E. Lack of interaction between nizatidine and warfarin during chronic administration. J Clin Pharmacol 1988 Dec;28(12):1120-2.]]></reference>
+                            <reference><![CDATA[8.Hussey EK, Dukes GE. Do all histamine2-antagonists cause a warfarin drug interaction?. DICP 1989 Sep;23(9):675-9.]]></reference>
+                            <reference><![CDATA[9.Hunt BA, Sax MJ, Chretien SD, Gray DR, Frank WO, Lalonde RL. Stereoselective alterations in the pharmacokinetics of warfarin enantiomers with two cimetidine dose regimens. Pharmacotherapy 1989; 9(3):184.]]></reference>
+                            <reference><![CDATA[10.Baciewicz AM, Morgan PJ. Ranitidine-warfarin interaction. Ann Intern Med 1990 Jan 1;112(1):76-7.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>248</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;8;Profile" gcnSeqNo="11666"/>
+                        <drug orderNumber="Z;11;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>CIMETIDINE/BENZODIAZEPINES</interaction>
+                    <shortText>CIMETIDINE ORAL TABLET 300 MG and DIAZEPAM ORAL TABLET 5 MG may interact based on the potential interaction between CIMETIDINE and BENZODIAZEPINES.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Cimetidine/Benzodiazepines</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Hepatic enzyme inhibition involving benzodiazepine oxidative metabolism.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The pharmacologic effects of certain benzodiazepines may be increased.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Observe the patient for increased sedation. This interaction can probably be avoided by administering a benzodiazepine that is not metabolized by oxidative metabolism (e.g., lorazepam, temazepam) or by administering another H-2 antagonist (e.g., ranitidine, famotidine, nizatidine).</patientManagement>
+                        <discussion>DISCUSSION:  Cimetidine increases the half-life and serum concentration and decreases the clearance of benzodiazepines that undergo oxidative metabolism (e.g., alprazolam, diazepam, flurazepam, midazolam, triazolam). The sedative effects of benzodiazepines have been reported to be increased during concurrent administration of cimetidine. This interaction does not appear to occur with benzodiazepines that undergo glucuronide conjugation.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Desmond PV, Patwardhan RV, Schenker S, Speeg KV Jr. Cimetidine impairs elimination of chlordiazepoxide (Librium) in man. Ann Intern Med 1980 Aug; 93(2):266-8.]]></reference>
+                            <reference><![CDATA[2.Klotz U, Reimann I. Delayed clearance of diazepam due to cimetidine. N Engl J Med 1980 May 1;302(18):1012-4.]]></reference>
+                            <reference><![CDATA[3.Klotz U, Reimann I. Influence of cimetidine on the pharmacokinetics of desmethyldiazepam and oxazepam. Eur J Clin Pharmacol 1980 Nov; 18(6):517-20.]]></reference>
+                            <reference><![CDATA[4.Patwardhan RV, Yarborough GW, Desmond PV, Johnson RF, Schenker S, Speeg KV Jr. Cimetidine spares the glucuronidation of lorazepam and oxazepam. Gastroenterology 1980 Nov;79(5 Pt 1):912-6.]]></reference>
+                            <reference><![CDATA[5.Ruffalo RL, Thompson JF, Segal J. Cimetidine-benzodiazepine drug interaction. Am J Hosp Pharm 1981 Sep;38(9):1365-6.]]></reference>
+                            <reference><![CDATA[6.Patwardhan RV, Johnson RF, Sinclair AP, Schenker S, Speeg KV Jr. Lack of tolerance and rapid recovery of cimetidine-inhibited chlordiazepoxide (Librium) elimination. Gastroenterology 1981 Sep;81(3):547-51.]]></reference>
+                            <reference><![CDATA[7.Klotz U, Reimann I. Elevation of steady-state diazepam levels by cimetidine. Clin Pharmacol Ther 1981 Oct;30(4):513-7.]]></reference>
+                            <reference><![CDATA[8.Divoll M, Abernethy DR, Greenblatt DJ. Cimetidine impairs drug oxidizing capacity in the elderly. Clin Pharmacol Ther 1982 Feb;31(2):218.]]></reference>
+                            <reference><![CDATA[9.Gough PA, Curry SH, Araujo OE, Robinson JD, Dallman JJ. Influence of cimetidine on oral diazepam elimination with measurement of subsequent cognitive change. Br J Clin Pharmacol 1982 Nov;14(5):739-42.]]></reference>
+                            <reference><![CDATA[10.Hiss J, Hepler BR, Falkowski AJ, Sunshine I. Fatal bradycardia after intentional overdose of cimetidine and diazepam. Lancet 1982 Oct 30; 2(8305):982.]]></reference>
+                            <reference><![CDATA[11.Divoll M, Greenblatt DJ, Abernethy DR, Shader RI. Cimetidine impairs clearance of antipyrine and desmethyldiazepam in the elderly. J Am Geriatr Soc 1982 Nov;30(11):684-9.]]></reference>
+                            <reference><![CDATA[12.Abernethy DR, Greenblatt DJ, Divoll M, Moschitto LJ, Harmatz JS, Shader RI. Interaction of cimetidine with the triazolobenzodiazepines alprazolam and triazolam. Psychopharmacology (Berl) 1983;80(3):275-8.]]></reference>
+                            <reference><![CDATA[13.Greenblatt DJ, Abernethy DR, Morse DS, Harmatz JS, Shader RI. Clinical importance of the interaction of diazepam and cimetidine. N Engl J Med 1984 Jun 21;310(25):1639-43.]]></reference>
+                            <reference><![CDATA[14.Greenblatt DJ, Abernethy DR, Morse DS, Harmatz JS, Shader RI. The diazepam-cimetidine interaction: is it clinically important?. Clin Pharmacol Ther 1984 Feb;35(2):245.]]></reference>
+                            <reference><![CDATA[15.Greenblatt DJ, Abernethy DR, Koepke HH, Shader RI. Interaction of cimetidine with oxazepam, lorazepam, and flurazepam. J Clin Pharmacol 1984 Apr;24(4):187-93.]]></reference>
+                            <reference><![CDATA[16.Greenblatt DJ, Locniskar A, Scavone JM, Blyden GT, Ochs HR, Harmatz JS, Shader RI. Absence of interaction of cimetidine and ranitidine with intravenous and oral midazolam. Anesth Analg 1986 Feb;65(2):176-80.]]></reference>
+                            <reference><![CDATA[17.Locniskar A, Greenblatt DJ, Harmatz JS, Zinny MA, Shader RI. Interaction of diazepam with famotidine and cimetidine, two H2-receptor antagonists. J Clin Pharmacol 1986 Apr;26(4):299-303.]]></reference>
+                            <reference><![CDATA[18.Friedman H, Greenblatt DJ, Burstein ES, Scavone JM, Harmatz JS, Shader RI. Triazolam kinetics: interaction with cimetidine, propranolol, and the combination. J Clin Pharmacol 1988 Mar;28(3):228-33.]]></reference>
+                            <reference><![CDATA[19.Andersson T, Andren K, Cederberg C, Edvardsson G, Heggelund A, Lundborg P. Effect of omeprazole and cimetidine on plasma diazepam levels. Eur J Clin Pharmacol 1990;39(1):51-4.]]></reference>
+                            <reference><![CDATA[20.Sanders LD, Whitehead C, Gildersleve CD, Rosen M, Robinson JO. Interaction of H2-receptor antagonists and benzodiazepine sedation. A double-blind placebo-controlled investigation of the effects of cimetidine and ranitidine on recovery after intravenous midazolam. Anaesthesia 1993 Apr;48(4):286-92.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>497</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;5;Profile" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;1;Profile" gcnSeqNo="58202"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>ANTICOAGULANTS/VITAMIN K</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and MVI, ADULT NO.1 WITH VIT K INTRAVENOUS VIAL (SDV,MDV OR ADDITIVE) 1 MG-5 MCG-10 MG-200 MG-150 MCG may interact based on the potential interaction between ANTICOAGULANTS and VITAMIN K.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Anticoagulants/Vitamin K</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Anticoagulants interfere with the activation of vitamin K-dependent clotting factors. Vitamin K administration may reverse this effect.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  The pharmacological effect of anticoagulants may be reversed resulting in thrombus formation.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Patients receiving anticoagulants should avoid eating unusual increases in foods high in vitamin K content.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated or discontinued. Contact the prescriber before initiating, altering the dose or discontinuing either drug.</patientManagement>
+                        <discussion>DISCUSSION:  Numerous reports have demonstrated that vitamin K interferes with the hypoprothrombinemic effects of anticoagulants. However, reports of clinically important consequences are uncommon. A clearer understanding of the mechanism by which these drugs act has made it possible to use vitamin K to control bleeding side effects of warfarin therapy. One should be aware of the vitamin K content of enteral feeding products being administered to patients on anticoagulant therapy. Prothrombin time should be monitored when these products are given.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Anonymous. Anticoagulant therapyn - a clinical dilemma. JAMA 1964 Feb 15; 187(7):27-30.]]></reference>
+                            <reference><![CDATA[2.Andersen P, Godal HC. Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K. Acta Med Scand 1975 Oct; 198(4):269-70.]]></reference>
+                            <reference><![CDATA[3.Fletcher DC. Clotting factors in vitamin K-rich vegetables hinder anticoagulant therapy?. JAMA 1977 Apr 25;237(17):1871.]]></reference>
+                            <reference><![CDATA[4.Kempin SJ. Warfarin resistance caused by broccoli. N Engl J Med 1983 May 19;308(20):1229-30.]]></reference>
+                            <reference><![CDATA[5.Karlson B, Leijd B, Hellstrom K. On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment. Acta Med Scand 1986;220(4):347-50.]]></reference>
+                            <reference><![CDATA[6.Walker FB 4th. Myocardial infarction after diet-induced warfarin resistance. Arch Intern Med 1984 Oct;144(10):2089-90.]]></reference>
+                            <reference><![CDATA[7.Martin JE, Lutomski DM. Warfarin resistance and enteral feedings. JPEN J Parenter Enteral Nutr 1989 Mar-Apr;13(2):206-8.]]></reference>
+                            <reference><![CDATA[8.Suttie JW. Warfarin and vitamin K. Clin Cardiol 1990 Apr;13(4 Suppl 6):VI16-8.]]></reference>
+                            <reference><![CDATA[9.Chow WH, Chow TC, Tse TM, Tai YT, Lee WT. Anticoagulation instability with life-threatening complication after dietary modification. Postgrad Med J 1990 Oct;66(780):855-7.]]></reference>
+                            <reference><![CDATA[10.Pedersen FM, Hamberg O, Hess K, Ovesen L. The effect of dietary vitamin K on warfarin-induced anticoagulation. J Intern Med 1991 Jun;229(6):517-20.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>498</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;5;Profile" gcnSeqNo="6562"/>
+                        <drug orderNumber="Z;1;Profile" gcnSeqNo="58202"/>
+                    </interactedDrugList>
+                    <severity>Severe Interaction</severity>
+                    <interaction>SELECTED ANTICOAGULANTS/ALPHA TOCOPHERYL</interaction>
+                    <shortText>WARFARIN SODIUM ORAL TABLET 5 MG and MVI, ADULT NO.1 WITH VIT K INTRAVENOUS VIAL (SDV,MDV OR ADDITIVE) 1 MG-5 MCG-10 MG-200 MG-150 MCG may interact based on the potential interaction between SELECTED ANTICOAGULANTS and ALPHA TOCOPHERYL.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Selected Anticoagulants/Alpha Tocopheryl</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Unknown.</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Vitamin E may increase the pharmacologic effects of anticoagulants.</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  Coadministration of vitamin E and anticoagulants should be avoided. If both drugs are administered, monitor hypoprothrombinemic response to warfarin and adjust the dose of the anticoagulants as indicated.The time of highest risk for a coumarin-type drug interaction is when the precipitant drug is initiated or discontinued. Contact the prescriber before initiating, altering the dose or discontinuing either drug.</patientManagement>
+                        <discussion>DISCUSSION:  Vitamin E doses of 800 International Units/day and more have been reported to increase the hypoprothrombinemic effect of warfarin; while doses of 42 International Units/day of vitamin E for 30 days have increased the hypoprothrombinemic effect of dicumarol. Agenerase brand of amprenavir capsules and oral solution contain a significant amount of vitamin E.  Each 150 mg capsule contains 109 International Units vitamin E, with a total of 1744 International Units of vitamin E in the recommended daily adult dose.  Each mL of oral solution contains 46 International Units of vitamin E.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Corrigan JJ Jr, Marcus FI. Coagulopathy associated with vitamin E ingestion. JAMA 1974 Dec 2;230(9):1300-1.]]></reference>
+                            <reference><![CDATA[2.Schrogie JJ. Letter: Coagulopathy and fat-soluble vitamins. JAMA 1975 Apr 7;232(1):19.]]></reference>
+                            <reference><![CDATA[3.Corrigan JJ Jr, Ulfers LL. Effect of vitamin E on prothrombin levels in warfarin-induced vitamin K deficiency. Am J Clin Nutr 1981 Sep; 34(9):1701-5.]]></reference>
+                            <reference><![CDATA[4.Anonymous. Vitamin K, vitamin E and the coumarin drugs. Nutr Rev 1982 Jun; 40(6):180-2.]]></reference>
+                            <reference><![CDATA[5.Agenerase (amprenavir) Capsules US prescribing information. GlaxoSmithKline February, 2004.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+                <drugDrugCheck>
+                    <id>1353</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;2;Profile" gcnSeqNo="60301"/>
+                        <drug orderNumber="Z;5;Profile" gcnSeqNo="6562"/>
+                    </interactedDrugList>
+                    <severity>Moderate Interaction</severity>
+                    <interaction>HEPARINS/ANTICOAGULANTS</interaction>
+                    <shortText>HEPARIN SODIUM,PORCINE/DEXTROSE 5%-WATER INTRAVENOUS SOLUTION,INTRAVENOUS 25,000 UNIT/250 ML and WARFARIN SODIUM ORAL TABLET 5 MG may interact based on the potential interaction between HEPARINS and ANTICOAGULANTS.</shortText>
+                    <professionalMonograph>
+                        <monographSource>FDB</monographSource>
+                        <disclaimer>This information is generalized and not intended as specific medical advice. Consult your healthcare professional before taking or discontinuing any drug or commencing any course of treatment.</disclaimer>
+                        <monographTitle>MONOGRAPH TITLE:  Heparins/Anticoagulants</monographTitle>
+                        <severityLevel>SEVERITY LEVEL:  3-Moderate Interaction: Assess the risk to the patient and take action as needed.</severityLevel>
+                        <mechanismOfAction>MECHANISM OF ACTION:  Heparin inhibits thrombosis by inactivating activated Factor X and inhibiting the conversion of prothrombin to thrombin.(1)</mechanismOfAction>
+                        <clinicalEffects>CLINICAL EFFECTS:  Concurrent use of anticoagulants with heparin can enhance the effects of heparin and may increase the risk of bleeding.(1)</clinicalEffects>
+                        <predisposingFactors>PREDISPOSING FACTORS:  None determined.</predisposingFactors>
+                        <patientManagement>PATIENT MANAGEMENT:  The manufacturer recommends doing periodic platelet counts, hematocrits, and testing for occult blood in stool.(1)</patientManagement>
+                        <discussion>DISCUSSION:  A study of the use of heparin and warfarin in DVT patients concluded that it is safe to use heparin in combination with warfarin(2) with proper monitoring.</discussion>
+                        <references>
+                            <reference><![CDATA[REFERENCES:]]></reference>
+                            <reference><![CDATA[1.Heparin Sodium Injection, USP US prescribing information. Baxter Healthcare Corporation October, 2006.]]></reference>
+                            <reference><![CDATA[2.Harrison L, McGinnis J, Crowther M, Ginsberg J, Hirsh J. Assessment of outpatient treatment of deep-vein thrombosis with low-molecular-weight heparin. Arch Intern Med 1998 Oct 12;158(18):2001-3.]]></reference>
+                        </references>
+                    </professionalMonograph>
+                </drugDrugCheck>
+            </drugDrugChecks>
+            <drugTherapyChecks>
+                <drugTherapyCheck>
+                    <id>32</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;6;Profile" gcnSeqNo="3689"/>
+                        <drug orderNumber="Z;9;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;11;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Antianxiety Agents</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of TEMAZEPAM ORAL CAPSULE 15 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Antianxiety Agents.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>40</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;10;Profile" gcnSeqNo="3590"/>
+                        <drug orderNumber="Z;9;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;11;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Anticonvulsants</classification>
+                    <duplicateAllowance>2</duplicateAllowance>
+                    <shortText>Use of PHENOBARBITAL ORAL TABLET 30 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Anticonvulsants.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>93</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;6;Profile" gcnSeqNo="3689"/>
+                        <drug orderNumber="Z;9;Profile" gcnSeqNo="3758"/>
+                        <drug orderNumber="Z;11;Profile" gcnSeqNo="3768"/>
+                    </interactedDrugList>
+                    <classification>Benzodiazepines</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of TEMAZEPAM ORAL CAPSULE 15 MG, LORAZEPAM ORAL TABLET 1 MG, and DIAZEPAM ORAL TABLET 5 MG may represent a duplication in therapy based on their association to the therapeutic drug class Benzodiazepines.</shortText>
+                </drugTherapyCheck>
+                <drugTherapyCheck>
+                    <id>1088</id>
+                    <source>FDB</source>
+                    <interactedDrugList>
+                        <drug orderNumber="Z;10;Profile" gcnSeqNo="3590"/>
+                        <drug orderNumber="Z;6;Profile" gcnSeqNo="3689"/>
+                    </interactedDrugList>
+                    <classification>Hypnotics</classification>
+                    <duplicateAllowance>0</duplicateAllowance>
+                    <shortText>Use of PHENOBARBITAL ORAL TABLET 30 MG and TEMAZEPAM ORAL CAPSULE 15 MG may represent a duplication in therapy based on their association to the therapeutic drug class Hypnotics.</shortText>
+                </drugTherapyCheck>
+            </drugTherapyChecks>
+        </drugCheck>
+    </Body>

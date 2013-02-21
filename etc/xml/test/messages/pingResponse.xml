@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="127.0.0.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="2101"/>
+        <PEPSVersion customIssueDate="NOT AVAIALABLE"
+            customBuildVersion="NOT AVAIALABLE"
+            customDbVersion="NOT AVAIALABLE" difIssueDate="20091002"
+            difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>

@@ -1,0 +1,148 @@
+<project name="Template" default="compile" basedir="../../.." xmlns:swri="http://www.swri.org">
+    <dirname property="template.dir" file="${ant.file.Template}" />
+    <property file="${template.dir}/properties/project.properties" />
+    <property file="${etc.build.dir}/build.properties" />
+
+    <import file="${template.dir}/buildTest.xml" />
+    <import file="${template.dir}/compile.xml" />
+    <import file="${template.dir}/deploy.xml" />
+    <import file="${template.dir}/document.xml" />
+    <import file="${template.dir}/ear.xml" />
+    <import file="${template.dir}/init.xml" />
+    <import file="${template.dir}/jar.xml" />
+    <import file="${template.dir}/progress.xml" />
+    <import file="${template.dir}/test.xml" />
+    <import file="${template.dir}/weblogic.xml" />
+    <import file="${template.dir}/xml.xml" />
+    <import file="${template.dir}/coverage.xml" />
+    <import file="${template.dir}/database.xml" />
+
+    <!-- Setup project structure and classpath -->
+    <target name="init" depends="clean, initTasks, initTemplate, initStructure, initProperties, initClasspath">
+        <swri:initCoverageTemplate />
+    </target>
+
+    <!-- Delete this project's build artifacts -->
+    <target name="clean" depends="initTasks, initTemplate">
+        <swri:progress msg="Cleaning ${ant.project.name}" />
+
+        <delete dir="${build.dir}" failonerror="false" />
+    </target>
+
+    <!-- Generate the relevant source code -->
+    <target name="generate" depends="init">
+        <swri:progress msg="Generating ${ant.project.name}" />
+    </target>
+
+    <!-- Compile the source code -->
+    <target name="compile" depends="generate">
+        <swri:progress msg="Compiling ${ant.project.name}" />
+
+        <swri:compile />
+    </target>
+
+    <!-- Compile environments separately for dependency checking -->
+    <target name="compileEnvironments" depends="clean, generate">
+        <swri:compileCommon />
+        <swri:compileLocal />
+        <swri:compileNational />
+    </target>
+
+    <!-- Execute the unit tests -->
+    <target name="unitTest" depends="compile" unless="test.ignore">
+        <swri:progress msg="Unit testing ${ant.project.name}" />
+
+        <swri:unitTest />
+    </target>
+
+    <!-- Archive the artifacts of the project -->
+    <target name="jar" depends="compile" unless="package.ignore">
+        <swri:progress msg="Packaging ${ant.project.name}" />
+    </target>
+
+    <!-- Ear the project artifacts for deployment -->
+    <target name="ear" depends="jar" unless="ear.ignore">
+        <swri:progress msg="Earing ${ant.project.name}" />
+    </target>
+
+    <!-- Deploy this project -->
+    <target name="deploy" depends="ear" unless="deploy.ignore">
+        <swri:progress msg="Deploying ${ant.project.name}" />
+    </target>
+
+    <!-- Deploy and execute the integration tests -->
+    <target name="integrationTest" depends="compile">
+        <swri:progress msg="Integration testing ${ant.project.name}" />
+
+        <swri:integrationTest />
+    </target>
+
+    <!-- Deploy and execute the performance tests -->
+    <target name="performanceTest" depends="deploy">
+        <swri:progress msg="Performance testing ${ant.project.name}" />
+
+        <swri:performanceTest />
+    </target>
+
+    <!-- Deploy and execute the performance tests -->
+    <target name="atpTest" depends="compile">
+        <swri:progress msg="ATP testing ${ant.project.name}" />
+
+        <swri:atpTest />
+    </target>
+
+    <!-- Document this project -->
+    <target name="document" depends="generate">
+        <swri:progress msg="Documenting ${ant.project.name}" />
+
+        <swri:javadoc />
+        <swri:checkstyle />
+        <swri:pmd />
+    </target>
+
+    <!-- Run unit tests, then check for errors with Checkstyle and PMD -->
+    <target name="buildUnitTest"
+            depends="setIgnoreTestFailures, initBuildFailureMessage, compileEnvironments, unitTest, buildTestDocument">
+        <swri:setBuildFailureMessage />
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Run integration tests, then check for errors with Checkstyle and PMD -->
+    <target name="buildIntegrationTest"
+            depends="setIgnoreTestFailures, initBuildFailureMessage, compileEnvironments, integrationTest, buildTestDocument">
+        <swri:setBuildFailureMessage />
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Run unit and integration tests, then check for errors with Checkstyle and PMD -->
+    <target name="buildTestAll"
+            depends="setIgnoreTestFailures, initBuildFailureMessage, compileEnvironments, unitTest, integrationTest, buildTestDocument">
+        <swri:setBuildFailureMessage />
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Run the buildItegrationTest target after rebooting the managed server -->
+    <target name="cruiseControlIntegrationTest"
+            depends="setCruiseControlDeployEnvironment, rebootManagedServers, buildIntegrationTest" />
+
+    <!-- Run the buildUnitTest target -->
+    <target name="cruiseControlUnitTest" depends="setCruiseControlDeployEnvironment, buildUnitTest" />
+
+    <!-- CruiseControl calls this target so everything is clean before running integration tests for the baseline build -->
+    <target name="cruiseControlTestAll"
+            depends="setCruiseControlDeployEnvironment, setCoverage, rebootManagedServers, buildTestAll" />
+
+    <target name="setCoverage" depends="initTasks">
+        <var name="coverage" value="true" />
+    </target>
+
+    <!-- CruiseControl is deploying to the "development rack" -->
+    <target name="setCruiseControlDeployEnvironment" depends="initTasks">
+        <var name="deploy.environment" value="buildrack" />
+    </target>
+
+    <!-- Rebooting the managed servers (LocalPharmacyServer-3) helps correct our out of memory problems -->
+    <target name="rebootManagedServers" depends="initTasks, initProperties">
+        <swri:rebootManagedServers />
+    </target>
+</project>

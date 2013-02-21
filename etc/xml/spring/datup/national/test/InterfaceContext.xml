@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <import
+        resource="classpath*:xml/spring/mocha/test/InterfaceContext.xml" />
+    <import
+        resource="classpath*:xml/spring/datup/national/InterfaceContextTemplate.xml" />
+    <!-- PE-DTUP -->
+    <bean
+        id="datupDataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property
+            name="driverClassName"
+            value="${national.datup.driver}" />
+        <property
+            name="url"
+            value="${national.datup.jdbc.url}" />
+        <property
+            name="username"
+            value="${national.datup.user}" />
+        <property
+            name="password"
+            value="${national.datup.password}" />
+    </bean>
+    <bean id="jndiTemplate" class="EXT.DOMAIN.pharmacy.peps.common.test.stub.JndiTemplateStub" />
+    <!-- Database Configuration Properties -->
+    <bean
+        id="fdbDatabaseProperties"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property
+            name="location"
+            value="classpath:properties/EXT/DOMAIN/pharmacy/peps/common/test/integration/IntegrationTestCase.properties" />
+    </bean>
+    <!--  Don't automatically start the scheduler -->
+    <bean
+        id="difUpdateScheduler"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.DifUpdateScheduler">
+        <property
+            name="configuration"
+            ref="datupConfiguration" />
+    </bean>
+    <!-- Use the out-of-container timer -->
+    <bean
+        id="timerFactory"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.TimerFactory">
+    </bean>
+    <!-- FTP Server for testing anonymous account -->
+    <server
+        xmlns="http://mina.apache.org/ftpserver/spring/v1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://mina.apache.org/ftpserver/spring/v1 http://mina.apache.org/ftpserver/ftpserver-1.0.xsd"
+        id="testFtpServer"
+        max-logins="1000"
+        anon-enabled="true"
+        max-anon-logins="1000"
+        max-login-failures="0"
+        login-failure-delay="0">
+        <listeners>
+            <nio-listener
+                name="default"
+                port="2021"
+                implicit-ssl="false"
+                idle-timeout="60"
+                local-address="127.0.0.1">
+                <data-connection
+                    idle-timeout="60">
+                    <active
+                        enabled="true"
+                        local-address="127.0.0.1"
+                        local-port="2023"
+                        ip-check="false" />
+                    <passive
+                        ports="123-125"
+                        address="127.0.0.1" />
+                </data-connection>
+            </nio-listener>
+        </listeners>
+        <file-user-manager
+            file="etc/properties/ftp_users.properties"
+            encrypt-passwords="clear" />
+        <native-filesystem
+            case-insensitive="false"
+            create-home="true" />
+    </server>
+    <bean
+        id="datupConfiguration"
+        class="EXT.DOMAIN.pharmacy.peps.updater.common.utility.Configuration">
+        <property
+            name="filename"
+            value="properties/fdb_datup_configuration.properties" />
+    </bean>
+    
+    <bean
+        id="sendToExternalCapability"
+        class="EXT.DOMAIN.pharmacy.peps.updater.national.messaging.test.stub.SendToExternalCapabilityStub" />

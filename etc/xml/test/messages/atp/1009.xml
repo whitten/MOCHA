@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+    <Header>
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="127.0.0.1"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="1009"
+            duz="88660079"
+            userName="user" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks prospectiveOnly="false" useCustomTables="false">
+                <drugTherapyCheck useDuplicateAllowance="false" />
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    gcnSeqNo="3689"
+                    orderNumber="Z;1;Prospect" />
+                <drug
+                    gcnSeqNo="8209"
+                    orderNumber="Z;2;Prospect" />
+            </prospectiveDrugs>
+            <medicationProfile>
+                <drug
+                    gcnSeqNo="3590"
+                    orderNumber="Z;1;Profile" />
+                <drug
+                    gcnSeqNo="2451"
+                    orderNumber="Z;2;Profile" />
+                <drug
+                    gcnSeqNo="3768"
+                    orderNumber="Z;3;Profile" />
+                <drug
+                    gcnSeqNo="3758"
+                    orderNumber="Z;4;Profile" />
+                <drug
+                    gcnSeqNo="15365"
+                    orderNumber="Z;5;Profile" />
+                <drug
+                    gcnSeqNo="58202"
+                    orderNumber="Z;6;Profile" />
+                <drug
+                    gcnSeqNo="60301"
+                    orderNumber="Z;7;Profile" />
+                <drug
+                    gcnSeqNo="49835"
+                    orderNumber="Z;8;Profile" />
+            </medicationProfile>
+        </drugCheck>
+    </Body>

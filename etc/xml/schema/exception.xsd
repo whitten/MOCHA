@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/exception"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/exception"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xsd:element name="exception">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="code"
+                    type="exceptionCodeType" />
+                <xsd:element
+                    name="message"
+                    type="xsd:string" />
+                <xsd:element
+                    name="detailedMessage"
+                    type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="exceptionCodeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PRE" />
+            <xsd:enumeration value="FDB" />
+            <xsd:enumeration value="JAVA" />
+            <xsd:enumeration value="SYSTEM" />
+            <xsd:enumeration value="FDBUPDATE" />
+        </xsd:restriction>
+    </xsd:simpleType>

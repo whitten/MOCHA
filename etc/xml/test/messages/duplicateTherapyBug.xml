@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="ext/domain/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+    <Header>
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="127.0.0.1"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="1002"
+            duz="88660079"
+            userName="user" />
+    </Header>
+    <Body>
+        <drugCheck>
+            <checks
+                prospectiveOnly="true"
+                useCustomTables="true">
+                <drugTherapyCheck useDuplicateAllowance="true" />
+            </checks>
+            <prospectiveDrugs>
+                <drug
+                    gcnSeqNo="58432"
+                    ien="344"
+                    orderNumber="Z;1;Prospect" />
+                <drug
+                    gcnSeqNo="16579"
+                    ien="93267"
+                    orderNumber="Z;2;Prospect" />
+                <drug
+                    gcnSeqNo="24538"
+                    ien="93268"
+                    orderNumber="Z;2;Prospect" />
+            </prospectiveDrugs>
+        </drugCheck>
+    </Body>
